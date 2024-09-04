@@ -29,6 +29,6 @@ def eliminar_bits_menos_significativos(archivo_blif, archivo_salida):
         file.writelines(lineas_modificadas)
 
 # Uso del script
-archivo_entrada = '/home/moises-leiva/vtr_work/quickstart/sumador_16bits/exacto/temp/sumador_16bits.pre-vpr.blif'  # Nombre del archivo de entrada
-archivo_salida = '/home/moises-leiva/vtr_work/quickstart/sumador_16bits/exacto/temp/eliminado.blif'  # Nombre del archivo de salida
+archivo_entrada = 'sumador_16bits.pre-vpr.blif'  # Nombre del archivo de entrada
+archivo_salida = 'eliminado.blif'  # Nombre del archivo de salida
 eliminar_bits_menos_significativos(archivo_entrada, archivo_salida)
