@@ -1,0 +1,1038 @@
+#Timing report of worst 34 path(s)
+# Unit scale: 1e-09 seconds
+# Output precision: 3
+
+#Path 1
+Startpoint: X~2.inpad[0] (.input clocked by clk)
+Endpoint  : S~16.D[0] (.latch clocked by clk)
+Path Type : setup
+
+Point                                                             Incr      Path
+--------------------------------------------------------------------------------
+clock clk (rise edge)                                            0.000     0.000
+clock source latency                                             0.000     0.000
+input external delay                                             0.000     0.000
+X~2.inpad[0] (.input)                                            0.000     0.000
+new_new_n110.in[3] (.names)                                      0.399     0.399
+new_new_n110.out[0] (.names)                                     0.261     0.660
+new_new_n119_1.in[1] (.names)                                    0.100     0.760
+new_new_n119_1.out[0] (.names)                                   0.261     1.021
+new_new_n138.in[1] (.names)                                      0.500     1.522
+new_new_n138.out[0] (.names)                                     0.261     1.783
+new_new_n160.in[1] (.names)                                      0.100     1.883
+new_new_n160.out[0] (.names)                                     0.261     2.144
+n168.in[0] (.names)                                              0.287     2.431
+n168.out[0] (.names)                                             0.261     2.692
+S~16.D[0] (.latch)                                               0.000     2.692
+data arrival time                                                          2.692
+
+clock clk (rise edge)                                            0.000     0.000
+clock source latency                                             0.000     0.000
+clk.inpad[0] (.input)                                            0.000     0.000
+S~16.clk[0] (.latch)                                             0.042     0.042
+clock uncertainty                                                0.000     0.042
+cell setup time                                                 -0.066    -0.024
+data required time                                                        -0.024
+--------------------------------------------------------------------------------
+data required time                                                        -0.024
+data arrival time                                                         -2.692
+--------------------------------------------------------------------------------
+slack (VIOLATED)                                                          -2.715
+
+
+#Path 2
+Startpoint: X~2.inpad[0] (.input clocked by clk)
+Endpoint  : S~11.D[0] (.latch clocked by clk)
+Path Type : setup
+
+Point                                                             Incr      Path
+--------------------------------------------------------------------------------
+clock clk (rise edge)                                            0.000     0.000
+clock source latency                                             0.000     0.000
+input external delay                                             0.000     0.000
+X~2.inpad[0] (.input)                                            0.000     0.000
+new_new_n110.in[3] (.names)                                      0.399     0.399
+new_new_n110.out[0] (.names)                                     0.261     0.660
+new_new_n125.in[0] (.names)                                      0.100     0.760
+new_new_n125.out[0] (.names)                                     0.261     1.021
+new_new_n145.in[1] (.names)                                      0.404     1.426
+new_new_n145.out[0] (.names)                                     0.261     1.687
+n148.in[0] (.names)                                              0.100     1.787
+n148.out[0] (.names)                                             0.235     2.022
+S~11.D[0] (.latch)                                               0.505     2.527
+data arrival time                                                          2.527
+
+clock clk (rise edge)                                            0.000     0.000
+clock source latency                                             0.000     0.000
+clk.inpad[0] (.input)                                            0.000     0.000
+S~11.clk[0] (.latch)                                             0.042     0.042
+clock uncertainty                                                0.000     0.042
+cell setup time                                                 -0.066    -0.024
+data required time                                                        -0.024
+--------------------------------------------------------------------------------
+data required time                                                        -0.024
+data arrival time                                                         -2.527
+--------------------------------------------------------------------------------
+slack (VIOLATED)                                                          -2.551
+
+
+#Path 3
+Startpoint: X~2.inpad[0] (.input clocked by clk)
+Endpoint  : S~14.D[0] (.latch clocked by clk)
+Path Type : setup
+
+Point                                                             Incr      Path
+--------------------------------------------------------------------------------
+clock clk (rise edge)                                            0.000     0.000
+clock source latency                                             0.000     0.000
+input external delay                                             0.000     0.000
+X~2.inpad[0] (.input)                                            0.000     0.000
+new_new_n110.in[3] (.names)                                      0.399     0.399
+new_new_n110.out[0] (.names)                                     0.261     0.660
+new_new_n119_1.in[1] (.names)                                    0.100     0.760
+new_new_n119_1.out[0] (.names)                                   0.261     1.021
+new_new_n138.in[1] (.names)                                      0.500     1.522
+new_new_n138.out[0] (.names)                                     0.261     1.783
+new_new_n160.in[1] (.names)                                      0.100     1.883
+new_new_n160.out[0] (.names)                                     0.261     2.144
+n160.in[0] (.names)                                              0.100     2.244
+n160.out[0] (.names)                                             0.235     2.479
+S~14.D[0] (.latch)                                               0.000     2.479
+data arrival time                                                          2.479
+
+clock clk (rise edge)                                            0.000     0.000
+clock source latency                                             0.000     0.000
+clk.inpad[0] (.input)                                            0.000     0.000
+S~14.clk[0] (.latch)                                             0.042     0.042
+clock uncertainty                                                0.000     0.042
+cell setup time                                                 -0.066    -0.024
+data required time                                                        -0.024
+--------------------------------------------------------------------------------
+data required time                                                        -0.024
+data arrival time                                                         -2.479
+--------------------------------------------------------------------------------
+slack (VIOLATED)                                                          -2.502
+
+
+#Path 4
+Startpoint: X~2.inpad[0] (.input clocked by clk)
+Endpoint  : S~15.D[0] (.latch clocked by clk)
+Path Type : setup
+
+Point                                                             Incr      Path
+--------------------------------------------------------------------------------
+clock clk (rise edge)                                            0.000     0.000
+clock source latency                                             0.000     0.000
+input external delay                                             0.000     0.000
+X~2.inpad[0] (.input)                                            0.000     0.000
+new_new_n110.in[3] (.names)                                      0.399     0.399
+new_new_n110.out[0] (.names)                                     0.261     0.660
+new_new_n125.in[0] (.names)                                      0.100     0.760
+new_new_n125.out[0] (.names)                                     0.261     1.021
+new_new_n145.in[1] (.names)                                      0.404     1.426
+new_new_n145.out[0] (.names)                                     0.261     1.687
+new_new_n156.in[0] (.names)                                      0.100     1.787
+new_new_n156.out[0] (.names)                                     0.261     2.048
+n164.in[0] (.names)                                              0.100     2.148
+n164.out[0] (.names)                                             0.261     2.409
+S~15.D[0] (.latch)                                               0.000     2.409
+data arrival time                                                          2.409
+
+clock clk (rise edge)                                            0.000     0.000
+clock source latency                                             0.000     0.000
+clk.inpad[0] (.input)                                            0.000     0.000
+S~15.clk[0] (.latch)                                             0.042     0.042
+clock uncertainty                                                0.000     0.042
+cell setup time                                                 -0.066    -0.024
+data required time                                                        -0.024
+--------------------------------------------------------------------------------
+data required time                                                        -0.024
+data arrival time                                                         -2.409
+--------------------------------------------------------------------------------
+slack (VIOLATED)                                                          -2.432
+
+
+#Path 5
+Startpoint: X~2.inpad[0] (.input clocked by clk)
+Endpoint  : S~13.D[0] (.latch clocked by clk)
+Path Type : setup
+
+Point                                                             Incr      Path
+--------------------------------------------------------------------------------
+clock clk (rise edge)                                            0.000     0.000
+clock source latency                                             0.000     0.000
+input external delay                                             0.000     0.000
+X~2.inpad[0] (.input)                                            0.000     0.000
+new_new_n110.in[3] (.names)                                      0.399     0.399
+new_new_n110.out[0] (.names)                                     0.261     0.660
+new_new_n125.in[0] (.names)                                      0.100     0.760
+new_new_n125.out[0] (.names)                                     0.261     1.021
+new_new_n145.in[1] (.names)                                      0.404     1.426
+new_new_n145.out[0] (.names)                                     0.261     1.687
+new_new_n156.in[0] (.names)                                      0.100     1.787
+new_new_n156.out[0] (.names)                                     0.261     2.048
+n156.in[1] (.names)                                              0.100     2.148
+n156.out[0] (.names)                                             0.235     2.383
+S~13.D[0] (.latch)                                               0.000     2.383
+data arrival time                                                          2.383
+
+clock clk (rise edge)                                            0.000     0.000
+clock source latency                                             0.000     0.000
+clk.inpad[0] (.input)                                            0.000     0.000
+S~13.clk[0] (.latch)                                             0.042     0.042
+clock uncertainty                                                0.000     0.042
+cell setup time                                                 -0.066    -0.024
+data required time                                                        -0.024
+--------------------------------------------------------------------------------
+data required time                                                        -0.024
+data arrival time                                                         -2.383
+--------------------------------------------------------------------------------
+slack (VIOLATED)                                                          -2.406
+
+
+#Path 6
+Startpoint: X~2.inpad[0] (.input clocked by clk)
+Endpoint  : S~12.D[0] (.latch clocked by clk)
+Path Type : setup
+
+Point                                                             Incr      Path
+--------------------------------------------------------------------------------
+clock clk (rise edge)                                            0.000     0.000
+clock source latency                                             0.000     0.000
+input external delay                                             0.000     0.000
+X~2.inpad[0] (.input)                                            0.000     0.000
+new_new_n110.in[3] (.names)                                      0.399     0.399
+new_new_n110.out[0] (.names)                                     0.261     0.660
+new_new_n125.in[0] (.names)                                      0.100     0.760
+new_new_n125.out[0] (.names)                                     0.261     1.021
+new_new_n145.in[1] (.names)                                      0.404     1.426
+new_new_n145.out[0] (.names)                                     0.261     1.687
+n148.in[0] (.names)                                              0.100     1.787
+n148.out[0] (.names)                                             0.235     2.022
+n152.in[2] (.names)                                              0.100     2.122
+n152.out[0] (.names)                                             0.235     2.357
+S~12.D[0] (.latch)                                               0.000     2.357
+data arrival time                                                          2.357
+
+clock clk (rise edge)                                            0.000     0.000
+clock source latency                                             0.000     0.000
+clk.inpad[0] (.input)                                            0.000     0.000
+S~12.clk[0] (.latch)                                             0.042     0.042
+clock uncertainty                                                0.000     0.042
+cell setup time                                                 -0.066    -0.024
+data required time                                                        -0.024
+--------------------------------------------------------------------------------
+data required time                                                        -0.024
+data arrival time                                                         -2.357
+--------------------------------------------------------------------------------
+slack (VIOLATED)                                                          -2.380
+
+
+#Path 7
+Startpoint: X~2.inpad[0] (.input clocked by clk)
+Endpoint  : S~10.D[0] (.latch clocked by clk)
+Path Type : setup
+
+Point                                                             Incr      Path
+--------------------------------------------------------------------------------
+clock clk (rise edge)                                            0.000     0.000
+clock source latency                                             0.000     0.000
+input external delay                                             0.000     0.000
+X~2.inpad[0] (.input)                                            0.000     0.000
+new_new_n110.in[3] (.names)                                      0.399     0.399
+new_new_n110.out[0] (.names)                                     0.261     0.660
+new_new_n119_1.in[1] (.names)                                    0.100     0.760
+new_new_n119_1.out[0] (.names)                                   0.261     1.021
+new_new_n138.in[1] (.names)                                      0.500     1.522
+new_new_n138.out[0] (.names)                                     0.261     1.783
+n144.in[0] (.names)                                              0.270     2.053
+n144.out[0] (.names)                                             0.235     2.288
+S~10.D[0] (.latch)                                               0.000     2.288
+data arrival time                                                          2.288
+
+clock clk (rise edge)                                            0.000     0.000
+clock source latency                                             0.000     0.000
+clk.inpad[0] (.input)                                            0.000     0.000
+S~10.clk[0] (.latch)                                             0.042     0.042
+clock uncertainty                                                0.000     0.042
+cell setup time                                                 -0.066    -0.024
+data required time                                                        -0.024
+--------------------------------------------------------------------------------
+data required time                                                        -0.024
+data arrival time                                                         -2.288
+--------------------------------------------------------------------------------
+slack (VIOLATED)                                                          -2.312
+
+
+#Path 8
+Startpoint: X~7.inpad[0] (.input clocked by clk)
+Endpoint  : S~8.D[0] (.latch clocked by clk)
+Path Type : setup
+
+Point                                                             Incr      Path
+--------------------------------------------------------------------------------
+clock clk (rise edge)                                            0.000     0.000
+clock source latency                                             0.000     0.000
+input external delay                                             0.000     0.000
+X~7.inpad[0] (.input)                                            0.000     0.000
+new_new_n131_1.in[1] (.names)                                    0.406     0.406
+new_new_n131_1.out[0] (.names)                                   0.235     0.641
+new_new_n130.in[2] (.names)                                      0.100     0.741
+new_new_n130.out[0] (.names)                                     0.235     0.976
+n136.in[2] (.names)                                              0.311     1.287
+n136.out[0] (.names)                                             0.261     1.548
+S~8.D[0] (.latch)                                                0.546     2.093
+data arrival time                                                          2.093
+
+clock clk (rise edge)                                            0.000     0.000
+clock source latency                                             0.000     0.000
+clk.inpad[0] (.input)                                            0.000     0.000
+S~8.clk[0] (.latch)                                              0.042     0.042
+clock uncertainty                                                0.000     0.042
+cell setup time                                                 -0.066    -0.024
+data required time                                                        -0.024
+--------------------------------------------------------------------------------
+data required time                                                        -0.024
+data arrival time                                                         -2.093
+--------------------------------------------------------------------------------
+slack (VIOLATED)                                                          -2.117
+
+
+#Path 9
+Startpoint: X~2.inpad[0] (.input clocked by clk)
+Endpoint  : S~7.D[0] (.latch clocked by clk)
+Path Type : setup
+
+Point                                                             Incr      Path
+--------------------------------------------------------------------------------
+clock clk (rise edge)                                            0.000     0.000
+clock source latency                                             0.000     0.000
+input external delay                                             0.000     0.000
+X~2.inpad[0] (.input)                                            0.000     0.000
+new_new_n110.in[3] (.names)                                      0.399     0.399
+new_new_n110.out[0] (.names)                                     0.261     0.660
+new_new_n125.in[0] (.names)                                      0.100     0.760
+new_new_n125.out[0] (.names)                                     0.261     1.021
+new_new_n124_1.in[0] (.names)                                    0.404     1.426
+new_new_n124_1.out[0] (.names)                                   0.235     1.661
+n132.in[1] (.names)                                              0.100     1.761
+n132.out[0] (.names)                                             0.235     1.996
+S~7.D[0] (.latch)                                                0.000     1.996
+data arrival time                                                          1.996
+
+clock clk (rise edge)                                            0.000     0.000
+clock source latency                                             0.000     0.000
+clk.inpad[0] (.input)                                            0.000     0.000
+S~7.clk[0] (.latch)                                              0.042     0.042
+clock uncertainty                                                0.000     0.042
+cell setup time                                                 -0.066    -0.024
+data required time                                                        -0.024
+--------------------------------------------------------------------------------
+data required time                                                        -0.024
+data arrival time                                                         -1.996
+--------------------------------------------------------------------------------
+slack (VIOLATED)                                                          -2.019
+
+
+#Path 10
+Startpoint: X~7.inpad[0] (.input clocked by clk)
+Endpoint  : S~9.D[0] (.latch clocked by clk)
+Path Type : setup
+
+Point                                                             Incr      Path
+--------------------------------------------------------------------------------
+clock clk (rise edge)                                            0.000     0.000
+clock source latency                                             0.000     0.000
+input external delay                                             0.000     0.000
+X~7.inpad[0] (.input)                                            0.000     0.000
+new_new_n131_1.in[1] (.names)                                    0.406     0.406
+new_new_n131_1.out[0] (.names)                                   0.235     0.641
+new_new_n130.in[2] (.names)                                      0.100     0.741
+new_new_n130.out[0] (.names)                                     0.235     0.976
+n136.in[2] (.names)                                              0.311     1.287
+n136.out[0] (.names)                                             0.261     1.548
+n140.in[2] (.names)                                              0.100     1.648
+n140.out[0] (.names)                                             0.235     1.883
+S~9.D[0] (.latch)                                                0.000     1.883
+data arrival time                                                          1.883
+
+clock clk (rise edge)                                            0.000     0.000
+clock source latency                                             0.000     0.000
+clk.inpad[0] (.input)                                            0.000     0.000
+S~9.clk[0] (.latch)                                              0.042     0.042
+clock uncertainty                                                0.000     0.042
+cell setup time                                                 -0.066    -0.024
+data required time                                                        -0.024
+--------------------------------------------------------------------------------
+data required time                                                        -0.024
+data arrival time                                                         -1.883
+--------------------------------------------------------------------------------
+slack (VIOLATED)                                                          -1.906
+
+
+#Path 11
+Startpoint: X~2.inpad[0] (.input clocked by clk)
+Endpoint  : S~6.D[0] (.latch clocked by clk)
+Path Type : setup
+
+Point                                                             Incr      Path
+--------------------------------------------------------------------------------
+clock clk (rise edge)                                            0.000     0.000
+clock source latency                                             0.000     0.000
+input external delay                                             0.000     0.000
+X~2.inpad[0] (.input)                                            0.000     0.000
+new_new_n110.in[3] (.names)                                      0.399     0.399
+new_new_n110.out[0] (.names)                                     0.261     0.660
+new_new_n119_1.in[1] (.names)                                    0.100     0.760
+new_new_n119_1.out[0] (.names)                                   0.261     1.021
+n128.in[1] (.names)                                              0.484     1.506
+n128.out[0] (.names)                                             0.235     1.741
+S~6.D[0] (.latch)                                                0.000     1.741
+data arrival time                                                          1.741
+
+clock clk (rise edge)                                            0.000     0.000
+clock source latency                                             0.000     0.000
+clk.inpad[0] (.input)                                            0.000     0.000
+S~6.clk[0] (.latch)                                              0.042     0.042
+clock uncertainty                                                0.000     0.042
+cell setup time                                                 -0.066    -0.024
+data required time                                                        -0.024
+--------------------------------------------------------------------------------
+data required time                                                        -0.024
+data arrival time                                                         -1.741
+--------------------------------------------------------------------------------
+slack (VIOLATED)                                                          -1.764
+
+
+#Path 12
+Startpoint: X~3.inpad[0] (.input clocked by clk)
+Endpoint  : S~5.D[0] (.latch clocked by clk)
+Path Type : setup
+
+Point                                                             Incr      Path
+--------------------------------------------------------------------------------
+clock clk (rise edge)                                            0.000     0.000
+clock source latency                                             0.000     0.000
+input external delay                                             0.000     0.000
+X~3.inpad[0] (.input)                                            0.000     0.000
+new_new_n114.in[1] (.names)                                      0.422     0.422
+new_new_n114.out[0] (.names)                                     0.235     0.657
+n124.in[1] (.names)                                              0.408     1.065
+n124.out[0] (.names)                                             0.261     1.326
+S~5.D[0] (.latch)                                                0.000     1.326
+data arrival time                                                          1.326
+
+clock clk (rise edge)                                            0.000     0.000
+clock source latency                                             0.000     0.000
+clk.inpad[0] (.input)                                            0.000     0.000
+S~5.clk[0] (.latch)                                              0.042     0.042
+clock uncertainty                                                0.000     0.042
+cell setup time                                                 -0.066    -0.024
+data required time                                                        -0.024
+--------------------------------------------------------------------------------
+data required time                                                        -0.024
+data arrival time                                                         -1.326
+--------------------------------------------------------------------------------
+slack (VIOLATED)                                                          -1.350
+
+
+#Path 13
+Startpoint: S~5.Q[0] (.latch clocked by clk)
+Endpoint  : out:S~5.outpad[0] (.output clocked by clk)
+Path Type : setup
+
+Point                                                             Incr      Path
+--------------------------------------------------------------------------------
+clock clk (rise edge)                                            0.000     0.000
+clock source latency                                             0.000     0.000
+clk.inpad[0] (.input)                                            0.000     0.000
+S~5.clk[0] (.latch)                                              0.042     0.042
+S~5.Q[0] (.latch) [clock-to-output]                              0.124     0.166
+out:S~5.outpad[0] (.output)                                      0.690     0.856
+data arrival time                                                          0.856
+
+clock clk (rise edge)                                            0.000     0.000
+clock source latency                                             0.000     0.000
+clock uncertainty                                                0.000     0.000
+output external delay                                            0.000     0.000
+data required time                                                         0.000
+--------------------------------------------------------------------------------
+data required time                                                         0.000
+data arrival time                                                         -0.856
+--------------------------------------------------------------------------------
+slack (VIOLATED)                                                          -0.856
+
+
+#Path 14
+Startpoint: X~1.inpad[0] (.input clocked by clk)
+Endpoint  : S~1.D[0] (.latch clocked by clk)
+Path Type : setup
+
+Point                                                             Incr      Path
+--------------------------------------------------------------------------------
+clock clk (rise edge)                                            0.000     0.000
+clock source latency                                             0.000     0.000
+input external delay                                             0.000     0.000
+X~1.inpad[0] (.input)                                            0.000     0.000
+S~1.D[0] (.latch)                                                0.789     0.789
+data arrival time                                                          0.789
+
+clock clk (rise edge)                                            0.000     0.000
+clock source latency                                             0.000     0.000
+clk.inpad[0] (.input)                                            0.000     0.000
+S~1.clk[0] (.latch)                                              0.042     0.042
+clock uncertainty                                                0.000     0.042
+cell setup time                                                 -0.066    -0.024
+data required time                                                        -0.024
+--------------------------------------------------------------------------------
+data required time                                                        -0.024
+data arrival time                                                         -0.789
+--------------------------------------------------------------------------------
+slack (VIOLATED)                                                          -0.812
+
+
+#Path 15
+Startpoint: S~2.Q[0] (.latch clocked by clk)
+Endpoint  : out:S~2.outpad[0] (.output clocked by clk)
+Path Type : setup
+
+Point                                                             Incr      Path
+--------------------------------------------------------------------------------
+clock clk (rise edge)                                            0.000     0.000
+clock source latency                                             0.000     0.000
+clk.inpad[0] (.input)                                            0.000     0.000
+S~2.clk[0] (.latch)                                              0.042     0.042
+S~2.Q[0] (.latch) [clock-to-output]                              0.124     0.166
+out:S~2.outpad[0] (.output)                                      0.613     0.779
+data arrival time                                                          0.779
+
+clock clk (rise edge)                                            0.000     0.000
+clock source latency                                             0.000     0.000
+clock uncertainty                                                0.000     0.000
+output external delay                                            0.000     0.000
+data required time                                                         0.000
+--------------------------------------------------------------------------------
+data required time                                                         0.000
+data arrival time                                                         -0.779
+--------------------------------------------------------------------------------
+slack (VIOLATED)                                                          -0.779
+
+
+#Path 16
+Startpoint: X~0.inpad[0] (.input clocked by clk)
+Endpoint  : S~0.D[0] (.latch clocked by clk)
+Path Type : setup
+
+Point                                                             Incr      Path
+--------------------------------------------------------------------------------
+clock clk (rise edge)                                            0.000     0.000
+clock source latency                                             0.000     0.000
+input external delay                                             0.000     0.000
+X~0.inpad[0] (.input)                                            0.000     0.000
+S~0.D[0] (.latch)                                                0.729     0.729
+data arrival time                                                          0.729
+
+clock clk (rise edge)                                            0.000     0.000
+clock source latency                                             0.000     0.000
+clk.inpad[0] (.input)                                            0.000     0.000
+S~0.clk[0] (.latch)                                              0.042     0.042
+clock uncertainty                                                0.000     0.042
+cell setup time                                                 -0.066    -0.024
+data required time                                                        -0.024
+--------------------------------------------------------------------------------
+data required time                                                        -0.024
+data arrival time                                                         -0.729
+--------------------------------------------------------------------------------
+slack (VIOLATED)                                                          -0.753
+
+
+#Path 17
+Startpoint: S~0.Q[0] (.latch clocked by clk)
+Endpoint  : out:S~0.outpad[0] (.output clocked by clk)
+Path Type : setup
+
+Point                                                             Incr      Path
+--------------------------------------------------------------------------------
+clock clk (rise edge)                                            0.000     0.000
+clock source latency                                             0.000     0.000
+clk.inpad[0] (.input)                                            0.000     0.000
+S~0.clk[0] (.latch)                                              0.042     0.042
+S~0.Q[0] (.latch) [clock-to-output]                              0.124     0.166
+out:S~0.outpad[0] (.output)                                      0.581     0.747
+data arrival time                                                          0.747
+
+clock clk (rise edge)                                            0.000     0.000
+clock source latency                                             0.000     0.000
+clock uncertainty                                                0.000     0.000
+output external delay                                            0.000     0.000
+data required time                                                         0.000
+--------------------------------------------------------------------------------
+data required time                                                         0.000
+data arrival time                                                         -0.747
+--------------------------------------------------------------------------------
+slack (VIOLATED)                                                          -0.747
+
+
+#Path 18
+Startpoint: S~1.Q[0] (.latch clocked by clk)
+Endpoint  : out:S~1.outpad[0] (.output clocked by clk)
+Path Type : setup
+
+Point                                                             Incr      Path
+--------------------------------------------------------------------------------
+clock clk (rise edge)                                            0.000     0.000
+clock source latency                                             0.000     0.000
+clk.inpad[0] (.input)                                            0.000     0.000
+S~1.clk[0] (.latch)                                              0.042     0.042
+S~1.Q[0] (.latch) [clock-to-output]                              0.124     0.166
+out:S~1.outpad[0] (.output)                                      0.553     0.720
+data arrival time                                                          0.720
+
+clock clk (rise edge)                                            0.000     0.000
+clock source latency                                             0.000     0.000
+clock uncertainty                                                0.000     0.000
+output external delay                                            0.000     0.000
+data required time                                                         0.000
+--------------------------------------------------------------------------------
+data required time                                                         0.000
+data arrival time                                                         -0.720
+--------------------------------------------------------------------------------
+slack (VIOLATED)                                                          -0.720
+
+
+#Path 19
+Startpoint: X~4.inpad[0] (.input clocked by clk)
+Endpoint  : S~4.D[0] (.latch clocked by clk)
+Path Type : setup
+
+Point                                                             Incr      Path
+--------------------------------------------------------------------------------
+clock clk (rise edge)                                            0.000     0.000
+clock source latency                                             0.000     0.000
+input external delay                                             0.000     0.000
+X~4.inpad[0] (.input)                                            0.000     0.000
+S~4.D[0] (.latch)                                                0.695     0.695
+data arrival time                                                          0.695
+
+clock clk (rise edge)                                            0.000     0.000
+clock source latency                                             0.000     0.000
+clk.inpad[0] (.input)                                            0.000     0.000
+S~4.clk[0] (.latch)                                              0.042     0.042
+clock uncertainty                                                0.000     0.042
+cell setup time                                                 -0.066    -0.024
+data required time                                                        -0.024
+--------------------------------------------------------------------------------
+data required time                                                        -0.024
+data arrival time                                                         -0.695
+--------------------------------------------------------------------------------
+slack (VIOLATED)                                                          -0.718
+
+
+#Path 20
+Startpoint: X~3.inpad[0] (.input clocked by clk)
+Endpoint  : S~3.D[0] (.latch clocked by clk)
+Path Type : setup
+
+Point                                                             Incr      Path
+--------------------------------------------------------------------------------
+clock clk (rise edge)                                            0.000     0.000
+clock source latency                                             0.000     0.000
+input external delay                                             0.000     0.000
+X~3.inpad[0] (.input)                                            0.000     0.000
+S~3.D[0] (.latch)                                                0.680     0.680
+data arrival time                                                          0.680
+
+clock clk (rise edge)                                            0.000     0.000
+clock source latency                                             0.000     0.000
+clk.inpad[0] (.input)                                            0.000     0.000
+S~3.clk[0] (.latch)                                              0.042     0.042
+clock uncertainty                                                0.000     0.042
+cell setup time                                                 -0.066    -0.024
+data required time                                                        -0.024
+--------------------------------------------------------------------------------
+data required time                                                        -0.024
+data arrival time                                                         -0.680
+--------------------------------------------------------------------------------
+slack (VIOLATED)                                                          -0.704
+
+
+#Path 21
+Startpoint: X~2.inpad[0] (.input clocked by clk)
+Endpoint  : S~2.D[0] (.latch clocked by clk)
+Path Type : setup
+
+Point                                                             Incr      Path
+--------------------------------------------------------------------------------
+clock clk (rise edge)                                            0.000     0.000
+clock source latency                                             0.000     0.000
+input external delay                                             0.000     0.000
+X~2.inpad[0] (.input)                                            0.000     0.000
+S~2.D[0] (.latch)                                                0.679     0.679
+data arrival time                                                          0.679
+
+clock clk (rise edge)                                            0.000     0.000
+clock source latency                                             0.000     0.000
+clk.inpad[0] (.input)                                            0.000     0.000
+S~2.clk[0] (.latch)                                              0.042     0.042
+clock uncertainty                                                0.000     0.042
+cell setup time                                                 -0.066    -0.024
+data required time                                                        -0.024
+--------------------------------------------------------------------------------
+data required time                                                        -0.024
+data arrival time                                                         -0.679
+--------------------------------------------------------------------------------
+slack (VIOLATED)                                                          -0.703
+
+
+#Path 22
+Startpoint: S~9.Q[0] (.latch clocked by clk)
+Endpoint  : out:S~9.outpad[0] (.output clocked by clk)
+Path Type : setup
+
+Point                                                             Incr      Path
+--------------------------------------------------------------------------------
+clock clk (rise edge)                                            0.000     0.000
+clock source latency                                             0.000     0.000
+clk.inpad[0] (.input)                                            0.000     0.000
+S~9.clk[0] (.latch)                                              0.042     0.042
+S~9.Q[0] (.latch) [clock-to-output]                              0.124     0.166
+out:S~9.outpad[0] (.output)                                      0.535     0.701
+data arrival time                                                          0.701
+
+clock clk (rise edge)                                            0.000     0.000
+clock source latency                                             0.000     0.000
+clock uncertainty                                                0.000     0.000
+output external delay                                            0.000     0.000
+data required time                                                         0.000
+--------------------------------------------------------------------------------
+data required time                                                         0.000
+data arrival time                                                         -0.701
+--------------------------------------------------------------------------------
+slack (VIOLATED)                                                          -0.701
+
+
+#Path 23
+Startpoint: S~14.Q[0] (.latch clocked by clk)
+Endpoint  : out:S~14.outpad[0] (.output clocked by clk)
+Path Type : setup
+
+Point                                                             Incr      Path
+--------------------------------------------------------------------------------
+clock clk (rise edge)                                            0.000     0.000
+clock source latency                                             0.000     0.000
+clk.inpad[0] (.input)                                            0.000     0.000
+S~14.clk[0] (.latch)                                             0.042     0.042
+S~14.Q[0] (.latch) [clock-to-output]                             0.124     0.166
+out:S~14.outpad[0] (.output)                                     0.524     0.690
+data arrival time                                                          0.690
+
+clock clk (rise edge)                                            0.000     0.000
+clock source latency                                             0.000     0.000
+clock uncertainty                                                0.000     0.000
+output external delay                                            0.000     0.000
+data required time                                                         0.000
+--------------------------------------------------------------------------------
+data required time                                                         0.000
+data arrival time                                                         -0.690
+--------------------------------------------------------------------------------
+slack (VIOLATED)                                                          -0.690
+
+
+#Path 24
+Startpoint: S~13.Q[0] (.latch clocked by clk)
+Endpoint  : out:S~13.outpad[0] (.output clocked by clk)
+Path Type : setup
+
+Point                                                             Incr      Path
+--------------------------------------------------------------------------------
+clock clk (rise edge)                                            0.000     0.000
+clock source latency                                             0.000     0.000
+clk.inpad[0] (.input)                                            0.000     0.000
+S~13.clk[0] (.latch)                                             0.042     0.042
+S~13.Q[0] (.latch) [clock-to-output]                             0.124     0.166
+out:S~13.outpad[0] (.output)                                     0.521     0.687
+data arrival time                                                          0.687
+
+clock clk (rise edge)                                            0.000     0.000
+clock source latency                                             0.000     0.000
+clock uncertainty                                                0.000     0.000
+output external delay                                            0.000     0.000
+data required time                                                         0.000
+--------------------------------------------------------------------------------
+data required time                                                         0.000
+data arrival time                                                         -0.687
+--------------------------------------------------------------------------------
+slack (VIOLATED)                                                          -0.687
+
+
+#Path 25
+Startpoint: S~15.Q[0] (.latch clocked by clk)
+Endpoint  : out:S~15.outpad[0] (.output clocked by clk)
+Path Type : setup
+
+Point                                                             Incr      Path
+--------------------------------------------------------------------------------
+clock clk (rise edge)                                            0.000     0.000
+clock source latency                                             0.000     0.000
+clk.inpad[0] (.input)                                            0.000     0.000
+S~15.clk[0] (.latch)                                             0.042     0.042
+S~15.Q[0] (.latch) [clock-to-output]                             0.124     0.166
+out:S~15.outpad[0] (.output)                                     0.480     0.646
+data arrival time                                                          0.646
+
+clock clk (rise edge)                                            0.000     0.000
+clock source latency                                             0.000     0.000
+clock uncertainty                                                0.000     0.000
+output external delay                                            0.000     0.000
+data required time                                                         0.000
+--------------------------------------------------------------------------------
+data required time                                                         0.000
+data arrival time                                                         -0.646
+--------------------------------------------------------------------------------
+slack (VIOLATED)                                                          -0.646
+
+
+#Path 26
+Startpoint: S~12.Q[0] (.latch clocked by clk)
+Endpoint  : out:S~12.outpad[0] (.output clocked by clk)
+Path Type : setup
+
+Point                                                             Incr      Path
+--------------------------------------------------------------------------------
+clock clk (rise edge)                                            0.000     0.000
+clock source latency                                             0.000     0.000
+clk.inpad[0] (.input)                                            0.000     0.000
+S~12.clk[0] (.latch)                                             0.042     0.042
+S~12.Q[0] (.latch) [clock-to-output]                             0.124     0.166
+out:S~12.outpad[0] (.output)                                     0.401     0.567
+data arrival time                                                          0.567
+
+clock clk (rise edge)                                            0.000     0.000
+clock source latency                                             0.000     0.000
+clock uncertainty                                                0.000     0.000
+output external delay                                            0.000     0.000
+data required time                                                         0.000
+--------------------------------------------------------------------------------
+data required time                                                         0.000
+data arrival time                                                         -0.567
+--------------------------------------------------------------------------------
+slack (VIOLATED)                                                          -0.567
+
+
+#Path 27
+Startpoint: S~8.Q[0] (.latch clocked by clk)
+Endpoint  : out:S~8.outpad[0] (.output clocked by clk)
+Path Type : setup
+
+Point                                                             Incr      Path
+--------------------------------------------------------------------------------
+clock clk (rise edge)                                            0.000     0.000
+clock source latency                                             0.000     0.000
+clk.inpad[0] (.input)                                            0.000     0.000
+S~8.clk[0] (.latch)                                              0.042     0.042
+S~8.Q[0] (.latch) [clock-to-output]                              0.124     0.166
+out:S~8.outpad[0] (.output)                                      0.401     0.567
+data arrival time                                                          0.567
+
+clock clk (rise edge)                                            0.000     0.000
+clock source latency                                             0.000     0.000
+clock uncertainty                                                0.000     0.000
+output external delay                                            0.000     0.000
+data required time                                                         0.000
+--------------------------------------------------------------------------------
+data required time                                                         0.000
+data arrival time                                                         -0.567
+--------------------------------------------------------------------------------
+slack (VIOLATED)                                                          -0.567
+
+
+#Path 28
+Startpoint: S~6.Q[0] (.latch clocked by clk)
+Endpoint  : out:S~6.outpad[0] (.output clocked by clk)
+Path Type : setup
+
+Point                                                             Incr      Path
+--------------------------------------------------------------------------------
+clock clk (rise edge)                                            0.000     0.000
+clock source latency                                             0.000     0.000
+clk.inpad[0] (.input)                                            0.000     0.000
+S~6.clk[0] (.latch)                                              0.042     0.042
+S~6.Q[0] (.latch) [clock-to-output]                              0.124     0.166
+out:S~6.outpad[0] (.output)                                      0.364     0.531
+data arrival time                                                          0.531
+
+clock clk (rise edge)                                            0.000     0.000
+clock source latency                                             0.000     0.000
+clock uncertainty                                                0.000     0.000
+output external delay                                            0.000     0.000
+data required time                                                         0.000
+--------------------------------------------------------------------------------
+data required time                                                         0.000
+data arrival time                                                         -0.531
+--------------------------------------------------------------------------------
+slack (VIOLATED)                                                          -0.531
+
+
+#Path 29
+Startpoint: S~4.Q[0] (.latch clocked by clk)
+Endpoint  : out:S~4.outpad[0] (.output clocked by clk)
+Path Type : setup
+
+Point                                                             Incr      Path
+--------------------------------------------------------------------------------
+clock clk (rise edge)                                            0.000     0.000
+clock source latency                                             0.000     0.000
+clk.inpad[0] (.input)                                            0.000     0.000
+S~4.clk[0] (.latch)                                              0.042     0.042
+S~4.Q[0] (.latch) [clock-to-output]                              0.124     0.166
+out:S~4.outpad[0] (.output)                                      0.329     0.495
+data arrival time                                                          0.495
+
+clock clk (rise edge)                                            0.000     0.000
+clock source latency                                             0.000     0.000
+clock uncertainty                                                0.000     0.000
+output external delay                                            0.000     0.000
+data required time                                                         0.000
+--------------------------------------------------------------------------------
+data required time                                                         0.000
+data arrival time                                                         -0.495
+--------------------------------------------------------------------------------
+slack (VIOLATED)                                                          -0.495
+
+
+#Path 30
+Startpoint: S~10.Q[0] (.latch clocked by clk)
+Endpoint  : out:S~10.outpad[0] (.output clocked by clk)
+Path Type : setup
+
+Point                                                             Incr      Path
+--------------------------------------------------------------------------------
+clock clk (rise edge)                                            0.000     0.000
+clock source latency                                             0.000     0.000
+clk.inpad[0] (.input)                                            0.000     0.000
+S~10.clk[0] (.latch)                                             0.042     0.042
+S~10.Q[0] (.latch) [clock-to-output]                             0.124     0.166
+out:S~10.outpad[0] (.output)                                     0.287     0.454
+data arrival time                                                          0.454
+
+clock clk (rise edge)                                            0.000     0.000
+clock source latency                                             0.000     0.000
+clock uncertainty                                                0.000     0.000
+output external delay                                            0.000     0.000
+data required time                                                         0.000
+--------------------------------------------------------------------------------
+data required time                                                         0.000
+data arrival time                                                         -0.454
+--------------------------------------------------------------------------------
+slack (VIOLATED)                                                          -0.454
+
+
+#Path 31
+Startpoint: S~3.Q[0] (.latch clocked by clk)
+Endpoint  : out:S~3.outpad[0] (.output clocked by clk)
+Path Type : setup
+
+Point                                                             Incr      Path
+--------------------------------------------------------------------------------
+clock clk (rise edge)                                            0.000     0.000
+clock source latency                                             0.000     0.000
+clk.inpad[0] (.input)                                            0.000     0.000
+S~3.clk[0] (.latch)                                              0.042     0.042
+S~3.Q[0] (.latch) [clock-to-output]                              0.124     0.166
+out:S~3.outpad[0] (.output)                                      0.286     0.453
+data arrival time                                                          0.453
+
+clock clk (rise edge)                                            0.000     0.000
+clock source latency                                             0.000     0.000
+clock uncertainty                                                0.000     0.000
+output external delay                                            0.000     0.000
+data required time                                                         0.000
+--------------------------------------------------------------------------------
+data required time                                                         0.000
+data arrival time                                                         -0.453
+--------------------------------------------------------------------------------
+slack (VIOLATED)                                                          -0.453
+
+
+#Path 32
+Startpoint: S~16.Q[0] (.latch clocked by clk)
+Endpoint  : out:S~16.outpad[0] (.output clocked by clk)
+Path Type : setup
+
+Point                                                             Incr      Path
+--------------------------------------------------------------------------------
+clock clk (rise edge)                                            0.000     0.000
+clock source latency                                             0.000     0.000
+clk.inpad[0] (.input)                                            0.000     0.000
+S~16.clk[0] (.latch)                                             0.042     0.042
+S~16.Q[0] (.latch) [clock-to-output]                             0.124     0.166
+out:S~16.outpad[0] (.output)                                     0.286     0.453
+data arrival time                                                          0.453
+
+clock clk (rise edge)                                            0.000     0.000
+clock source latency                                             0.000     0.000
+clock uncertainty                                                0.000     0.000
+output external delay                                            0.000     0.000
+data required time                                                         0.000
+--------------------------------------------------------------------------------
+data required time                                                         0.000
+data arrival time                                                         -0.453
+--------------------------------------------------------------------------------
+slack (VIOLATED)                                                          -0.453
+
+
+#Path 33
+Startpoint: S~7.Q[0] (.latch clocked by clk)
+Endpoint  : out:S~7.outpad[0] (.output clocked by clk)
+Path Type : setup
+
+Point                                                             Incr      Path
+--------------------------------------------------------------------------------
+clock clk (rise edge)                                            0.000     0.000
+clock source latency                                             0.000     0.000
+clk.inpad[0] (.input)                                            0.000     0.000
+S~7.clk[0] (.latch)                                              0.042     0.042
+S~7.Q[0] (.latch) [clock-to-output]                              0.124     0.166
+out:S~7.outpad[0] (.output)                                      0.247     0.414
+data arrival time                                                          0.414
+
+clock clk (rise edge)                                            0.000     0.000
+clock source latency                                             0.000     0.000
+clock uncertainty                                                0.000     0.000
+output external delay                                            0.000     0.000
+data required time                                                         0.000
+--------------------------------------------------------------------------------
+data required time                                                         0.000
+data arrival time                                                         -0.414
+--------------------------------------------------------------------------------
+slack (VIOLATED)                                                          -0.414
+
+
+#Path 34
+Startpoint: S~11.Q[0] (.latch clocked by clk)
+Endpoint  : out:S~11.outpad[0] (.output clocked by clk)
+Path Type : setup
+
+Point                                                             Incr      Path
+--------------------------------------------------------------------------------
+clock clk (rise edge)                                            0.000     0.000
+clock source latency                                             0.000     0.000
+clk.inpad[0] (.input)                                            0.000     0.000
+S~11.clk[0] (.latch)                                             0.042     0.042
+S~11.Q[0] (.latch) [clock-to-output]                             0.124     0.166
+out:S~11.outpad[0] (.output)                                     0.228     0.395
+data arrival time                                                          0.395
+
+clock clk (rise edge)                                            0.000     0.000
+clock source latency                                             0.000     0.000
+clock uncertainty                                                0.000     0.000
+output external delay                                            0.000     0.000
+data required time                                                         0.000
+--------------------------------------------------------------------------------
+data required time                                                         0.000
+data arrival time                                                         -0.395
+--------------------------------------------------------------------------------
+slack (VIOLATED)                                                          -0.395
+
+
+#End of timing report

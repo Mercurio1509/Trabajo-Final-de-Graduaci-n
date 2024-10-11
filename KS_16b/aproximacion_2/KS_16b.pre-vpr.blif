@@ -1,0 +1,257 @@
+# Benchmark "KS_16b" written by ABC on Thu Oct 10 20:02:51 2024
+.model KS_16b
+.inputs rst clk Y~15 Y~14 Y~13 Y~12 Y~11 Y~10 Y~9 Y~8 Y~7 Y~6 Y~5 Y~4 Y~3 \
+ Y~2 Y~1 Y~0 X~15 X~14 X~13 X~12 X~11 X~10 X~9 X~8 X~7 X~6 X~5 X~4 X~3 X~2 \
+ X~1 X~0
+.outputs S~12 S~16 S~15 S~14 S~13 S~11 S~10 S~9 S~8 S~7 S~6 S~5 S~4 S~3 S~2 \
+ S~1 S~0
+
+.latch n104 S~0 re clk 2
+.latch n108 S~1 re clk 2
+.latch n112 S~2 re clk 2
+.latch n116 S~3 re clk 2
+.latch n120 S~4 re clk 2
+.latch n124 S~5 re clk 2
+.latch n128 S~6 re clk 2
+.latch n132 S~7 re clk 2
+.latch n136 S~8 re clk 2
+.latch n140 S~9 re clk 2
+.latch n144 S~10 re clk 2
+.latch n148 S~11 re clk 2
+.latch n152 S~12 re clk 2
+.latch n156 S~13 re clk 2
+.latch n160 S~14 re clk 2
+.latch n164 S~15 re clk 2
+.latch n168 S~16 re clk 2
+
+.names X~0 n104
+1 1
+.names X~1 n108
+1 1
+.names rst new_new_n108_1 Y~2 X~2 n112
+0000 1
+0011 1
+0101 1
+0110 1
+.names Y~1 X~1 Y~0 X~0 new_new_n108_1
+-111 0
+1-11 0
+11-- 0
+.names rst new_new_n110 Y~3 X~3 n116
+0000 1
+0011 1
+0101 1
+0110 1
+.names Y~2 Y~1 X~1 X~2 Y~0 X~0 new_new_n110
+--1111 0
+-1-111 0
+-111-- 0
+1--1-- 0
+1-1-11 0
+11--11 0
+111--- 0
+.names new_new_n110 Y~3 X~3 rst new_new_n112_1 n120
+-0001 1
+-1100 1
+0-100 1
+01-00 1
+1-001 1
+10-01 1
+.names Y~4 X~4 new_new_n112_1
+01 1
+10 1
+.names new_new_n110 new_new_n114 new_new_n117 new_new_n115_1 rst \
+ new_new_n116_1 n124
+---101 1
+--0000 1
+-11-01 1
+00-000 1
+1-1-01 1
+.names Y~3 X~3 new_new_n114
+00 1
+.names Y~4 X~4 new_new_n115_1
+00 1
+.names Y~5 X~5 new_new_n116_1
+01 1
+10 1
+.names Y~4 X~4 Y~3 X~3 new_new_n117
+--11 0
+11-- 0
+.names rst new_new_n119_1 new_new_n122 n128
+001 1
+010 1
+.names new_new_n121 new_new_n110 Y~3 X~3 new_new_n112_1 new_new_n120_1 \
+ new_new_n119_1
+--1110 1
+-0-110 1
+-01-10 1
+0----0 1
+.names Y~5 X~5 new_new_n120_1
+00 1
+.names Y~5 X~5 Y~4 X~4 new_new_n121
+--11 0
+11-- 0
+.names Y~6 X~6 new_new_n122
+01 1
+10 1
+.names rst new_new_n124_1 new_new_n128_1 n132
+001 1
+010 1
+.names new_new_n125 new_new_n127_1 new_new_n124_1
+00 1
+.names new_new_n110 new_new_n114 new_new_n117 new_new_n126 new_new_n115_1 \
+ new_new_n116_1 new_new_n125
+---0-- 0
+--0-01 0
+00--01 0
+.names Y~6 X~6 Y~5 X~5 new_new_n126
+--11 0
+11-- 0
+.names Y~6 X~6 new_new_n127_1
+00 1
+.names Y~7 X~7 new_new_n128_1
+01 1
+10 1
+.names new_new_n119_1 new_new_n122 new_new_n130 new_new_n132_1 rst \
+ new_new_n133 n136
+---101 1
+--0000 1
+-01-01 1
+0-1-01 1
+11-000 1
+.names Y~6 X~6 new_new_n131_1 new_new_n130
+-00 1
+0-0 1
+.names Y~7 X~7 new_new_n131_1
+11 1
+.names Y~7 X~7 new_new_n132_1
+00 1
+.names Y~8 X~8 new_new_n133
+01 1
+10 1
+.names Y~8 X~8 n136 rst new_new_n136_1 n140
+-0101 1
+-1000 1
+0-101 1
+00-01 1
+1-000 1
+11-00 1
+.names Y~9 X~9 new_new_n136_1
+01 1
+10 1
+.names new_new_n138 new_new_n142 rst new_new_n143_1 n144
+-101 1
+0000 1
+1-01 1
+.names new_new_n122 new_new_n119_1 new_new_n130 new_new_n139_1 \
+ new_new_n132_1 new_new_n133 new_new_n138
+---0-- 0
+--0-01 0
+11--01 0
+.names new_new_n140_1 new_new_n141 new_new_n139_1
+00 1
+.names Y~8 X~8 new_new_n140_1
+11 1
+.names Y~9 X~9 new_new_n141
+11 1
+.names Y~9 X~9 new_new_n142
+00 1
+.names Y~10 X~10 new_new_n143_1
+01 1
+10 1
+.names new_new_n145 new_new_n148_1 new_new_n150 rst new_new_n151_1 n148
+--101 1
+-0000 1
+01-01 1
+1-000 1
+.names new_new_n127_1 new_new_n125 new_new_n128_1 new_new_n146 \
+ new_new_n147_1 new_new_n136_1 new_new_n145
+---001 1
+001-01 1
+.names new_new_n131_1 new_new_n140_1 new_new_n146
+00 1
+.names Y~8 X~8 new_new_n147_1
+00 1
+.names new_new_n141 new_new_n149 new_new_n148_1
+00 1
+.names Y~10 X~10 new_new_n149
+11 1
+.names Y~10 X~10 new_new_n150
+00 1
+.names Y~11 X~11 new_new_n151_1
+01 1
+10 1
+.names Y~11 X~11 n148 rst new_new_n154 n152
+-0101 1
+-1000 1
+0-101 1
+00-01 1
+1-000 1
+11-00 1
+.names Y~12 X~12 new_new_n154
+01 1
+10 1
+.names rst new_new_n156 new_new_n158 n156
+001 1
+010 1
+.names new_new_n145 new_new_n148_1 new_new_n157 new_new_n150 new_new_n154 \
+ new_new_n151_1 new_new_n156
+--0--- 1
+-0-011 1
+1--011 1
+.names Y~12 X~12 Y~11 X~11 new_new_n157
+-111 0
+1-11 0
+11-- 0
+.names Y~13 X~13 new_new_n158
+01 1
+10 1
+.names new_new_n160 new_new_n165 new_new_n163 rst new_new_n164 n160
+--101 1
+-0000 1
+01-01 1
+1-000 1
+.names new_new_n142 new_new_n138 new_new_n143_1 new_new_n161 new_new_n162 \
+ new_new_n154 new_new_n160
+---001 1
+001-01 1
+.names Y~11 X~11 new_new_n149 new_new_n161
+-00 1
+0-0 1
+.names Y~11 X~11 new_new_n162
+00 1
+.names Y~13 X~13 new_new_n163
+00 1
+.names Y~14 X~14 new_new_n164
+01 1
+10 1
+.names Y~13 X~13 Y~12 X~12 new_new_n165
+--11 0
+11-- 0
+.names new_new_n156 new_new_n158 new_new_n169 new_new_n167 rst new_new_n168 \
+ n164
+---101 1
+--0000 1
+-01-01 1
+0-1-01 1
+11-000 1
+.names Y~14 X~14 new_new_n167
+00 1
+.names Y~15 X~15 new_new_n168
+01 1
+10 1
+.names Y~14 X~14 Y~13 X~13 new_new_n169
+--11 0
+11-- 0
+.names new_new_n160 new_new_n165 new_new_n171 new_new_n163 new_new_n164 \
+ new_new_n172 n168
+--0--1 1
+-0-011 1
+1--011 1
+.names Y~15 X~15 Y~14 X~14 new_new_n171
+--11 0
+11-- 0
+.names Y~15 X~15 rst new_new_n172
+-10 1
+1-0 1
+.end

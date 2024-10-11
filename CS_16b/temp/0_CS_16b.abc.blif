@@ -1,0 +1,288 @@
+# Benchmark "CSkipA_16b" written by ABC on Sun Oct 6 20:55:31 2024 
+
+.model CSkipA_16b 
+
+.inputs a~4 a~0 a~1 a~2 a~3 a~5 a~8 a~6 a~7 b~0 b~1 b~2 b~3 b~4 b~5 a~15 a~14 b~13 b~12 b~11 b~10 b~9 b~8 b~7 b~6 rst clk \
+ b~15 b~14 a~9 a~10 a~11 a~12 a~13 
+
+.outputs sum~13 sum~14 sum~15 cout sum~3 sum~2 sum~1 sum~0 sum~11 sum~10 sum~9 sum~8 sum~7 sum~6 sum~5 sum~4 sum~12 
+
+
+.latch n87 sum~0 re clk 0 
+
+.latch n91 sum~1 re clk 0 
+
+.latch n95 sum~2 re clk 0 
+
+.latch n99 sum~3 re clk 0 
+
+.latch n103 sum~4 re clk 0 
+
+.latch n107 sum~5 re clk 0 
+
+.latch n111 sum~6 re clk 0 
+
+.latch n115 sum~7 re clk 0 
+
+.latch n119 sum~8 re clk 0 
+
+.latch n123 sum~9 re clk 0 
+
+.latch n127 sum~10 re clk 0 
+
+.latch n131 sum~11 re clk 0 
+
+.latch n135 sum~12 re clk 0 
+
+.latch n139 sum~13 re clk 0 
+
+.latch n143 sum~14 re clk 0 
+
+.latch n147 sum~15 re clk 0 
+
+.latch n151 cout re clk 0 
+
+
+
+
+
+.names rst a~0 b~0 n87 
+001 1 
+010 1 
+
+.names a~0 b~0 rst a~1 b~1 n91 
+-0001 1 
+-0010 1 
+0-001 1 
+0-010 1 
+11000 1 
+11011 1 
+
+.names rst new_n108_1 a~2 b~2 n95 
+0000 1 
+0011 1 
+0101 1 
+0110 1 
+
+.names a~1 b~1 b~0 a~0 new_n108_1 
+-111 0 
+1-11 0 
+11-- 0 
+
+.names rst new_n110 a~3 b~3 n99 
+0000 1 
+0011 1 
+0101 1 
+0110 1 
+
+.names a~1 a~2 b~2 b~1 b~0 a~0 new_n110 
+--1111 0 
+-1-111 0 
+-11--- 0 
+1-1-11 0 
+1-11-- 0 
+11--11 0 
+11-1-- 0 
+
+.names new_n110 a~3 b~3 rst a~4 b~4 n103 
+-00001 1 
+-00010 1 
+-11000 1 
+-11011 1 
+0-1000 1 
+0-1011 1 
+01-000 1 
+01-011 1 
+1-0001 1 
+1-0010 1 
+10-001 1 
+10-010 1 
+
+.names rst new_n113 a~5 b~5 n107 
+0000 1 
+0011 1 
+0101 1 
+0110 1 
+
+.names new_n110 a~4 b~4 a~3 b~3 new_n113 
+--000 1 
+-0-00 1 
+-00-- 1 
+1-0-0 1 
+1-00- 1 
+10--0 1 
+10-0- 1 
+
+.names new_n115_1 new_n117 rst a~6 b~6 n111 
+-1000 1 
+-1011 1 
+00001 1 
+00010 1 
+1-000 1 
+1-011 1 
+
+.names new_n110 a~4 b~4 a~3 b~3 new_n116_1 new_n115_1 
+--1111 1 
+-1-111 1 
+-11--1 1 
+0-1-11 1 
+0-11-1 1 
+01--11 1 
+01-1-1 1 
+
+.names a~5 b~5 new_n116_1 
+01 1 
+10 1 
+
+.names a~5 b~5 new_n117 
+11 1 
+
+.names rst new_n119_1 a~7 b~7 n115 
+0000 1 
+0011 1 
+0101 1 
+0110 1 
+
+.names a~6 b~6 new_n115_1 new_n117 new_n119_1 
+-000 1 
+0-00 1 
+00-- 1 
+
+.names rst new_n121 a~8 b~8 n119 
+0000 1 
+0011 1 
+0101 1 
+0110 1 
+
+.names a~6 a~7 b~7 b~6 new_n115_1 new_n117 new_n121 
+--0000 1 
+-0-000 1 
+-00--- 1 
+0-0-00 1 
+0-00-- 1 
+00--00 1 
+00-0-- 1 
+
+.names rst new_n123_1 b~9 a~9 n123 
+0000 1 
+0011 1 
+0101 1 
+0110 1 
+
+.names new_n121 a~8 b~8 new_n123_1 
+-00 1 
+1-0 1 
+10- 1 
+
+.names new_n123_1 b~9 a~9 rst b~10 a~10 n127 
+-00001 1 
+-00010 1 
+-11000 1 
+-11011 1 
+0-1000 1 
+0-1011 1 
+01-000 1 
+01-011 1 
+1-0001 1 
+1-0010 1 
+10-001 1 
+10-010 1 
+
+.names rst new_n126 b~11 a~11 n131 
+0000 1 
+0011 1 
+0101 1 
+0110 1 
+
+.names new_n127_1 new_n129 new_n126 
+00 1 
+
+.names new_n121 b~9 a~9 a~8 b~8 new_n128_1 new_n127_1 
+--1111 1 
+-1-111 1 
+-11--1 1 
+0-1-11 1 
+0-11-1 1 
+01--11 1 
+01-1-1 1 
+
+.names b~10 a~10 new_n128_1 
+01 1 
+10 1 
+
+.names b~10 a~10 new_n129 
+11 1 
+
+.names new_n126 b~11 a~11 rst b~12 a~12 n135 
+-00001 1 
+-00010 1 
+-11000 1 
+-11011 1 
+0-1000 1 
+0-1011 1 
+01-000 1 
+01-011 1 
+1-0001 1 
+1-0010 1 
+10-001 1 
+10-010 1 
+
+.names rst new_n132_1 b~13 a~13 n139 
+0000 1 
+0011 1 
+0101 1 
+0110 1 
+
+.names b~12 b~11 a~11 a~12 new_n127_1 new_n129 new_n132_1 
+--0000 1 
+-0-000 1 
+-000-- 1 
+0--0-- 1 
+0-0-00 1 
+00--00 1 
+000--- 1 
+
+.names new_n132_1 b~13 a~13 rst a~14 b~14 n143 
+-00001 1 
+-00010 1 
+-11000 1 
+-11011 1 
+0-1000 1 
+0-1011 1 
+01-000 1 
+01-011 1 
+1-0001 1 
+1-0010 1 
+10-001 1 
+10-010 1 
+
+.names rst new_n135_1 a~15 b~15 n147 
+0000 1 
+0011 1 
+0101 1 
+0110 1 
+
+.names new_n132_1 a~14 b~14 b~13 a~13 new_n135_1 
+--000 1 
+-0-00 1 
+-00-- 1 
+1-0-0 1 
+1-00- 1 
+10--0 1 
+10-0- 1 
+
+.names new_n135_1 a~15 b~15 rst n151 
+-110 1 
+0-10 1 
+01-0 1 
+
+
+.end 
+
+
+
+.model CLOCK_GATING
+.inputs I
+.blackbox
+.end
+

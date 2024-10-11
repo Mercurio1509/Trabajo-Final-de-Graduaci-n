@@ -1,0 +1,265 @@
+# Benchmark "KS_16b" written by ABC on Thu Oct 10 20:02:51 2024
+.model KS_16b
+.inputs rst clk Y~15 Y~14 Y~13 Y~12 Y~11 Y~10 Y~9 Y~8 Y~7 Y~6 Y~5 Y~4 Y~3 \
+ Y~2 Y~1 Y~0 X~15 X~14 X~13 X~12 X~11 X~10 X~9 X~8 X~7 X~6 X~5 X~4 X~3 X~2 \
+ X~1 X~0
+.outputs S~12 S~16 S~15 S~14 S~13 S~11 S~10 S~9 S~8 S~7 S~6 S~5 S~4 S~3 S~2 \
+ S~1 S~0
+
+.latch        n87        S~0  0
+.latch        n91        S~1  0
+.latch        n95        S~2  0
+.latch        n99        S~3  0
+.latch       n103        S~4  0
+.latch       n107        S~5  0
+.latch       n111        S~6  0
+.latch       n115        S~7  0
+.latch       n119        S~8  0
+.latch       n123        S~9  0
+.latch       n127       S~10  0
+.latch       n131       S~11  0
+.latch       n135       S~12  0
+.latch       n139       S~13  0
+.latch       n143       S~14  0
+.latch       n147       S~15  0
+.latch       n151       S~16  0
+
+
+.subckt CLOCK_GATING I=clk
+
+
+.names rst Y~0 X~0 n87
+010 1
+001 1
+.names Y~0 X~0 rst Y~1 X~1 n91
+11000 1
+-0010 1
+0-010 1
+-0001 1
+0-001 1
+11011 1
+.names rst new_n108_1 Y~2 X~2 n95
+0000 1
+0110 1
+0101 1
+0011 1
+.names Y~1 X~1 Y~0 X~0 new_n108_1
+-111 0
+1-11 0
+11-- 0
+.names rst new_n110 Y~3 X~3 n99
+0000 1
+0110 1
+0101 1
+0011 1
+.names Y~2 Y~1 X~1 X~2 Y~0 X~0 new_n110
+--1111 0
+-1-111 0
+1-1-11 0
+11--11 0
+-111-- 0
+1--1-- 0
+111--- 0
+.names new_n110 Y~3 X~3 rst new_n112_1 n103
+-1100 1
+0-100 1
+01-00 1
+-0001 1
+1-001 1
+10-01 1
+.names Y~4 X~4 new_n112_1
+10 1
+01 1
+.names new_n110 new_n114 new_n117 new_n115_1 rst new_n116_1 n107
+--0000 1
+00-000 1
+---101 1
+-11-01 1
+1-1-01 1
+.names Y~3 X~3 new_n114
+00 1
+.names Y~4 X~4 new_n115_1
+00 1
+.names Y~5 X~5 new_n116_1
+10 1
+01 1
+.names Y~3 X~3 Y~4 X~4 new_n117
+--11 0
+11-- 0
+.names rst new_n119_1 new_n122 n111
+010 1
+001 1
+.names new_n121 new_n110 Y~3 X~3 new_n112_1 new_n120_1 new_n119_1
+--1110 1
+-0-110 1
+-01-10 1
+0----0 1
+.names Y~5 X~5 new_n120_1
+00 1
+.names Y~4 X~4 Y~5 X~5 new_n121
+--11 0
+11-- 0
+.names Y~6 X~6 new_n122
+10 1
+01 1
+.names rst new_n124_1 new_n128_1 n115
+010 1
+001 1
+.names new_n125 new_n127_1 new_n124_1
+00 1
+.names new_n114 new_n110 new_n117 new_n126 new_n115_1 new_n116_1 new_n125
+--0-01 0
+00--01 0
+---0-- 0
+.names Y~5 X~5 Y~6 X~6 new_n126
+--11 0
+11-- 0
+.names Y~6 X~6 new_n127_1
+00 1
+.names Y~7 X~7 new_n128_1
+10 1
+01 1
+.names new_n119_1 new_n122 new_n130 new_n132_1 rst new_n133 n119
+--0000 1
+11-000 1
+---101 1
+-01-01 1
+0-1-01 1
+.names X~6 Y~6 new_n131_1 new_n130
+--1 0
+11- 0
+.names Y~7 X~7 new_n131_1
+11 1
+.names Y~7 X~7 new_n132_1
+00 1
+.names Y~8 X~8 new_n133
+10 1
+01 1
+.names Y~8 X~8 rst new_n136_1 n119 n123
+-1000 1
+1-000 1
+-0011 1
+0-011 1
+1100- 1
+0001- 1
+.names Y~9 X~9 new_n136_1
+10 1
+01 1
+.names new_n138 new_n142 rst new_n143_1 n127
+0000 1
+-101 1
+1-01 1
+.names new_n119_1 new_n122 new_n130 new_n139_1 new_n132_1 new_n133 new_n138
+--0-01 0
+11--01 0
+---0-- 0
+.names new_n140_1 new_n141 new_n139_1
+00 1
+.names Y~8 X~8 new_n140_1
+11 1
+.names Y~9 X~9 new_n141
+11 1
+.names Y~9 X~9 new_n142
+00 1
+.names Y~10 X~10 new_n143_1
+10 1
+01 1
+.names new_n145 new_n148_1 new_n150 rst new_n151_1 n131
+-0000 1
+1-000 1
+--101 1
+01-01 1
+.names new_n125 new_n127_1 new_n128_1 new_n146 new_n147_1 new_n136_1 \
+ new_n145
+---001 1
+001-01 1
+.names new_n131_1 new_n140_1 new_n146
+00 1
+.names Y~8 X~8 new_n147_1
+00 1
+.names new_n141 new_n149 new_n148_1
+00 1
+.names Y~10 X~10 new_n149
+11 1
+.names Y~10 X~10 new_n150
+00 1
+.names Y~11 X~11 new_n151_1
+10 1
+01 1
+.names Y~11 X~11 rst new_n154 n131 n135
+-1000 1
+1-000 1
+-0011 1
+0-011 1
+1100- 1
+0001- 1
+.names Y~12 X~12 new_n154
+10 1
+01 1
+.names rst new_n156 new_n158 n139
+010 1
+001 1
+.names new_n148_1 new_n145 new_n157 new_n150 new_n154 new_n151_1 new_n156
+-1-011 1
+0--011 1
+--0--- 1
+.names Y~12 X~12 Y~11 X~11 new_n157
+-111 0
+1-11 0
+11-- 0
+.names Y~13 X~13 new_n158
+10 1
+01 1
+.names new_n160 new_n165 new_n163 rst new_n164 n143
+-0000 1
+1-000 1
+--101 1
+01-01 1
+.names new_n138 new_n142 new_n143_1 new_n161 new_n162 new_n154 new_n160
+---001 1
+001-01 1
+.names X~11 Y~11 new_n149 new_n161
+--1 0
+11- 0
+.names Y~11 X~11 new_n162
+00 1
+.names Y~13 X~13 new_n163
+00 1
+.names Y~14 X~14 new_n164
+10 1
+01 1
+.names Y~12 X~12 Y~13 X~13 new_n165
+--11 0
+11-- 0
+.names new_n156 new_n158 new_n169 new_n167 rst new_n168 n147
+--0000 1
+11-000 1
+---101 1
+-01-01 1
+0-1-01 1
+.names Y~14 X~14 new_n167
+00 1
+.names Y~15 X~15 new_n168
+10 1
+01 1
+.names Y~13 X~13 Y~14 X~14 new_n169
+--11 0
+11-- 0
+.names new_n165 new_n160 new_n171 new_n163 new_n164 new_n172 n151
+-1-011 1
+0--011 1
+--0--1 1
+.names Y~14 X~14 Y~15 X~15 new_n171
+--11 0
+11-- 0
+.names X~15 Y~15 rst new_n172
+--1 0
+00- 0
+.end
+
+
+.model CLOCK_GATING
+.inputs I
+.outputs
+.blackbox
+.end

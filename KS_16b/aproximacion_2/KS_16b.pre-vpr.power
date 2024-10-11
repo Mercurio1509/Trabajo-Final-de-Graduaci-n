@@ -1,0 +1,175 @@
+----------------------------------- Summary ------------------------------------
+Circuit: KS_16b.pre-vpr
+Architecture: EArch.xml
+Technology (nm): 45
+Voltage: 0.90
+Temperature: 85
+Critical Path: 2.66602e-09
+Size of FPGA: 5 x 5
+Channel Width: 100
+
+----------------------------------- Warnings -----------------------------------
+No transistor counter function for BLIF model: .subckt adder
+
+------------------------------- Power Breakdown --------------------------------
+Component                       Power (W)   %-Total     %-Dynamic   Method      
+
+Total                           0.001431    1           0.7989      
+ Routing                        0.0008147   0.5694      0.7645      
+  Switch Box                    0.0005662   0.3957      0.6902      
+  Connection Box                6.007e-05   0.04198     0.7261      
+  Global Wires                  0.0001884   0.1317      1           
+ PB Types                       0.0004472   0.3125      0.7902      
+  Primitives                    0.0002459   0.1718      0.8751      
+  Interc Structures             9.696e-05   0.06776     0.6299      
+  Buffers and Wires             0.0001043   0.07293     0.7392      
+  Other Estimation Methods      0           0           -nan        
+ Clock                          0.000169    0.1181      0.9877      
+
+---------------------------- Power Breakdown by PB -----------------------------
+This sections provides a detailed breakdown of power usage by PB (physical
+block). For each PB, the power is listed, which is the sum power of all
+instances of the block.  It also indicates its percentage of total power (entire
+FPGA), as well as the percentage of its power that is dynamic (vs. static).  It
+also indicates the method used for power estimation.
+
+The data includes:
+	Modes:		When a pb contains multiple modes, each mode is listed, with
+				its power statistics.
+	Bufs/Wires:	Power of all local buffers and local wire switching
+				(transistor-level estimation only).
+	Interc:		Power of local interconnect multiplexers (transistor-
+				level estimation only)
+
+Description of Estimation Methods:
+	Transistor Auto-Size: Transistor-level power estimation. Local buffers and
+		wire lengths are automatically sized. This is the default estimation
+		method.
+	Transistor Specify-Size: Transistor-level power estimation. Local buffers
+		and wire lengths are only inserted where specified by the user in the
+		architecture file.
+	Pin-Toggle: Dynamic power is calculated using enery-per-toggle of the PB
+		input pins. Static power is absolute.
+	C-Internal: Dynamic power is calculated using an internal equivalent
+		capacitance for PB type. Static power is absolute.
+	Absolute: Dynamic and static power are absolutes from the architecture file.
+	Sum of Children: Power of PB is only the sum of all child PBs; interconnect
+		between the PB and its children is ignored.
+	Ignore: Power of PB is ignored.
+
+
+Component                       Power (W)   %-Total     %-Dynamic   Method      
+
+io                              0           0           -nan        Ignore      
+clb                             0.0004472   0.3125      0.7902      Transistor Auto-Size
+ Bufs/Wires                     8.777e-05   0.06134     0.7419      
+ Interc:                        9.54e-05    0.06667     0.6286      
+  lutA                          1.369e-05   0.009567    0.6329      
+  lutB                          1.163e-05   0.00813     0.6296      
+  lutC                          1.289e-05   0.00901     0.6376      
+  lutD                          1.587e-05   0.01109     0.6164      
+  lutE                          1.128e-05   0.007886    0.6076      
+  lutF                          1.598e-05   0.01117     0.6544      
+  lutG                          6.911e-06   0.00483     0.5673      
+  lutH                          7.148e-06   0.004995    0.6652      
+  clks                          0           0           -nan        
+ fle                            0.000264    0.1845      0.8647      Transistor Auto-Size
+  Bufs/Wires                    9.699e-06   0.006779    0.621       
+  Mode:n2_lut5                  0.0002145   0.1499      0.8805      
+   Interc:                      0           0           -nan        
+   lut5inter                    0.0002145   0.1499      0.8805      Transistor Auto-Size
+    Bufs/Wires                  5.27e-06    0.003683    0.9106      
+    Interc:                     0           0           -nan        
+     complete1                  0           0           -nan        
+    ble5                        0.0002092   0.1462      0.8797      Transistor Auto-Size
+     Bufs/Wires                 0           0           -nan        
+     Mode:blut5                 0.0002092   0.1462      0.8797      
+      Interc:                   0           0           -nan        
+      flut5                     0.0002092   0.1462      0.8797      Transistor Auto-Size
+       Bufs/Wires               1.392e-06   0.0009728   0.7357      
+       Interc:                  1.338e-06   0.0009348   0.7104      
+        mux1                    1.338e-06   0.0009348   0.7104      
+       lut5                     7.006e-05   0.04896     0.724       Transistor Auto-Size
+        Bufs/Wires              0           0           -nan        
+        Mode:wire               0           0           -nan        
+         Interc:                0           0           -nan        
+          complete:lut5         0           0           -nan        
+        Mode:lut5               7.006e-05   0.04896     0.724       
+         Interc:                0           0           -nan        
+         lut                    7.006e-05   0.04896     0.724       Transistor Auto-Size
+          Bufs/Wires            0           0           -nan        
+       ff                       0.0001364   0.09535     0.9629      Transistor Auto-Size
+        Bufs/Wires              0           0           -nan        
+     Mode:arithmetic            0           0           -nan        
+      Interc:                   0           0           -nan        
+      arithmetic                0           0           -nan        Transistor Auto-Size
+       Bufs/Wires               0           0           -nan        
+       Interc:                  0           0           -nan        
+        sumout                  0           0           -nan        
+       lut4                     0           0           -nan        Transistor Auto-Size
+        Bufs/Wires              0           0           -nan        
+        Mode:wire               0           0           -nan        
+         Interc:                0           0           -nan        
+          complete:lut4         0           0           -nan        
+        Mode:lut4               0           0           -nan        
+         Interc:                0           0           -nan        
+         lut                    0           0           -nan        Transistor Auto-Size
+          Bufs/Wires            0           0           -nan        
+       adder                    0           0           -nan        Transistor Auto-Size
+        Bufs/Wires              0           0           -nan        
+       ff                       0           0           -nan        Transistor Auto-Size
+        Bufs/Wires              0           0           -nan        
+  Mode:n1_lut6                  3.984e-05   0.02784     0.8388      
+   Interc:                      0           0           -nan        
+   ble6                         3.984e-05   0.02784     0.8388      Transistor Auto-Size
+    Bufs/Wires                  2.213e-07   0.0001547   0.7648      
+    Interc:                     2.221e-07   0.0001553   0.6963      
+     mux1                       2.221e-07   0.0001553   0.6963      
+    lut6                        2.364e-05   0.01652     0.7584      Transistor Auto-Size
+     Bufs/Wires                 0           0           -nan        
+     Mode:wire                  0           0           -nan        
+      Interc:                   0           0           -nan        
+       complete:lut6            0           0           -nan        
+     Mode:lut6                  2.364e-05   0.01652     0.7584      
+      Interc:                   0           0           -nan        
+      lut                       2.364e-05   0.01652     0.7584      Transistor Auto-Size
+       Bufs/Wires               0           0           -nan        
+    ff                          1.576e-05   0.01101     0.9624      Transistor Auto-Size
+     Bufs/Wires                 0           0           -nan        
+mult_36                         0           0           -nan        Sum of Children
+ Mode:two_divisible_mult_18x18  0           0           -nan        
+  divisible_mult_18x18          0           0           -nan        Sum of Children
+   Mode:two_mult_9x9            0           0           -nan        
+    mult_9x9_slice              0           0           -nan        Pin-Toggle  
+   Mode:mult_18x18              0           0           -nan        
+    mult_18x18_slice            0           0           -nan        Pin-Toggle  
+ Mode:mult_36x36                0           0           -nan        
+  mult_36x36_slice              0           0           -nan        Pin-Toggle  
+memory                          0           0           -nan        Sum of Children
+ Mode:mem_512x64_sp             0           0           -nan        
+  mem_512x64_sp                 0           0           -nan        Pin-Toggle  
+ Mode:mem_1024x32_sp            0           0           -nan        
+  mem_1024x32_sp                0           0           -nan        Pin-Toggle  
+ Mode:mem_2048x16_sp            0           0           -nan        
+  mem_2048x16_sp                0           0           -nan        Pin-Toggle  
+ Mode:mem_4096x8_sp             0           0           -nan        
+  mem_4096x8_sp                 0           0           -nan        Pin-Toggle  
+ Mode:mem_8192x4_sp             0           0           -nan        
+  mem_8192x4_sp                 0           0           -nan        Pin-Toggle  
+ Mode:mem_16384x2_sp            0           0           -nan        
+  mem_16384x2_sp                0           0           -nan        Pin-Toggle  
+ Mode:mem_32768x1_sp            0           0           -nan        
+  mem_32768x1_sp                0           0           -nan        Pin-Toggle  
+ Mode:mem_1024x32_dp            0           0           -nan        
+  mem_1024x32_dp                0           0           -nan        Pin-Toggle  
+ Mode:mem_2048x16_dp            0           0           -nan        
+  mem_2048x16_dp                0           0           -nan        Pin-Toggle  
+ Mode:mem_2048x8_dp             0           0           -nan        
+  mem_2048x8_dp                 0           0           -nan        Pin-Toggle  
+ Mode:mem_8192x4_dp             0           0           -nan        
+  mem_8192x4_dp                 0           0           -nan        Pin-Toggle  
+ Mode:mem_16384x2_dp            0           0           -nan        
+  mem_16384x2_dp                0           0           -nan        Pin-Toggle  
+ Mode:mem_32768x1_dp            0           0           -nan        
+  mem_32768x1_dp                0           0           -nan        Pin-Toggle  
+
