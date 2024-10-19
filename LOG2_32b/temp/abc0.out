@@ -1,0 +1,102 @@
+/usr/bin/env time -v /home/moises-leiva/vtr-verilog-to-routing/abc/abc -c echo ""; echo "Load Netlist"; echo "============"; read 0_log2_32b_syn.parmys.blif; time; echo ""; echo "Circuit Info"; echo "=========="; print_stats; print_latch; time; echo ""; echo "LUT Costs"; echo "========="; print_lut; time; echo ""; echo "Logic Opt + Techmap"; echo "==================="; strash; ifraig -v; scorr -v; dc2 -v; dch -f; if -K 6 -v; mfs2 -v; print_stats; time; echo ""; echo "Output Netlist"; echo "=============="; write_hie 0_log2_32b_syn.parmys.blif 0_log2_32b_syn.raw.abc.blif; time;
+ABC command line: "echo ""; echo "Load Netlist"; echo "============"; read 0_log2_32b_syn.parmys.blif; time; echo ""; echo "Circuit Info"; echo "=========="; print_stats; print_latch; time; echo ""; echo "LUT Costs"; echo "========="; print_lut; time; echo ""; echo "Logic Opt + Techmap"; echo "==================="; strash; ifraig -v; scorr -v; dc2 -v; dch -f; if -K 6 -v; mfs2 -v; print_stats; time; echo ""; echo "Output Netlist"; echo "=============="; write_hie 0_log2_32b_syn.parmys.blif 0_log2_32b_syn.raw.abc.blif; time;".
+
+ 
+Load Netlist 
+============ 
+Warning: The design has 2 root-level modules. The first one (log2_32b) will be used.
+elapse: 0.15 seconds, total: 0.15 seconds
+ 
+Circuit Info 
+========== 
+[1;37mlog2_32b                      :[0m i/o =   34/   32  lat =    0  nd = 33065  edge =  57934  cube = 50411  lev = 620
+The network is combinational.
+elapse: 0.01 seconds, total: 0.16 seconds
+ 
+LUT Costs 
+========= 
+# The area/delay of k-variable LUTs:
+# k    area     delay
+1      1.00      1.00
+2      1.00      1.00
+3      1.00      1.00
+4      1.00      1.00
+elapse: 0.00 seconds, total: 0.16 seconds
+ 
+Logic Opt + Techmap 
+=================== 
+SimWords = 32. Rounds = 6. Mem = 3.79 MB.  Classes: Beg = 250. End = 250.
+Proof = 108. Counter-example = 0. Fail = 135. FailReal = 66. Zero = 162.
+Final = 30423. Miter = 30566. Total = 30953. Mux = 0. (Exor = 0.) SatVars = 16764.
+starts        :              115
+conflicts     :             2256
+decisions     :            21864
+propagations  :          1707646
+AIG simulation   =     0.01 sec
+AIG traversal    =     0.04 sec
+SAT solving      =     0.27 sec
+    Unsat        =     0.03 sec
+    Sat          =     0.00 sec
+    Fail         =     0.24 sec
+Class refining   =     0.00 sec
+TOTAL RUNTIME    =     0.37 sec
+Warning: The network is combinational (run "fraig" or "fraig_sweep").
+Starting:  log2_32b        : pi =    34  po =    32  and =   30423  lev = 411
+Rewrite:   log2_32b        : pi =    34  po =    32  and =   29295  lev = 411
+Refactor:  log2_32b        : pi =    34  po =    32  and =   29217  lev = 411
+Balance:   log2_32b        : pi =    34  po =    32  and =   29141  lev = 381
+Rewrite:   log2_32b        : pi =    34  po =    32  and =   29044  lev = 381
+RewriteZ:  log2_32b        : pi =    34  po =    32  and =   28967  lev = 305
+RefactorZ: log2_32b        : pi =    34  po =    32  and =   28957  lev = 310
+RewriteZ:  log2_32b        : pi =    34  po =    32  and =   28939  lev = 304
+K = 6. Memory (bytes): Truth =    0. Cut =   56. Obj =  136. Set =  600. CutMin = no
+Node =   45854.  Ch =  4000.  Total mem =    6.66 MB. Peak cut mem =    0.79 MB.
+P:  Del =   66.00.  Ar =   12220.0.  Edge =    53519.  Cut =  1013242.  T =     0.33 sec
+P:  Del =   66.00.  Ar =   10802.0.  Edge =    55834.  Cut =   746098.  T =     0.28 sec
+P:  Del =   66.00.  Ar =   10326.0.  Edge =    49839.  Cut =   917625.  T =     0.31 sec
+F:  Del =   66.00.  Ar =    9197.0.  Edge =    46032.  Cut =   720185.  T =     0.27 sec
+A:  Del =   66.00.  Ar =    8342.0.  Edge =    37333.  Cut =   747370.  T =     0.36 sec
+A:  Del =   66.00.  Ar =    8225.0.  Edge =    37060.  Cut =   751602.  T =     0.38 sec
+Total time =     1.94 sec
+Performing MFS with 34 PIs, 32 POs, 8225 nodes (8225 flexible, 0 fixed, 0 empty).
+Nodes = 8225. Try = 4027. Resub = 1. Div = 590261 (ave = 146). SAT calls = 30309. Timeouts = 0. MaxDivs = 3490.
+Attempts :   Remove      1 out of  10720 (  0.01 %)   Resub       0 out of    901 (  0.00 %)   
+Reduction:   Nodes       0 out of   8225 (  0.00 %)   Edges       1 out of  37046 (  0.00 %)   
+Win =     0.06 sec (  5.56 %)
+Div =     0.05 sec (  4.63 %)
+Cnf =     0.27 sec ( 22.78 %)
+Sat =     0.78 sec ( 66.59 %)
+Oth =     0.01 sec (  0.44 %)
+ALL =     1.16 sec (100.00 %)
+The network has 1 nodes changed by "mfs".
+[1;37mlog2_32b                      :[0m i/o =   34/   32  lat =    0  nd =  8225  edge =  37045  cube = 34456  lev = 66
+elapse: 15.15 seconds, total: 15.31 seconds
+ 
+Output Netlist 
+============== 
+Warning: The design has 2 root-level modules. The first one (log2_32b) will be used.
+Warning: The output network does not contain blackboxes.
+elapse: 0.13 seconds, total: 15.44 seconds
+	Command being timed: "/home/moises-leiva/vtr-verilog-to-routing/abc/abc -c echo ""; echo "Load Netlist"; echo "============"; read 0_log2_32b_syn.parmys.blif; time; echo ""; echo "Circuit Info"; echo "=========="; print_stats; print_latch; time; echo ""; echo "LUT Costs"; echo "========="; print_lut; time; echo ""; echo "Logic Opt + Techmap"; echo "==================="; strash; ifraig -v; scorr -v; dc2 -v; dch -f; if -K 6 -v; mfs2 -v; print_stats; time; echo ""; echo "Output Netlist"; echo "=============="; write_hie 0_log2_32b_syn.parmys.blif 0_log2_32b_syn.raw.abc.blif; time;"
+	User time (seconds): 15.35
+	System time (seconds): 0.13
+	Percent of CPU this job got: 99%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:15.48
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 60208
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 10165
+	Voluntary context switches: 1
+	Involuntary context switches: 24
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 1496
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
