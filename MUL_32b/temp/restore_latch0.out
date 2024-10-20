@@ -1,0 +1,35 @@
+/usr/bin/env time -v /home/moises-leiva/vtr-verilog-to-routing/vtr_flow/scripts/blackbox_latches.pl --input 0_MUL_32b.abc.blif --output MUL_32b.abc.blif --vanilla
+using input blif: 0_MUL_32b.abc.blif
+using output blif: MUL_32b.abc.blif
+Usage Statistic:
+	<Clock UniqID>	#<Number of Latches impacted>
+____
+Vanilla Latches:
+	-None-
+____
+Black Boxed Latches:
+	-None-
+
+	Command being timed: "/home/moises-leiva/vtr-verilog-to-routing/vtr_flow/scripts/blackbox_latches.pl --input 0_MUL_32b.abc.blif --output MUL_32b.abc.blif --vanilla"
+	User time (seconds): 0.06
+	System time (seconds): 0.00
+	Percent of CPU this job got: 92%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:00.07
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 5452
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 363
+	Voluntary context switches: 0
+	Involuntary context switches: 1
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 496
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0

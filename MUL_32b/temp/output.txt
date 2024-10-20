@@ -1,0 +1,5 @@
+vpr_status=success
+vpr_seconds=27
+rundir=/home/moises-leiva/vtr_work/MUL_32b
+hostname=DESKTOP-JH228BH
+error=
