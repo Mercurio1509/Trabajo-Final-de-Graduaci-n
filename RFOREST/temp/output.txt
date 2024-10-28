@@ -1,0 +1,5 @@
+vpr_status=success
+vpr_seconds=32
+rundir=/home/moises-leiva/vtr_work/RFOREST
+hostname=DESKTOP-JH228BH
+error=

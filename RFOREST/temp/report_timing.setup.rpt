@@ -1,0 +1,313 @@
+#Timing report of worst 5 path(s)
+# Unit scale: 1e-09 seconds
+# Output precision: 3
+
+#Path 1
+Startpoint: A993~7.inpad[0] (.input clocked by virtual_io_clock)
+Endpoint  : out:decision~1.outpad[0] (.output clocked by virtual_io_clock)
+Path Type : setup
+
+Point                                                                                                                                      Incr      Path
+---------------------------------------------------------------------------------------------------------------------------------------------------------
+clock virtual_io_clock (rise edge)                                                                                                        0.000     0.000
+clock source latency                                                                                                                      0.000     0.000
+input external delay                                                                                                                      0.000     0.000
+A993~7.inpad[0] (.input)                                                                                                                  0.000     0.000
+new_n825.in[0] (.names)                                                                                                                   0.650     0.650
+new_n825.out[0] (.names)                                                                                                                  0.235     0.885
+new_n822.in[3] (.names)                                                                                                                   0.634     1.519
+new_n822.out[0] (.names)                                                                                                                  0.261     1.780
+new_n821.in[4] (.names)                                                                                                                   0.780     2.560
+new_n821.out[0] (.names)                                                                                                                  0.261     2.821
+new_n3100.in[1] (.names)                                                                                                                  0.629     3.450
+new_n3100.out[0] (.names)                                                                                                                 0.235     3.685
+new_n3098.in[1] (.names)                                                                                                                  0.100     3.785
+new_n3098.out[0] (.names)                                                                                                                 0.261     4.046
+$or~2963^Y~0.in[2] (.names)                                                                                                               0.622     4.668
+$or~2963^Y~0.out[0] (.names)                                                                                                              0.261     4.929
+$add~4123^ADD~19-1[1].b[0] (adder)                                                                                                        0.827     5.757
+$add~4123^ADD~19-1[1].cout[0] (adder)                                                                                                     0.300     6.057
+$add~4123^ADD~19-2[1].cin[0] (adder)                                                                                                      0.000     6.057
+$add~4123^ADD~19-2[1].sumout[0] (adder)                                                                                                   0.300     6.357
+$add~4124^ADD~18-2[1].a[0] (adder)                                                                                                        0.963     7.319
+$add~4124^ADD~18-2[1].cout[0] (adder)                                                                                                     0.300     7.619
+$add~4124^ADD~18-3[1].cin[0] (adder)                                                                                                      0.000     7.619
+$add~4124^ADD~18-3[1].sumout[0] (adder)                                                                                                   0.300     7.919
+$add~4125^ADD~17-3[1].a[0] (adder)                                                                                                        0.682     8.601
+$add~4125^ADD~17-3[1].sumout[0] (adder)                                                                                                   0.300     8.901
+$techmap$auto$hard_block.cc:122:cell_hard_block$10173.$auto$alumacc.cc:485:replace_alu$14933.B[2].a[0] (adder)                            0.821     9.722
+$techmap$auto$hard_block.cc:122:cell_hard_block$10173.$auto$alumacc.cc:485:replace_alu$14933.B[2].sumout[0] (adder)                       0.300    10.022
+new_n806.in[4] (.names)                                                                                                                   0.464    10.485
+new_n806.out[0] (.names)                                                                                                                  0.261    10.746
+new_n809.in[4] (.names)                                                                                                                   0.100    10.846
+new_n809.out[0] (.names)                                                                                                                  0.261    11.107
+new_n804.in[3] (.names)                                                                                                                   0.100    11.207
+new_n804.out[0] (.names)                                                                                                                  0.261    11.468
+new_n811.in[4] (.names)                                                                                                                   0.100    11.568
+new_n811.out[0] (.names)                                                                                                                  0.261    11.829
+decision~4.in[3] (.names)                                                                                                                 0.100    11.929
+decision~4.out[0] (.names)                                                                                                                0.235    12.164
+decision~1.in[0] (.names)                                                                                                                 0.417    12.582
+decision~1.out[0] (.names)                                                                                                                0.235    12.817
+out:decision~1.outpad[0] (.output)                                                                                                        0.531    13.348
+data arrival time                                                                                                                                  13.348
+
+clock virtual_io_clock (rise edge)                                                                                                        0.000     0.000
+clock source latency                                                                                                                      0.000     0.000
+clock uncertainty                                                                                                                         0.000     0.000
+output external delay                                                                                                                     0.000     0.000
+data required time                                                                                                                                  0.000
+---------------------------------------------------------------------------------------------------------------------------------------------------------
+data required time                                                                                                                                  0.000
+data arrival time                                                                                                                                 -13.348
+---------------------------------------------------------------------------------------------------------------------------------------------------------
+slack (VIOLATED)                                                                                                                                  -13.348
+
+
+#Path 2
+Startpoint: A993~7.inpad[0] (.input clocked by virtual_io_clock)
+Endpoint  : out:decision~2.outpad[0] (.output clocked by virtual_io_clock)
+Path Type : setup
+
+Point                                                                                                                                      Incr      Path
+---------------------------------------------------------------------------------------------------------------------------------------------------------
+clock virtual_io_clock (rise edge)                                                                                                        0.000     0.000
+clock source latency                                                                                                                      0.000     0.000
+input external delay                                                                                                                      0.000     0.000
+A993~7.inpad[0] (.input)                                                                                                                  0.000     0.000
+new_n825.in[0] (.names)                                                                                                                   0.650     0.650
+new_n825.out[0] (.names)                                                                                                                  0.235     0.885
+new_n822.in[3] (.names)                                                                                                                   0.634     1.519
+new_n822.out[0] (.names)                                                                                                                  0.261     1.780
+new_n821.in[4] (.names)                                                                                                                   0.780     2.560
+new_n821.out[0] (.names)                                                                                                                  0.261     2.821
+new_n3100.in[1] (.names)                                                                                                                  0.629     3.450
+new_n3100.out[0] (.names)                                                                                                                 0.235     3.685
+new_n3098.in[1] (.names)                                                                                                                  0.100     3.785
+new_n3098.out[0] (.names)                                                                                                                 0.261     4.046
+$or~2963^Y~0.in[2] (.names)                                                                                                               0.622     4.668
+$or~2963^Y~0.out[0] (.names)                                                                                                              0.261     4.929
+$add~4123^ADD~19-1[1].b[0] (adder)                                                                                                        0.827     5.757
+$add~4123^ADD~19-1[1].cout[0] (adder)                                                                                                     0.300     6.057
+$add~4123^ADD~19-2[1].cin[0] (adder)                                                                                                      0.000     6.057
+$add~4123^ADD~19-2[1].sumout[0] (adder)                                                                                                   0.300     6.357
+$add~4124^ADD~18-2[1].a[0] (adder)                                                                                                        0.963     7.319
+$add~4124^ADD~18-2[1].cout[0] (adder)                                                                                                     0.300     7.619
+$add~4124^ADD~18-3[1].cin[0] (adder)                                                                                                      0.000     7.619
+$add~4124^ADD~18-3[1].sumout[0] (adder)                                                                                                   0.300     7.919
+$add~4125^ADD~17-3[1].a[0] (adder)                                                                                                        0.682     8.601
+$add~4125^ADD~17-3[1].sumout[0] (adder)                                                                                                   0.300     8.901
+$techmap$auto$hard_block.cc:122:cell_hard_block$10173.$auto$alumacc.cc:485:replace_alu$14933.B[2].a[0] (adder)                            0.821     9.722
+$techmap$auto$hard_block.cc:122:cell_hard_block$10173.$auto$alumacc.cc:485:replace_alu$14933.B[2].sumout[0] (adder)                       0.300    10.022
+new_n806.in[4] (.names)                                                                                                                   0.464    10.485
+new_n806.out[0] (.names)                                                                                                                  0.261    10.746
+new_n809.in[4] (.names)                                                                                                                   0.100    10.846
+new_n809.out[0] (.names)                                                                                                                  0.261    11.107
+new_n804.in[3] (.names)                                                                                                                   0.100    11.207
+new_n804.out[0] (.names)                                                                                                                  0.261    11.468
+new_n811.in[4] (.names)                                                                                                                   0.100    11.568
+new_n811.out[0] (.names)                                                                                                                  0.261    11.829
+decision~4.in[3] (.names)                                                                                                                 0.100    11.929
+decision~4.out[0] (.names)                                                                                                                0.235    12.164
+decision~2.in[0] (.names)                                                                                                                 0.417    12.582
+decision~2.out[0] (.names)                                                                                                                0.235    12.817
+out:decision~2.outpad[0] (.output)                                                                                                        0.407    13.224
+data arrival time                                                                                                                                  13.224
+
+clock virtual_io_clock (rise edge)                                                                                                        0.000     0.000
+clock source latency                                                                                                                      0.000     0.000
+clock uncertainty                                                                                                                         0.000     0.000
+output external delay                                                                                                                     0.000     0.000
+data required time                                                                                                                                  0.000
+---------------------------------------------------------------------------------------------------------------------------------------------------------
+data required time                                                                                                                                  0.000
+data arrival time                                                                                                                                 -13.224
+---------------------------------------------------------------------------------------------------------------------------------------------------------
+slack (VIOLATED)                                                                                                                                  -13.224
+
+
+#Path 3
+Startpoint: A993~7.inpad[0] (.input clocked by virtual_io_clock)
+Endpoint  : out:decision~0.outpad[0] (.output clocked by virtual_io_clock)
+Path Type : setup
+
+Point                                                                                                                                      Incr      Path
+---------------------------------------------------------------------------------------------------------------------------------------------------------
+clock virtual_io_clock (rise edge)                                                                                                        0.000     0.000
+clock source latency                                                                                                                      0.000     0.000
+input external delay                                                                                                                      0.000     0.000
+A993~7.inpad[0] (.input)                                                                                                                  0.000     0.000
+new_n825.in[0] (.names)                                                                                                                   0.650     0.650
+new_n825.out[0] (.names)                                                                                                                  0.235     0.885
+new_n822.in[3] (.names)                                                                                                                   0.634     1.519
+new_n822.out[0] (.names)                                                                                                                  0.261     1.780
+new_n821.in[4] (.names)                                                                                                                   0.780     2.560
+new_n821.out[0] (.names)                                                                                                                  0.261     2.821
+new_n3100.in[1] (.names)                                                                                                                  0.629     3.450
+new_n3100.out[0] (.names)                                                                                                                 0.235     3.685
+new_n3098.in[1] (.names)                                                                                                                  0.100     3.785
+new_n3098.out[0] (.names)                                                                                                                 0.261     4.046
+$or~2963^Y~0.in[2] (.names)                                                                                                               0.622     4.668
+$or~2963^Y~0.out[0] (.names)                                                                                                              0.261     4.929
+$add~4123^ADD~19-1[1].b[0] (adder)                                                                                                        0.827     5.757
+$add~4123^ADD~19-1[1].cout[0] (adder)                                                                                                     0.300     6.057
+$add~4123^ADD~19-2[1].cin[0] (adder)                                                                                                      0.000     6.057
+$add~4123^ADD~19-2[1].sumout[0] (adder)                                                                                                   0.300     6.357
+$add~4124^ADD~18-2[1].a[0] (adder)                                                                                                        0.963     7.319
+$add~4124^ADD~18-2[1].cout[0] (adder)                                                                                                     0.300     7.619
+$add~4124^ADD~18-3[1].cin[0] (adder)                                                                                                      0.000     7.619
+$add~4124^ADD~18-3[1].sumout[0] (adder)                                                                                                   0.300     7.919
+$add~4125^ADD~17-3[1].a[0] (adder)                                                                                                        0.682     8.601
+$add~4125^ADD~17-3[1].sumout[0] (adder)                                                                                                   0.300     8.901
+$techmap$auto$hard_block.cc:122:cell_hard_block$10173.$auto$alumacc.cc:485:replace_alu$14933.B[2].a[0] (adder)                            0.821     9.722
+$techmap$auto$hard_block.cc:122:cell_hard_block$10173.$auto$alumacc.cc:485:replace_alu$14933.B[2].sumout[0] (adder)                       0.300    10.022
+new_n806.in[4] (.names)                                                                                                                   0.464    10.485
+new_n806.out[0] (.names)                                                                                                                  0.261    10.746
+new_n809.in[4] (.names)                                                                                                                   0.100    10.846
+new_n809.out[0] (.names)                                                                                                                  0.261    11.107
+new_n804.in[3] (.names)                                                                                                                   0.100    11.207
+new_n804.out[0] (.names)                                                                                                                  0.261    11.468
+new_n811.in[4] (.names)                                                                                                                   0.100    11.568
+new_n811.out[0] (.names)                                                                                                                  0.261    11.829
+decision~4.in[3] (.names)                                                                                                                 0.100    11.929
+decision~4.out[0] (.names)                                                                                                                0.235    12.164
+decision~0.in[0] (.names)                                                                                                                 0.417    12.582
+decision~0.out[0] (.names)                                                                                                                0.235    12.817
+out:decision~0.outpad[0] (.output)                                                                                                        0.405    13.222
+data arrival time                                                                                                                                  13.222
+
+clock virtual_io_clock (rise edge)                                                                                                        0.000     0.000
+clock source latency                                                                                                                      0.000     0.000
+clock uncertainty                                                                                                                         0.000     0.000
+output external delay                                                                                                                     0.000     0.000
+data required time                                                                                                                                  0.000
+---------------------------------------------------------------------------------------------------------------------------------------------------------
+data required time                                                                                                                                  0.000
+data arrival time                                                                                                                                 -13.222
+---------------------------------------------------------------------------------------------------------------------------------------------------------
+slack (VIOLATED)                                                                                                                                  -13.222
+
+
+#Path 4
+Startpoint: A993~7.inpad[0] (.input clocked by virtual_io_clock)
+Endpoint  : out:decision~3.outpad[0] (.output clocked by virtual_io_clock)
+Path Type : setup
+
+Point                                                                                                                                      Incr      Path
+---------------------------------------------------------------------------------------------------------------------------------------------------------
+clock virtual_io_clock (rise edge)                                                                                                        0.000     0.000
+clock source latency                                                                                                                      0.000     0.000
+input external delay                                                                                                                      0.000     0.000
+A993~7.inpad[0] (.input)                                                                                                                  0.000     0.000
+new_n825.in[0] (.names)                                                                                                                   0.650     0.650
+new_n825.out[0] (.names)                                                                                                                  0.235     0.885
+new_n822.in[3] (.names)                                                                                                                   0.634     1.519
+new_n822.out[0] (.names)                                                                                                                  0.261     1.780
+new_n821.in[4] (.names)                                                                                                                   0.780     2.560
+new_n821.out[0] (.names)                                                                                                                  0.261     2.821
+new_n3100.in[1] (.names)                                                                                                                  0.629     3.450
+new_n3100.out[0] (.names)                                                                                                                 0.235     3.685
+new_n3098.in[1] (.names)                                                                                                                  0.100     3.785
+new_n3098.out[0] (.names)                                                                                                                 0.261     4.046
+$or~2963^Y~0.in[2] (.names)                                                                                                               0.622     4.668
+$or~2963^Y~0.out[0] (.names)                                                                                                              0.261     4.929
+$add~4123^ADD~19-1[1].b[0] (adder)                                                                                                        0.827     5.757
+$add~4123^ADD~19-1[1].cout[0] (adder)                                                                                                     0.300     6.057
+$add~4123^ADD~19-2[1].cin[0] (adder)                                                                                                      0.000     6.057
+$add~4123^ADD~19-2[1].sumout[0] (adder)                                                                                                   0.300     6.357
+$add~4124^ADD~18-2[1].a[0] (adder)                                                                                                        0.963     7.319
+$add~4124^ADD~18-2[1].cout[0] (adder)                                                                                                     0.300     7.619
+$add~4124^ADD~18-3[1].cin[0] (adder)                                                                                                      0.000     7.619
+$add~4124^ADD~18-3[1].sumout[0] (adder)                                                                                                   0.300     7.919
+$add~4125^ADD~17-3[1].a[0] (adder)                                                                                                        0.682     8.601
+$add~4125^ADD~17-3[1].sumout[0] (adder)                                                                                                   0.300     8.901
+$techmap$auto$hard_block.cc:122:cell_hard_block$10173.$auto$alumacc.cc:485:replace_alu$14933.B[2].a[0] (adder)                            0.821     9.722
+$techmap$auto$hard_block.cc:122:cell_hard_block$10173.$auto$alumacc.cc:485:replace_alu$14933.B[2].sumout[0] (adder)                       0.300    10.022
+new_n806.in[4] (.names)                                                                                                                   0.464    10.485
+new_n806.out[0] (.names)                                                                                                                  0.261    10.746
+new_n809.in[4] (.names)                                                                                                                   0.100    10.846
+new_n809.out[0] (.names)                                                                                                                  0.261    11.107
+new_n804.in[3] (.names)                                                                                                                   0.100    11.207
+new_n804.out[0] (.names)                                                                                                                  0.261    11.468
+new_n811.in[4] (.names)                                                                                                                   0.100    11.568
+new_n811.out[0] (.names)                                                                                                                  0.261    11.829
+decision~4.in[3] (.names)                                                                                                                 0.100    11.929
+decision~4.out[0] (.names)                                                                                                                0.235    12.164
+decision~3.in[0] (.names)                                                                                                                 0.417    12.582
+decision~3.out[0] (.names)                                                                                                                0.235    12.817
+out:decision~3.outpad[0] (.output)                                                                                                        0.308    13.124
+data arrival time                                                                                                                                  13.124
+
+clock virtual_io_clock (rise edge)                                                                                                        0.000     0.000
+clock source latency                                                                                                                      0.000     0.000
+clock uncertainty                                                                                                                         0.000     0.000
+output external delay                                                                                                                     0.000     0.000
+data required time                                                                                                                                  0.000
+---------------------------------------------------------------------------------------------------------------------------------------------------------
+data required time                                                                                                                                  0.000
+data arrival time                                                                                                                                 -13.124
+---------------------------------------------------------------------------------------------------------------------------------------------------------
+slack (VIOLATED)                                                                                                                                  -13.124
+
+
+#Path 5
+Startpoint: A993~7.inpad[0] (.input clocked by virtual_io_clock)
+Endpoint  : out:decision~4.outpad[0] (.output clocked by virtual_io_clock)
+Path Type : setup
+
+Point                                                                                                                                      Incr      Path
+---------------------------------------------------------------------------------------------------------------------------------------------------------
+clock virtual_io_clock (rise edge)                                                                                                        0.000     0.000
+clock source latency                                                                                                                      0.000     0.000
+input external delay                                                                                                                      0.000     0.000
+A993~7.inpad[0] (.input)                                                                                                                  0.000     0.000
+new_n825.in[0] (.names)                                                                                                                   0.650     0.650
+new_n825.out[0] (.names)                                                                                                                  0.235     0.885
+new_n822.in[3] (.names)                                                                                                                   0.634     1.519
+new_n822.out[0] (.names)                                                                                                                  0.261     1.780
+new_n821.in[4] (.names)                                                                                                                   0.780     2.560
+new_n821.out[0] (.names)                                                                                                                  0.261     2.821
+new_n3100.in[1] (.names)                                                                                                                  0.629     3.450
+new_n3100.out[0] (.names)                                                                                                                 0.235     3.685
+new_n3098.in[1] (.names)                                                                                                                  0.100     3.785
+new_n3098.out[0] (.names)                                                                                                                 0.261     4.046
+$or~2963^Y~0.in[2] (.names)                                                                                                               0.622     4.668
+$or~2963^Y~0.out[0] (.names)                                                                                                              0.261     4.929
+$add~4123^ADD~19-1[1].b[0] (adder)                                                                                                        0.827     5.757
+$add~4123^ADD~19-1[1].cout[0] (adder)                                                                                                     0.300     6.057
+$add~4123^ADD~19-2[1].cin[0] (adder)                                                                                                      0.000     6.057
+$add~4123^ADD~19-2[1].sumout[0] (adder)                                                                                                   0.300     6.357
+$add~4124^ADD~18-2[1].a[0] (adder)                                                                                                        0.963     7.319
+$add~4124^ADD~18-2[1].cout[0] (adder)                                                                                                     0.300     7.619
+$add~4124^ADD~18-3[1].cin[0] (adder)                                                                                                      0.000     7.619
+$add~4124^ADD~18-3[1].sumout[0] (adder)                                                                                                   0.300     7.919
+$add~4125^ADD~17-3[1].a[0] (adder)                                                                                                        0.682     8.601
+$add~4125^ADD~17-3[1].sumout[0] (adder)                                                                                                   0.300     8.901
+$techmap$auto$hard_block.cc:122:cell_hard_block$10173.$auto$alumacc.cc:485:replace_alu$14933.B[2].a[0] (adder)                            0.821     9.722
+$techmap$auto$hard_block.cc:122:cell_hard_block$10173.$auto$alumacc.cc:485:replace_alu$14933.B[2].sumout[0] (adder)                       0.300    10.022
+new_n806.in[4] (.names)                                                                                                                   0.464    10.485
+new_n806.out[0] (.names)                                                                                                                  0.261    10.746
+new_n809.in[4] (.names)                                                                                                                   0.100    10.846
+new_n809.out[0] (.names)                                                                                                                  0.261    11.107
+new_n804.in[3] (.names)                                                                                                                   0.100    11.207
+new_n804.out[0] (.names)                                                                                                                  0.261    11.468
+new_n811.in[4] (.names)                                                                                                                   0.100    11.568
+new_n811.out[0] (.names)                                                                                                                  0.261    11.829
+decision~4.in[3] (.names)                                                                                                                 0.100    11.929
+decision~4.out[0] (.names)                                                                                                                0.235    12.164
+out:decision~4.outpad[0] (.output)                                                                                                        0.575    12.739
+data arrival time                                                                                                                                  12.739
+
+clock virtual_io_clock (rise edge)                                                                                                        0.000     0.000
+clock source latency                                                                                                                      0.000     0.000
+clock uncertainty                                                                                                                         0.000     0.000
+output external delay                                                                                                                     0.000     0.000
+data required time                                                                                                                                  0.000
+---------------------------------------------------------------------------------------------------------------------------------------------------------
+data required time                                                                                                                                  0.000
+data arrival time                                                                                                                                 -12.739
+---------------------------------------------------------------------------------------------------------------------------------------------------------
+slack (VIOLATED)                                                                                                                                  -12.739
+
+
+#End of timing report

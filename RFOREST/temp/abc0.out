@@ -1,0 +1,107 @@
+/usr/bin/env time -v /home/moises-leiva/vtr-verilog-to-routing/abc/abc -c echo ""; echo "Load Netlist"; echo "============"; read 0_RFOREST.parmys.blif; time; echo ""; echo "Circuit Info"; echo "=========="; print_stats; print_latch; time; echo ""; echo "LUT Costs"; echo "========="; print_lut; time; echo ""; echo "Logic Opt + Techmap"; echo "==================="; strash; ifraig -v; scorr -v; dc2 -v; dch -f; if -K 6 -v; mfs2 -v; print_stats; time; echo ""; echo "Output Netlist"; echo "=============="; write_hie 0_RFOREST.parmys.blif 0_RFOREST.raw.abc.blif; time;
+ABC command line: "echo ""; echo "Load Netlist"; echo "============"; read 0_RFOREST.parmys.blif; time; echo ""; echo "Circuit Info"; echo "=========="; print_stats; print_latch; time; echo ""; echo "LUT Costs"; echo "========="; print_lut; time; echo ""; echo "Logic Opt + Techmap"; echo "==================="; strash; ifraig -v; scorr -v; dc2 -v; dch -f; if -K 6 -v; mfs2 -v; print_stats; time; echo ""; echo "Output Netlist"; echo "=============="; write_hie 0_RFOREST.parmys.blif 0_RFOREST.raw.abc.blif; time;".
+
+ 
+Load Netlist 
+============ 
+Warning: Constant-0 drivers added to 265 non-driven nets in network "RForest":
+$techmap$auto$hard_block.cc:122:cell_hard_block$10927.$auto$alumacc.cc:485:replace_alu$14422.CO[2], $techmap$auto$hard_block.cc:122:cell_hard_block$10927.$auto$alumacc.cc:485:replace_alu$14422.CO[4], $techmap$auto$hard_block.cc:122:cell_hard_block$10965.$auto$alumacc.cc:485:replace_alu$14388.CO[2], $techmap$auto$hard_block.cc:122:cell_hard_block$10933.$auto$alumacc.cc:485:replace_alu$14388.CO[2] ...
+Warning: The design has 2 root-level modules. The first one (RForest) will be used.
+Hierarchy reader converted 75 instances of blackboxes.
+elapse: 0.12 seconds, total: 0.12 seconds
+ 
+Circuit Info 
+========== 
+[1;37mRForest                       :[0m i/o =  672/  128  lat =    0  nd = 17137  edge =  27892  cube = 20760  lev = 73
+The network is combinational.
+elapse: 0.00 seconds, total: 0.12 seconds
+ 
+LUT Costs 
+========= 
+# The area/delay of k-variable LUTs:
+# k    area     delay
+1      1.00      1.00
+2      1.00      1.00
+3      1.00      1.00
+4      1.00      1.00
+elapse: 0.00 seconds, total: 0.12 seconds
+ 
+Logic Opt + Techmap 
+=================== 
+SimWords = 32. Rounds = 79. Mem = 1.45 MB.  Classes: Beg = 1056. End = 936.
+Proof = 935. Counter-example = 61. Fail = 0. FailReal = 0. Zero = 156.
+Final = 8664. Miter = 10959. Total = 11057. Mux = 0. (Exor = 0.) SatVars = 6500.
+starts        :              306
+conflicts     :              698
+decisions     :            41812
+propagations  :           544742
+AIG simulation   =     0.03 sec
+AIG traversal    =     0.00 sec
+SAT solving      =     0.06 sec
+    Unsat        =     0.02 sec
+    Sat          =     0.04 sec
+    Fail         =     0.00 sec
+Class refining   =     0.01 sec
+TOTAL RUNTIME    =     0.14 sec
+Warning: The network is combinational (run "fraig" or "fraig_sweep").
+Starting:  RForest         : pi =   672  po =   128  and =    8664  lev =  67
+Rewrite:   RForest         : pi =   672  po =   128  and =    7516  lev =  61
+Refactor:  RForest         : pi =   672  po =   128  and =    7315  lev =  61
+Balance:   RForest         : pi =   672  po =   128  and =    7290  lev =  20
+Rewrite:   RForest         : pi =   672  po =   128  and =    7141  lev =  20
+RewriteZ:  RForest         : pi =   672  po =   128  and =    6938  lev =  21
+RefactorZ: RForest         : pi =   672  po =   128  and =    6834  lev =  22
+RewriteZ:  RForest         : pi =   672  po =   128  and =    6702  lev =  21
+K = 6. Memory (bytes): Truth =    0. Cut =   56. Obj =  136. Set =  600. CutMin = no
+Node =   10500.  Ch =  1061.  Total mem =    1.64 MB. Peak cut mem =    0.81 MB.
+P:  Del =    6.00.  Ar =    2978.0.  Edge =    12675.  Cut =   154584.  T =     0.03 sec
+P:  Del =    6.00.  Ar =    2650.0.  Edge =    12416.  Cut =   108713.  T =     0.02 sec
+P:  Del =    6.00.  Ar =    2654.0.  Edge =    12395.  Cut =   121706.  T =     0.03 sec
+F:  Del =    6.00.  Ar =    2442.0.  Edge =    11946.  Cut =    87573.  T =     0.02 sec
+A:  Del =    6.00.  Ar =    2403.0.  Edge =    11018.  Cut =    92432.  T =     0.04 sec
+A:  Del =    6.00.  Ar =    2396.0.  Edge =    10974.  Cut =    92338.  T =     0.07 sec
+Total time =     0.22 sec
+Performing MFS with 672 PIs, 128 POs, 2399 nodes (2399 flexible, 0 fixed, 0 empty).
+Nodes = 2399. Try = 2974. Resub = 575. Div = 224211 (ave = 75). SAT calls = 40595. Timeouts = 0. MaxDivs = 407.
+Attempts :   Remove    523 out of  11501 (  4.55 %)   Resub      52 out of    777 (  6.69 %)   
+Reduction:   Nodes      70 out of   2396 (  2.92 %)   Edges     743 out of  10967 (  6.77 %)   
+Win =     0.06 sec (  4.42 %)
+Div =     0.04 sec (  3.31 %)
+Cnf =     0.21 sec ( 16.79 %)
+Sat =     0.96 sec ( 74.63 %)
+Oth =     0.01 sec (  0.84 %)
+ALL =     1.28 sec (100.00 %)
+The network has 356 nodes changed by "mfs".
+[1;37mRForest                       :[0m i/o =  672/  128  lat =    0  nd =  2329  edge =  10224  cube =  4038  lev = 6
+elapse: 3.12 seconds, total: 3.24 seconds
+ 
+Output Netlist 
+============== 
+Warning: Constant-0 drivers added to 265 non-driven nets in network "RForest":
+$techmap$auto$hard_block.cc:122:cell_hard_block$10927.$auto$alumacc.cc:485:replace_alu$14422.CO[2], $techmap$auto$hard_block.cc:122:cell_hard_block$10927.$auto$alumacc.cc:485:replace_alu$14422.CO[4], $techmap$auto$hard_block.cc:122:cell_hard_block$10965.$auto$alumacc.cc:485:replace_alu$14388.CO[2], $techmap$auto$hard_block.cc:122:cell_hard_block$10933.$auto$alumacc.cc:485:replace_alu$14388.CO[2] ...
+Warning: The design has 2 root-level modules. The first one (RForest) will be used.
+Hierarchy writer reintroduced 75 instances of blackboxes.
+elapse: 0.06 seconds, total: 3.30 seconds
+	Command being timed: "/home/moises-leiva/vtr-verilog-to-routing/abc/abc -c echo ""; echo "Load Netlist"; echo "============"; read 0_RFOREST.parmys.blif; time; echo ""; echo "Circuit Info"; echo "=========="; print_stats; print_latch; time; echo ""; echo "LUT Costs"; echo "========="; print_lut; time; echo ""; echo "Logic Opt + Techmap"; echo "==================="; strash; ifraig -v; scorr -v; dc2 -v; dch -f; if -K 6 -v; mfs2 -v; print_stats; time; echo ""; echo "Output Netlist"; echo "=============="; write_hie 0_RFOREST.parmys.blif 0_RFOREST.raw.abc.blif; time;"
+	User time (seconds): 3.28
+	System time (seconds): 0.04
+	Percent of CPU this job got: 99%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:03.33
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 44828
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 5792
+	Voluntary context switches: 0
+	Involuntary context switches: 8
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 352
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0

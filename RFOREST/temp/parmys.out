@@ -1,0 +1,1672 @@
+/usr/bin/env time -v /home/moises-leiva/vtr-verilog-to-routing/build/bin/yosys -c synthesis.tcl
+
+ /----------------------------------------------------------------------------\
+ |                                                                            |
+ |  yosys -- Yosys Open SYnthesis Suite                                       |
+ |                                                                            |
+ |  Copyright (C) 2012 - 2020  Claire Xenia Wolf <claire@yosyshq.com>         |
+ |                                                                            |
+ |  Permission to use, copy, modify, and/or distribute this software for any  |
+ |  purpose with or without fee is hereby granted, provided that the above    |
+ |  copyright notice and this permission notice appear in all copies.         |
+ |                                                                            |
+ |  THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES  |
+ |  WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF          |
+ |  MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR   |
+ |  ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES    |
+ |  WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN     |
+ |  ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF   |
+ |  OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.            |
+ |                                                                            |
+ \----------------------------------------------------------------------------/
+
+ Yosys 0.32 (git sha1 UNKNOWN, clang 14.0.0-1ubuntu1.1 -fPIC -Os)
+
+[TCL: yosys -import] Command name collision: found pre-existing command `cd' -> skip.
+[TCL: yosys -import] Command name collision: found pre-existing command `eval' -> skip.
+[TCL: yosys -import] Command name collision: found pre-existing command `exec' -> skip.
+[TCL: yosys -import] Command name collision: found pre-existing command `read' -> skip.
+[TCL: yosys -import] Command name collision: found pre-existing command `trace' -> skip.
+[TCL: yosys -import] Command name collision: found pre-existing command `add' -> skip.
+[TCL: yosys -import] Command name collision: found pre-existing command `aigmap' -> skip.
+[TCL: yosys -import] Command name collision: found pre-existing command `alumacc' -> skip.
+[TCL: yosys -import] Command name collision: found pre-existing command `anlogic_eqn' -> skip.
+[TCL: yosys -import] Command name collision: found pre-existing command `anlogic_fixcarry' -> skip.
+[TCL: yosys -import] Command name collision: found pre-existing command `assertpmux' -> skip.
+[TCL: yosys -import] Command name collision: found pre-existing command `async2sync' -> skip.
+[TCL: yosys -import] Command name collision: found pre-existing command `attrmap' -> skip.
+[TCL: yosys -import] Command name collision: found pre-existing command `attrmvcp' -> skip.
+[TCL: yosys -import] Command name collision: found pre-existing command `autoname' -> skip.
+[TCL: yosys -import] Command name collision: found pre-existing command `blackbox' -> skip.
+[TCL: yosys -import] Command name collision: found pre-existing command `bmuxmap' -> skip.
+[TCL: yosys -import] Command name collision: found pre-existing command `bugpoint' -> skip.
+[TCL: yosys -import] Command name collision: found pre-existing command `bwmuxmap' -> skip.
+[TCL: yosys -import] Command name collision: found pre-existing command `cd' -> skip.
+[TCL: yosys -import] Command name collision: found pre-existing command `check' -> skip.
+[TCL: yosys -import] Command name collision: found pre-existing command `chformal' -> skip.
+[TCL: yosys -import] Command name collision: found pre-existing command `chparam' -> skip.
+[TCL: yosys -import] Command name collision: found pre-existing command `chtype' -> skip.
+[TCL: yosys -import] Command name collision: found pre-existing command `clean' -> skip.
+[TCL: yosys -import] Command name collision: found pre-existing command `clean_zerowidth' -> skip.
+[TCL: yosys -import] Command name collision: found pre-existing command `clk2fflogic' -> skip.
+[TCL: yosys -import] Command name collision: found pre-existing command `clkbufmap' -> skip.
+[TCL: yosys -import] Command name collision: found pre-existing command `connect' -> skip.
+[TCL: yosys -import] Command name collision: found pre-existing command `connect_rpc' -> skip.
+[TCL: yosys -import] Command name collision: found pre-existing command `connwrappers' -> skip.
+[TCL: yosys -import] Command name collision: found pre-existing command `coolrunner2_fixup' -> skip.
+[TCL: yosys -import] Command name collision: found pre-existing command `coolrunner2_sop' -> skip.
+[TCL: yosys -import] Command name collision: found pre-existing command `copy' -> skip.
+[TCL: yosys -import] Command name collision: found pre-existing command `cover' -> skip.
+[TCL: yosys -import] Command name collision: found pre-existing command `cutpoint' -> skip.
+[TCL: yosys -import] Command name collision: found pre-existing command `debug' -> skip.
+[TCL: yosys -import] Command name collision: found pre-existing command `delete' -> skip.
+[TCL: yosys -import] Command name collision: found pre-existing command `deminout' -> skip.
+[TCL: yosys -import] Command name collision: found pre-existing command `demuxmap' -> skip.
+[TCL: yosys -import] Command name collision: found pre-existing command `design' -> skip.
+[TCL: yosys -import] Command name collision: found pre-existing command `dffinit' -> skip.
+[TCL: yosys -import] Command name collision: found pre-existing command `dfflegalize' -> skip.
+[TCL: yosys -import] Command name collision: found pre-existing command `dfflibmap' -> skip.
+[TCL: yosys -import] Command name collision: found pre-existing command `dffunmap' -> skip.
+[TCL: yosys -import] Command name collision: found pre-existing command `dump' -> skip.
+[TCL: yosys -import] Command name collision: found pre-existing command `echo' -> skip.
+[TCL: yosys -import] Command name collision: found pre-existing command `ecp5_gsr' -> skip.
+[TCL: yosys -import] Command name collision: found pre-existing command `edgetypes' -> skip.
+[TCL: yosys -import] Command name collision: found pre-existing command `efinix_fixcarry' -> skip.
+[TCL: yosys -import] Command name collision: found pre-existing command `equiv_add' -> skip.
+[TCL: yosys -import] Command name collision: found pre-existing command `equiv_induct' -> skip.
+[TCL: yosys -import] Command name collision: found pre-existing command `equiv_make' -> skip.
+[TCL: yosys -import] Command name collision: found pre-existing command `equiv_mark' -> skip.
+[TCL: yosys -import] Command name collision: found pre-existing command `equiv_miter' -> skip.
+[TCL: yosys -import] Command name collision: found pre-existing command `equiv_opt' -> skip.
+[TCL: yosys -import] Command name collision: found pre-existing command `equiv_purge' -> skip.
+[TCL: yosys -import] Command name collision: found pre-existing command `equiv_remove' -> skip.
+[TCL: yosys -import] Command name collision: found pre-existing command `equiv_simple' -> skip.
+[TCL: yosys -import] Command name collision: found pre-existing command `equiv_status' -> skip.
+[TCL: yosys -import] Command name collision: found pre-existing command `equiv_struct' -> skip.
+[TCL: yosys -import] Command name collision: found pre-existing command `eval' -> skip.
+[TCL: yosys -import] Command name collision: found pre-existing command `exec' -> skip.
+[TCL: yosys -import] Command name collision: found pre-existing command `expose' -> skip.
+[TCL: yosys -import] Command name collision: found pre-existing command `extract' -> skip.
+[TCL: yosys -import] Command name collision: found pre-existing command `extract_counter' -> skip.
+[TCL: yosys -import] Command name collision: found pre-existing command `extract_fa' -> skip.
+[TCL: yosys -import] Command name collision: found pre-existing command `extract_reduce' -> skip.
+[TCL: yosys -import] Command name collision: found pre-existing command `extractinv' -> skip.
+[TCL: yosys -import] Command name collision: found pre-existing command `flatten' -> skip.
+[TCL: yosys -import] Command name collision: found pre-existing command `flowmap' -> skip.
+[TCL: yosys -import] Command name collision: found pre-existing command `fmcombine' -> skip.
+[TCL: yosys -import] Command name collision: found pre-existing command `fminit' -> skip.
+[TCL: yosys -import] Command name collision: found pre-existing command `formalff' -> skip.
+[TCL: yosys -import] Command name collision: found pre-existing command `freduce' -> skip.
+[TCL: yosys -import] Command name collision: found pre-existing command `fsm' -> skip.
+[TCL: yosys -import] Command name collision: found pre-existing command `fsm_detect' -> skip.
+[TCL: yosys -import] Command name collision: found pre-existing command `fsm_expand' -> skip.
+[TCL: yosys -import] Command name collision: found pre-existing command `fsm_export' -> skip.
+[TCL: yosys -import] Command name collision: found pre-existing command `fsm_extract' -> skip.
+[TCL: yosys -import] Command name collision: found pre-existing command `fsm_info' -> skip.
+[TCL: yosys -import] Command name collision: found pre-existing command `fsm_map' -> skip.
+[TCL: yosys -import] Command name collision: found pre-existing command `fsm_opt' -> skip.
+[TCL: yosys -import] Command name collision: found pre-existing command `fsm_recode' -> skip.
+[TCL: yosys -import] Command name collision: found pre-existing command `fst2tb' -> skip.
+[TCL: yosys -import] Command name collision: found pre-existing command `gatemate_foldinv' -> skip.
+[TCL: yosys -import] Command name collision: found pre-existing command `glift' -> skip.
+[TCL: yosys -import] Command name collision: found pre-existing command `greenpak4_dffinv' -> skip.
+[TCL: yosys -import] Command name collision: found pre-existing command `help' -> skip.
+[TCL: yosys -import] Command name collision: found pre-existing command `hierarchy' -> skip.
+[TCL: yosys -import] Command name collision: found pre-existing command `hilomap' -> skip.
+[TCL: yosys -import] Command name collision: found pre-existing command `history' -> skip.
+[TCL: yosys -import] Command name collision: found pre-existing command `ice40_braminit' -> skip.
+[TCL: yosys -import] Command name collision: found pre-existing command `ice40_dsp' -> skip.
+[TCL: yosys -import] Command name collision: found pre-existing command `ice40_opt' -> skip.
+[TCL: yosys -import] Command name collision: found pre-existing command `ice40_wrapcarry' -> skip.
+[TCL: yosys -import] Command name collision: found pre-existing command `insbuf' -> skip.
+[TCL: yosys -import] Command name collision: found pre-existing command `iopadmap' -> skip.
+[TCL: yosys -import] Command name collision: found pre-existing command `jny' -> skip.
+[TCL: yosys -import] Command name collision: found pre-existing command `json' -> skip.
+[TCL: yosys -import] Command name collision: found pre-existing command `log' -> skip.
+[TCL: yosys -import] Command name collision: found pre-existing command `logger' -> skip.
+[TCL: yosys -import] Command name collision: found pre-existing command `ls' -> skip.
+[TCL: yosys -import] Command name collision: found pre-existing command `ltp' -> skip.
+[TCL: yosys -import] Command name collision: found pre-existing command `lut2mux' -> skip.
+[TCL: yosys -import] Command name collision: found pre-existing command `maccmap' -> skip.
+[TCL: yosys -import] Command name collision: found pre-existing command `memory' -> skip.
+[TCL: yosys -import] Command name collision: found pre-existing command `memory_bmux2rom' -> skip.
+[TCL: yosys -import] Command name collision: found pre-existing command `memory_bram' -> skip.
+[TCL: yosys -import] Command name collision: found pre-existing command `memory_collect' -> skip.
+[TCL: yosys -import] Command name collision: found pre-existing command `memory_dff' -> skip.
+[TCL: yosys -import] Command name collision: found pre-existing command `memory_libmap' -> skip.
+[TCL: yosys -import] Command name collision: found pre-existing command `memory_map' -> skip.
+[TCL: yosys -import] Command name collision: found pre-existing command `memory_memx' -> skip.
+[TCL: yosys -import] Command name collision: found pre-existing command `memory_narrow' -> skip.
+[TCL: yosys -import] Command name collision: found pre-existing command `memory_nordff' -> skip.
+[TCL: yosys -import] Command name collision: found pre-existing command `memory_share' -> skip.
+[TCL: yosys -import] Command name collision: found pre-existing command `memory_unpack' -> skip.
+[TCL: yosys -import] Command name collision: found pre-existing command `miter' -> skip.
+[TCL: yosys -import] Command name collision: found pre-existing command `mutate' -> skip.
+[TCL: yosys -import] Command name collision: found pre-existing command `muxcover' -> skip.
+[TCL: yosys -import] Command name collision: found pre-existing command `muxpack' -> skip.
+[TCL: yosys -import] Command name collision: found pre-existing command `nlutmap' -> skip.
+[TCL: yosys -import] Command name collision: found pre-existing command `onehot' -> skip.
+[TCL: yosys -import] Command name collision: found pre-existing command `opt' -> skip.
+[TCL: yosys -import] Command name collision: found pre-existing command `opt_clean' -> skip.
+[TCL: yosys -import] Command name collision: found pre-existing command `opt_demorgan' -> skip.
+[TCL: yosys -import] Command name collision: found pre-existing command `opt_dff' -> skip.
+[TCL: yosys -import] Command name collision: found pre-existing command `opt_expr' -> skip.
+[TCL: yosys -import] Command name collision: found pre-existing command `opt_ffinv' -> skip.
+[TCL: yosys -import] Command name collision: found pre-existing command `opt_lut' -> skip.
+[TCL: yosys -import] Command name collision: found pre-existing command `opt_lut_ins' -> skip.
+[TCL: yosys -import] Command name collision: found pre-existing command `opt_mem' -> skip.
+[TCL: yosys -import] Command name collision: found pre-existing command `opt_mem_feedback' -> skip.
+[TCL: yosys -import] Command name collision: found pre-existing command `opt_mem_priority' -> skip.
+[TCL: yosys -import] Command name collision: found pre-existing command `opt_mem_widen' -> skip.
+[TCL: yosys -import] Command name collision: found pre-existing command `opt_merge' -> skip.
+[TCL: yosys -import] Command name collision: found pre-existing command `opt_muxtree' -> skip.
+[TCL: yosys -import] Command name collision: found pre-existing command `opt_reduce' -> skip.
+[TCL: yosys -import] Command name collision: found pre-existing command `opt_share' -> skip.
+[TCL: yosys -import] Command name collision: found pre-existing command `paramap' -> skip.
+[TCL: yosys -import] Command name collision: found pre-existing command `peepopt' -> skip.
+[TCL: yosys -import] Command name collision: found pre-existing command `plugin' -> skip.
+[TCL: yosys -import] Command name collision: found pre-existing command `pmux2shiftx' -> skip.
+[TCL: yosys -import] Command name collision: found pre-existing command `pmuxtree' -> skip.
+[TCL: yosys -import] Command name collision: found pre-existing command `portlist' -> skip.
+[TCL: yosys -import] Command name collision: found pre-existing command `prep' -> skip.
+[TCL: yosys -import] Command name collision: found pre-existing command `printattrs' -> skip.
+[TCL: yosys -import] Command name collision: found pre-existing command `proc' -> skip.
+[TCL: yosys -import] Command name collision: found pre-existing command `proc_arst' -> skip.
+[TCL: yosys -import] Command name collision: found pre-existing command `proc_clean' -> skip.
+[TCL: yosys -import] Command name collision: found pre-existing command `proc_dff' -> skip.
+[TCL: yosys -import] Command name collision: found pre-existing command `proc_dlatch' -> skip.
+[TCL: yosys -import] Command name collision: found pre-existing command `proc_init' -> skip.
+[TCL: yosys -import] Command name collision: found pre-existing command `proc_memwr' -> skip.
+[TCL: yosys -import] Command name collision: found pre-existing command `proc_mux' -> skip.
+[TCL: yosys -import] Command name collision: found pre-existing command `proc_prune' -> skip.
+[TCL: yosys -import] Command name collision: found pre-existing command `proc_rmdead' -> skip.
+[TCL: yosys -import] Command name collision: found pre-existing command `proc_rom' -> skip.
+[TCL: yosys -import] Command name collision: found pre-existing command `qbfsat' -> skip.
+[TCL: yosys -import] Command name collision: found pre-existing command `qwp' -> skip.
+[TCL: yosys -import] Command name collision: found pre-existing command `read' -> skip.
+[TCL: yosys -import] Command name collision: found pre-existing command `read_aiger' -> skip.
+[TCL: yosys -import] Command name collision: found pre-existing command `read_blif' -> skip.
+[TCL: yosys -import] Command name collision: found pre-existing command `read_ilang' -> skip.
+[TCL: yosys -import] Command name collision: found pre-existing command `read_json' -> skip.
+[TCL: yosys -import] Command name collision: found pre-existing command `read_liberty' -> skip.
+[TCL: yosys -import] Command name collision: found pre-existing command `read_rtlil' -> skip.
+[TCL: yosys -import] Command name collision: found pre-existing command `read_verilog' -> skip.
+[TCL: yosys -import] Command name collision: found pre-existing command `recover_names' -> skip.
+[TCL: yosys -import] Command name collision: found pre-existing command `rename' -> skip.
+[TCL: yosys -import] Command name collision: found pre-existing command `rmports' -> skip.
+[TCL: yosys -import] Command name collision: found pre-existing command `sat' -> skip.
+[TCL: yosys -import] Command name collision: found pre-existing command `scatter' -> skip.
+[TCL: yosys -import] Command name collision: found pre-existing command `scc' -> skip.
+[TCL: yosys -import] Command name collision: found pre-existing command `scratchpad' -> skip.
+[TCL: yosys -import] Command name collision: found pre-existing command `script' -> skip.
+[TCL: yosys -import] Command name collision: found pre-existing command `select' -> skip.
+[TCL: yosys -import] Command name collision: found pre-existing command `setattr' -> skip.
+[TCL: yosys -import] Command name collision: found pre-existing command `setparam' -> skip.
+[TCL: yosys -import] Command name collision: found pre-existing command `setundef' -> skip.
+[TCL: yosys -import] Command name collision: found pre-existing command `share' -> skip.
+[TCL: yosys -import] Command name collision: found pre-existing command `shell' -> skip.
+[TCL: yosys -import] Command name collision: found pre-existing command `show' -> skip.
+[TCL: yosys -import] Command name collision: found pre-existing command `shregmap' -> skip.
+[TCL: yosys -import] Command name collision: found pre-existing command `sim' -> skip.
+[TCL: yosys -import] Command name collision: found pre-existing command `simplemap' -> skip.
+[TCL: yosys -import] Command name collision: found pre-existing command `splice' -> skip.
+[TCL: yosys -import] Command name collision: found pre-existing command `splitcells' -> skip.
+[TCL: yosys -import] Command name collision: found pre-existing command `splitnets' -> skip.
+[TCL: yosys -import] Command name collision: found pre-existing command `sta' -> skip.
+[TCL: yosys -import] Command name collision: found pre-existing command `stat' -> skip.
+[TCL: yosys -import] Command name collision: found pre-existing command `submod' -> skip.
+[TCL: yosys -import] Command name collision: found pre-existing command `supercover' -> skip.
+[TCL: yosys -import] Command name collision: found pre-existing command `synth' -> skip.
+[TCL: yosys -import] Command name collision: found pre-existing command `synth_achronix' -> skip.
+[TCL: yosys -import] Command name collision: found pre-existing command `synth_anlogic' -> skip.
+[TCL: yosys -import] Command name collision: found pre-existing command `synth_coolrunner2' -> skip.
+[TCL: yosys -import] Command name collision: found pre-existing command `synth_easic' -> skip.
+[TCL: yosys -import] Command name collision: found pre-existing command `synth_ecp5' -> skip.
+[TCL: yosys -import] Command name collision: found pre-existing command `synth_efinix' -> skip.
+[TCL: yosys -import] Command name collision: found pre-existing command `synth_fabulous' -> skip.
+[TCL: yosys -import] Command name collision: found pre-existing command `synth_gatemate' -> skip.
+[TCL: yosys -import] Command name collision: found pre-existing command `synth_gowin' -> skip.
+[TCL: yosys -import] Command name collision: found pre-existing command `synth_greenpak4' -> skip.
+[TCL: yosys -import] Command name collision: found pre-existing command `synth_ice40' -> skip.
+[TCL: yosys -import] Command name collision: found pre-existing command `synth_intel' -> skip.
+[TCL: yosys -import] Command name collision: found pre-existing command `synth_intel_alm' -> skip.
+[TCL: yosys -import] Command name collision: found pre-existing command `synth_machxo2' -> skip.
+[TCL: yosys -import] Command name collision: found pre-existing command `synth_nexus' -> skip.
+[TCL: yosys -import] Command name collision: found pre-existing command `synth_quicklogic' -> skip.
+[TCL: yosys -import] Command name collision: found pre-existing command `synth_sf2' -> skip.
+[TCL: yosys -import] Command name collision: found pre-existing command `synth_xilinx' -> skip.
+[TCL: yosys -import] Command name collision: found pre-existing command `synthprop' -> skip.
+[TCL: yosys -import] Command name collision: found pre-existing command `tcl' -> skip.
+[TCL: yosys -import] Command name collision: found pre-existing command `techmap' -> skip.
+[TCL: yosys -import] Command name collision: found pre-existing command `tee' -> skip.
+[TCL: yosys -import] Command name collision: found pre-existing command `test_abcloop' -> skip.
+[TCL: yosys -import] Command name collision: found pre-existing command `test_autotb' -> skip.
+[TCL: yosys -import] Command name collision: found pre-existing command `test_cell' -> skip.
+[TCL: yosys -import] Command name collision: found pre-existing command `test_pmgen' -> skip.
+[TCL: yosys -import] Command name collision: found pre-existing command `torder' -> skip.
+[TCL: yosys -import] Command name collision: found pre-existing command `trace' -> skip.
+[TCL: yosys -import] Command name collision: found pre-existing command `tribuf' -> skip.
+[TCL: yosys -import] Command name collision: found pre-existing command `uniquify' -> skip.
+[TCL: yosys -import] Command name collision: found pre-existing command `verific' -> skip.
+[TCL: yosys -import] Command name collision: found pre-existing command `verilog_defaults' -> skip.
+[TCL: yosys -import] Command name collision: found pre-existing command `verilog_defines' -> skip.
+[TCL: yosys -import] Command name collision: found pre-existing command `viz' -> skip.
+[TCL: yosys -import] Command name collision: found pre-existing command `wbflip' -> skip.
+[TCL: yosys -import] Command name collision: found pre-existing command `wreduce' -> skip.
+[TCL: yosys -import] Command name collision: found pre-existing command `write_aiger' -> skip.
+[TCL: yosys -import] Command name collision: found pre-existing command `write_blif' -> skip.
+[TCL: yosys -import] Command name collision: found pre-existing command `write_btor' -> skip.
+[TCL: yosys -import] Command name collision: found pre-existing command `write_cxxrtl' -> skip.
+[TCL: yosys -import] Command name collision: found pre-existing command `write_edif' -> skip.
+[TCL: yosys -import] Command name collision: found pre-existing command `write_file' -> skip.
+[TCL: yosys -import] Command name collision: found pre-existing command `write_firrtl' -> skip.
+[TCL: yosys -import] Command name collision: found pre-existing command `write_ilang' -> skip.
+[TCL: yosys -import] Command name collision: found pre-existing command `write_intersynth' -> skip.
+[TCL: yosys -import] Command name collision: found pre-existing command `write_jny' -> skip.
+[TCL: yosys -import] Command name collision: found pre-existing command `write_json' -> skip.
+[TCL: yosys -import] Command name collision: found pre-existing command `write_rtlil' -> skip.
+[TCL: yosys -import] Command name collision: found pre-existing command `write_simplec' -> skip.
+[TCL: yosys -import] Command name collision: found pre-existing command `write_smt2' -> skip.
+[TCL: yosys -import] Command name collision: found pre-existing command `write_smv' -> skip.
+[TCL: yosys -import] Command name collision: found pre-existing command `write_spice' -> skip.
+[TCL: yosys -import] Command name collision: found pre-existing command `write_table' -> skip.
+[TCL: yosys -import] Command name collision: found pre-existing command `write_verilog' -> skip.
+[TCL: yosys -import] Command name collision: found pre-existing command `write_xaiger' -> skip.
+[TCL: yosys -import] Command name collision: found pre-existing command `xilinx_dffopt' -> skip.
+[TCL: yosys -import] Command name collision: found pre-existing command `xilinx_dsp' -> skip.
+[TCL: yosys -import] Command name collision: found pre-existing command `xilinx_srl' -> skip.
+[TCL: yosys -import] Command name collision: found pre-existing command `xprop' -> skip.
+[TCL: yosys -import] Command name collision: found pre-existing command `zinit' -> skip.
+
+1. Executing Verilog-2005 frontend: /home/moises-leiva/vtr-verilog-to-routing/build/bin/../share/yosys/parmys/vtr_primitives.v
+Using parmys as partial mapper
+Using Yosys read_verilog command
+Parsing Verilog input from `/home/moises-leiva/vtr-verilog-to-routing/build/bin/../share/yosys/parmys/vtr_primitives.v' to AST representation.
+Generating RTLIL representation for module `\LUT_K'.
+Generating RTLIL representation for module `\DFF'.
+Generating RTLIL representation for module `\fpga_interconnect'.
+Generating RTLIL representation for module `\mux'.
+Generating RTLIL representation for module `\adder'.
+Generating RTLIL representation for module `\multiply'.
+Generating RTLIL representation for module `\single_port_ram'.
+Generating RTLIL representation for module `\dual_port_ram'.
+Successfully finished Verilog frontend.
+parmys_arch pass finished.
+
+2. Executing Verilog-2005 frontend: RFOREST.v
+Parsing SystemVerilog input from `RFOREST.v' to AST representation.
+Generating RTLIL representation for module `\RForest'.
+RFOREST.v:882: Warning: Identifier `\or_0' is implicitly declared.
+RFOREST.v:882: Warning: Identifier `\or_1' is implicitly declared.
+RFOREST.v:882: Warning: Identifier `\or_2' is implicitly declared.
+RFOREST.v:882: Warning: Identifier `\or_3' is implicitly declared.
+RFOREST.v:882: Warning: Identifier `\or_4' is implicitly declared.
+RFOREST.v:882: Warning: Identifier `\or_5' is implicitly declared.
+RFOREST.v:882: Warning: Identifier `\or_6' is implicitly declared.
+RFOREST.v:882: Warning: Identifier `\or_7' is implicitly declared.
+RFOREST.v:882: Warning: Identifier `\or_8' is implicitly declared.
+RFOREST.v:882: Warning: Identifier `\or_9' is implicitly declared.
+RFOREST.v:882: Warning: Identifier `\or_10' is implicitly declared.
+RFOREST.v:882: Warning: Identifier `\or_11' is implicitly declared.
+RFOREST.v:882: Warning: Identifier `\or_12' is implicitly declared.
+RFOREST.v:882: Warning: Identifier `\or_13' is implicitly declared.
+RFOREST.v:882: Warning: Identifier `\or_14' is implicitly declared.
+RFOREST.v:882: Warning: Identifier `\or_15' is implicitly declared.
+RFOREST.v:882: Warning: Identifier `\or_16' is implicitly declared.
+RFOREST.v:882: Warning: Identifier `\or_17' is implicitly declared.
+RFOREST.v:882: Warning: Identifier `\or_18' is implicitly declared.
+RFOREST.v:882: Warning: Identifier `\or_19' is implicitly declared.
+RFOREST.v:882: Warning: Identifier `\or_20' is implicitly declared.
+RFOREST.v:882: Warning: Identifier `\or_21' is implicitly declared.
+RFOREST.v:882: Warning: Identifier `\or_22' is implicitly declared.
+RFOREST.v:882: Warning: Identifier `\or_23' is implicitly declared.
+RFOREST.v:882: Warning: Identifier `\or_24' is implicitly declared.
+Generating RTLIL representation for module `\COMPS'.
+Generating RTLIL representation for module `\ANDS'.
+Generating RTLIL representation for module `\MAJ'.
+Successfully finished Verilog frontend.
+
+3. Executing SCC pass (detecting logic loops).
+Found 0 SCCs in module MAJ.
+Found 0 SCCs in module ANDS.
+Found 0 SCCs in module COMPS.
+Found 0 SCCs in module RForest.
+Skipping module \dual_port_ram as it contains processes (run 'proc' pass first).
+Skipping module \single_port_ram as it contains processes (run 'proc' pass first).
+Found 0 SCCs in module multiply.
+Found 0 SCCs in module adder.
+Found 0 SCCs in module mux.
+Found 0 SCCs in module fpga_interconnect.
+Skipping module \DFF as it contains processes (run 'proc' pass first).
+Found 0 SCCs in module LUT_K.
+Found 0 SCCs.
+
+4. Executing HIERARCHY pass (managing design hierarchy).
+
+4.1. Finding top of design hierarchy..
+root of   0 design levels: MAJ                 
+root of   0 design levels: ANDS                
+root of   0 design levels: COMPS               
+root of   1 design levels: RForest             
+root of   0 design levels: dual_port_ram       
+root of   0 design levels: single_port_ram     
+root of   0 design levels: multiply            
+root of   0 design levels: adder               
+root of   0 design levels: mux                 
+root of   0 design levels: fpga_interconnect   
+root of   0 design levels: DFF                 
+root of   0 design levels: LUT_K               
+Automatically selected RForest as design top module.
+
+4.2. Analyzing design hierarchy..
+Top module:  \RForest
+Used module:     \MAJ
+Used module:     \ANDS
+Used module:     \COMPS
+
+4.3. Analyzing design hierarchy..
+Top module:  \RForest
+Used module:     \MAJ
+Used module:     \ANDS
+Used module:     \COMPS
+Removing unused module `\dual_port_ram'.
+Removing unused module `\single_port_ram'.
+Removing unused module `\multiply'.
+Removing unused module `\adder'.
+Removing unused module `\mux'.
+Removing unused module `\fpga_interconnect'.
+Removing unused module `\DFF'.
+Removing unused module `\LUT_K'.
+Removed 8 unused modules.
+Mapping positional arguments of cell RForest.INST_MAJ (MAJ).
+Mapping positional arguments of cell RForest.INST_ANDS (ANDS).
+Mapping positional arguments of cell RForest.INST_COMP (COMPS).
+
+5. Executing OPT_EXPR pass (perform const folding).
+Optimizing module MAJ.
+<suppressed ~2 debug messages>
+Optimizing module ANDS.
+Optimizing module COMPS.
+Optimizing module RForest.
+
+6. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \MAJ..
+Finding unused cells or wires in module \ANDS..
+Finding unused cells or wires in module \COMPS..
+Finding unused cells or wires in module \RForest..
+Removed 2 unused cells and 1511 unused wires.
+<suppressed ~6 debug messages>
+
+7. Executing CHECK pass (checking for obvious problems).
+Checking module ANDS...
+Checking module COMPS...
+Checking module MAJ...
+Checking module RForest...
+Found and reported 0 problems.
+
+8. Executing OPT pass (performing simple optimizations).
+
+8.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module ANDS.
+Optimizing module COMPS.
+Optimizing module MAJ.
+Optimizing module RForest.
+
+8.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\ANDS'.
+<suppressed ~17613 debug messages>
+Finding identical cells in module `\COMPS'.
+Finding identical cells in module `\MAJ'.
+Finding identical cells in module `\RForest'.
+Removed a total of 5871 cells.
+
+8.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \ANDS..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Running muxtree optimizer on module \COMPS..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Running muxtree optimizer on module \MAJ..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Running muxtree optimizer on module \RForest..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Removed 0 multiplexer ports.
+<suppressed ~8 debug messages>
+
+8.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \ANDS.
+  Optimizing cells in module \COMPS.
+  Optimizing cells in module \MAJ.
+  Optimizing cells in module \RForest.
+Performed a total of 0 changes.
+
+8.5. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\ANDS'.
+Finding identical cells in module `\COMPS'.
+Finding identical cells in module `\MAJ'.
+Finding identical cells in module `\RForest'.
+Removed a total of 0 cells.
+
+8.6. Executing OPT_DFF pass (perform DFF optimizations).
+
+8.7. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \ANDS..
+Finding unused cells or wires in module \COMPS..
+Finding unused cells or wires in module \MAJ..
+Finding unused cells or wires in module \RForest..
+Removed 0 unused cells and 5871 unused wires.
+<suppressed ~1 debug messages>
+
+8.8. Executing OPT_EXPR pass (perform const folding).
+Optimizing module ANDS.
+Optimizing module COMPS.
+Optimizing module MAJ.
+Optimizing module RForest.
+
+8.9. Rerunning OPT passes. (Maybe there is more to do..)
+
+8.10. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \ANDS..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Running muxtree optimizer on module \COMPS..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Running muxtree optimizer on module \MAJ..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Running muxtree optimizer on module \RForest..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Removed 0 multiplexer ports.
+<suppressed ~8 debug messages>
+
+8.11. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \ANDS.
+  Optimizing cells in module \COMPS.
+  Optimizing cells in module \MAJ.
+  Optimizing cells in module \RForest.
+Performed a total of 0 changes.
+
+8.12. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\ANDS'.
+Finding identical cells in module `\COMPS'.
+Finding identical cells in module `\MAJ'.
+Finding identical cells in module `\RForest'.
+Removed a total of 0 cells.
+
+8.13. Executing OPT_DFF pass (perform DFF optimizations).
+
+8.14. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \ANDS..
+Finding unused cells or wires in module \COMPS..
+Finding unused cells or wires in module \MAJ..
+Finding unused cells or wires in module \RForest..
+
+8.15. Executing OPT_EXPR pass (perform const folding).
+Optimizing module ANDS.
+Optimizing module COMPS.
+Optimizing module MAJ.
+Optimizing module RForest.
+
+8.16. Finished OPT passes. (There is nothing left to do.)
+
+9. Executing PROC pass (convert processes to netlists).
+
+9.1. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Cleaned up 0 empty switches.
+
+9.2. Executing PROC_RMDEAD pass (remove dead branches from decision trees).
+Removed a total of 0 dead cases.
+
+9.3. Executing PROC_PRUNE pass (remove redundant assignments in processes).
+Removed 0 redundant assignments.
+Promoted 0 assignments to connections.
+
+9.4. Executing PROC_INIT pass (extract init attributes).
+
+9.5. Executing PROC_ARST pass (detect async resets in processes).
+
+9.6. Executing PROC_MUX pass (convert decision trees to multiplexers).
+
+9.7. Executing PROC_DLATCH pass (convert process syncs to latches).
+
+9.8. Executing PROC_DFF pass (convert process syncs to FFs).
+
+9.9. Executing PROC_MEMWR pass (convert process memory writes to cells).
+
+9.10. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Cleaned up 0 empty switches.
+
+9.11. Executing OPT_EXPR pass (perform const folding).
+Optimizing module ANDS.
+Optimizing module COMPS.
+Optimizing module MAJ.
+Optimizing module RForest.
+
+10. Executing FSM pass (extract and optimize FSM).
+
+10.1. Executing FSM_DETECT pass (finding FSMs in design).
+
+10.2. Executing FSM_EXTRACT pass (extracting FSM from design).
+
+10.3. Executing FSM_OPT pass (simple optimizations of FSMs).
+
+10.4. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \ANDS..
+Finding unused cells or wires in module \COMPS..
+Finding unused cells or wires in module \MAJ..
+Finding unused cells or wires in module \RForest..
+
+10.5. Executing FSM_OPT pass (simple optimizations of FSMs).
+
+10.6. Executing FSM_RECODE pass (re-assigning FSM state encoding).
+
+10.7. Executing FSM_INFO pass (dumping all available information on FSM cells).
+
+10.8. Executing FSM_MAP pass (mapping FSMs to basic logic).
+
+11. Executing OPT pass (performing simple optimizations).
+
+11.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module ANDS.
+Optimizing module COMPS.
+Optimizing module MAJ.
+Optimizing module RForest.
+
+11.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\ANDS'.
+Finding identical cells in module `\COMPS'.
+Finding identical cells in module `\MAJ'.
+Finding identical cells in module `\RForest'.
+Removed a total of 0 cells.
+
+11.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \ANDS..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Running muxtree optimizer on module \COMPS..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Running muxtree optimizer on module \MAJ..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Running muxtree optimizer on module \RForest..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Removed 0 multiplexer ports.
+<suppressed ~8 debug messages>
+
+11.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \ANDS.
+  Optimizing cells in module \COMPS.
+  Optimizing cells in module \MAJ.
+  Optimizing cells in module \RForest.
+Performed a total of 0 changes.
+
+11.5. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\ANDS'.
+Finding identical cells in module `\COMPS'.
+Finding identical cells in module `\MAJ'.
+Finding identical cells in module `\RForest'.
+Removed a total of 0 cells.
+
+11.6. Executing OPT_DFF pass (perform DFF optimizations).
+
+11.7. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \ANDS..
+Finding unused cells or wires in module \COMPS..
+Finding unused cells or wires in module \MAJ..
+Finding unused cells or wires in module \RForest..
+
+11.8. Executing OPT_EXPR pass (perform const folding).
+Optimizing module ANDS.
+Optimizing module COMPS.
+Optimizing module MAJ.
+Optimizing module RForest.
+
+11.9. Finished OPT passes. (There is nothing left to do.)
+
+12. Executing WREDUCE pass (reducing word size of cells).
+Removed top 5 bits (of 10) from port B of cell COMPS.$le$RFOREST.v:2790$39 ($le).
+Removed top 1 bits (of 10) from port B of cell COMPS.$le$RFOREST.v:2791$40 ($le).
+Removed top 1 bits (of 10) from port B of cell COMPS.$le$RFOREST.v:2792$41 ($le).
+Removed top 1 bits (of 10) from port B of cell COMPS.$le$RFOREST.v:2793$42 ($le).
+Removed top 2 bits (of 10) from port B of cell COMPS.$le$RFOREST.v:2796$45 ($le).
+Removed top 1 bits (of 10) from port B of cell COMPS.$le$RFOREST.v:2797$46 ($le).
+Removed top 2 bits (of 10) from port B of cell COMPS.$le$RFOREST.v:2799$48 ($le).
+Removed top 1 bits (of 10) from port B of cell COMPS.$le$RFOREST.v:2800$49 ($le).
+Removed top 1 bits (of 10) from port B of cell COMPS.$le$RFOREST.v:2801$50 ($le).
+Removed top 4 bits (of 10) from port B of cell COMPS.$le$RFOREST.v:2803$52 ($le).
+Removed top 3 bits (of 10) from port B of cell COMPS.$le$RFOREST.v:2805$54 ($le).
+Removed top 3 bits (of 10) from port B of cell COMPS.$le$RFOREST.v:2807$56 ($le).
+Removed top 6 bits (of 10) from port B of cell COMPS.$le$RFOREST.v:2808$57 ($le).
+Removed top 2 bits (of 10) from port B of cell COMPS.$le$RFOREST.v:2809$58 ($le).
+Removed top 2 bits (of 10) from port B of cell COMPS.$le$RFOREST.v:2810$59 ($le).
+Removed top 6 bits (of 10) from port B of cell COMPS.$le$RFOREST.v:2811$60 ($le).
+Removed top 1 bits (of 10) from port B of cell COMPS.$le$RFOREST.v:2813$62 ($le).
+Removed top 1 bits (of 10) from port B of cell COMPS.$le$RFOREST.v:2814$63 ($le).
+Removed top 1 bits (of 10) from port B of cell COMPS.$le$RFOREST.v:2815$64 ($le).
+Removed top 6 bits (of 10) from port B of cell COMPS.$le$RFOREST.v:2818$67 ($le).
+Removed top 1 bits (of 10) from port B of cell COMPS.$le$RFOREST.v:2819$68 ($le).
+Removed top 1 bits (of 10) from port B of cell COMPS.$le$RFOREST.v:2820$69 ($le).
+Removed top 1 bits (of 10) from port B of cell COMPS.$le$RFOREST.v:2822$71 ($le).
+Removed top 3 bits (of 10) from port B of cell COMPS.$le$RFOREST.v:2823$72 ($le).
+Removed top 2 bits (of 10) from port B of cell COMPS.$le$RFOREST.v:2824$73 ($le).
+Removed top 1 bits (of 10) from port B of cell COMPS.$le$RFOREST.v:2825$74 ($le).
+Removed top 1 bits (of 10) from port B of cell COMPS.$le$RFOREST.v:2828$77 ($le).
+Removed top 1 bits (of 10) from port B of cell COMPS.$le$RFOREST.v:2833$82 ($le).
+Removed top 1 bits (of 10) from port B of cell COMPS.$le$RFOREST.v:2835$84 ($le).
+Removed top 1 bits (of 10) from port B of cell COMPS.$le$RFOREST.v:2836$85 ($le).
+Removed top 2 bits (of 10) from port B of cell COMPS.$le$RFOREST.v:2837$86 ($le).
+Removed top 2 bits (of 10) from port B of cell COMPS.$le$RFOREST.v:2839$88 ($le).
+Removed top 4 bits (of 10) from port B of cell COMPS.$le$RFOREST.v:2845$94 ($le).
+Removed top 1 bits (of 10) from port B of cell COMPS.$le$RFOREST.v:2846$95 ($le).
+Removed top 1 bits (of 10) from port B of cell COMPS.$le$RFOREST.v:2848$97 ($le).
+Removed top 1 bits (of 10) from port B of cell COMPS.$le$RFOREST.v:2853$102 ($le).
+Removed top 1 bits (of 10) from port B of cell COMPS.$le$RFOREST.v:2854$103 ($le).
+Removed top 3 bits (of 10) from port B of cell COMPS.$le$RFOREST.v:2858$107 ($le).
+Removed top 2 bits (of 10) from port B of cell COMPS.$le$RFOREST.v:2859$108 ($le).
+Removed top 2 bits (of 10) from port B of cell COMPS.$le$RFOREST.v:2865$114 ($le).
+Removed top 3 bits (of 10) from port B of cell COMPS.$le$RFOREST.v:2869$118 ($le).
+Removed top 1 bits (of 10) from port B of cell COMPS.$le$RFOREST.v:2871$120 ($le).
+Removed top 1 bits (of 10) from port B of cell COMPS.$le$RFOREST.v:2875$124 ($le).
+Removed top 1 bits (of 10) from port B of cell COMPS.$le$RFOREST.v:2876$125 ($le).
+Removed top 1 bits (of 10) from port B of cell COMPS.$le$RFOREST.v:2882$131 ($le).
+Removed top 1 bits (of 10) from port B of cell COMPS.$le$RFOREST.v:2884$133 ($le).
+Removed top 1 bits (of 10) from port B of cell COMPS.$le$RFOREST.v:2885$134 ($le).
+Removed top 1 bits (of 10) from port B of cell COMPS.$le$RFOREST.v:2886$135 ($le).
+Removed top 3 bits (of 10) from port B of cell COMPS.$le$RFOREST.v:2887$136 ($le).
+Removed top 1 bits (of 10) from port B of cell COMPS.$le$RFOREST.v:2891$140 ($le).
+Removed top 1 bits (of 10) from port B of cell COMPS.$le$RFOREST.v:2894$143 ($le).
+Removed top 2 bits (of 10) from port B of cell COMPS.$le$RFOREST.v:2897$146 ($le).
+Removed top 3 bits (of 10) from port B of cell COMPS.$le$RFOREST.v:2898$147 ($le).
+Removed top 3 bits (of 10) from port B of cell COMPS.$le$RFOREST.v:2899$148 ($le).
+Removed top 3 bits (of 10) from port B of cell COMPS.$le$RFOREST.v:2901$150 ($le).
+Removed top 2 bits (of 10) from port B of cell COMPS.$le$RFOREST.v:2902$151 ($le).
+Removed top 3 bits (of 10) from port B of cell COMPS.$le$RFOREST.v:2903$152 ($le).
+Removed top 1 bits (of 10) from port B of cell COMPS.$le$RFOREST.v:2906$155 ($le).
+Removed top 3 bits (of 10) from port B of cell COMPS.$le$RFOREST.v:2907$156 ($le).
+Removed top 2 bits (of 10) from port B of cell COMPS.$le$RFOREST.v:2910$159 ($le).
+Removed top 2 bits (of 10) from port B of cell COMPS.$le$RFOREST.v:2911$160 ($le).
+Removed top 2 bits (of 10) from port B of cell COMPS.$le$RFOREST.v:2912$161 ($le).
+Removed top 1 bits (of 10) from port B of cell COMPS.$le$RFOREST.v:2915$164 ($le).
+Removed top 1 bits (of 10) from port B of cell COMPS.$le$RFOREST.v:2918$167 ($le).
+Removed top 2 bits (of 10) from port B of cell COMPS.$le$RFOREST.v:2919$168 ($le).
+Removed top 1 bits (of 10) from port B of cell COMPS.$le$RFOREST.v:2924$173 ($le).
+Removed top 1 bits (of 10) from port B of cell COMPS.$le$RFOREST.v:2925$174 ($le).
+Removed top 1 bits (of 10) from port B of cell COMPS.$le$RFOREST.v:2926$175 ($le).
+Removed top 1 bits (of 10) from port B of cell COMPS.$le$RFOREST.v:2927$176 ($le).
+Removed top 1 bits (of 10) from port B of cell COMPS.$le$RFOREST.v:2928$177 ($le).
+Removed top 5 bits (of 10) from port B of cell COMPS.$le$RFOREST.v:2929$178 ($le).
+Removed top 2 bits (of 10) from port B of cell COMPS.$le$RFOREST.v:2931$180 ($le).
+Removed top 2 bits (of 10) from port B of cell COMPS.$le$RFOREST.v:2936$185 ($le).
+Removed top 1 bits (of 10) from port B of cell COMPS.$le$RFOREST.v:2937$186 ($le).
+Removed top 1 bits (of 10) from port B of cell COMPS.$le$RFOREST.v:2938$187 ($le).
+Removed top 1 bits (of 10) from port B of cell COMPS.$le$RFOREST.v:2942$191 ($le).
+Removed top 1 bits (of 10) from port B of cell COMPS.$le$RFOREST.v:2946$195 ($le).
+Removed top 2 bits (of 10) from port B of cell COMPS.$le$RFOREST.v:2948$197 ($le).
+Removed top 2 bits (of 10) from port B of cell COMPS.$le$RFOREST.v:2949$198 ($le).
+Removed top 3 bits (of 10) from port B of cell COMPS.$le$RFOREST.v:2951$200 ($le).
+Removed top 2 bits (of 10) from port B of cell COMPS.$le$RFOREST.v:2953$202 ($le).
+Removed top 1 bits (of 10) from port B of cell COMPS.$le$RFOREST.v:2956$205 ($le).
+Removed top 2 bits (of 10) from port B of cell COMPS.$le$RFOREST.v:2959$208 ($le).
+Removed top 3 bits (of 10) from port B of cell COMPS.$le$RFOREST.v:2960$209 ($le).
+Removed top 1 bits (of 10) from port B of cell COMPS.$le$RFOREST.v:2961$210 ($le).
+Removed top 1 bits (of 10) from port B of cell COMPS.$le$RFOREST.v:2963$212 ($le).
+Removed top 1 bits (of 10) from port B of cell COMPS.$le$RFOREST.v:2964$213 ($le).
+Removed top 1 bits (of 10) from port B of cell COMPS.$le$RFOREST.v:2966$215 ($le).
+Removed top 1 bits (of 10) from port B of cell COMPS.$le$RFOREST.v:2969$218 ($le).
+Removed top 2 bits (of 10) from port B of cell COMPS.$le$RFOREST.v:2973$222 ($le).
+Removed top 3 bits (of 10) from port B of cell COMPS.$le$RFOREST.v:2976$225 ($le).
+Removed top 2 bits (of 10) from port B of cell COMPS.$le$RFOREST.v:2977$226 ($le).
+Removed top 3 bits (of 10) from port B of cell COMPS.$le$RFOREST.v:2978$227 ($le).
+Removed top 6 bits (of 10) from port B of cell COMPS.$le$RFOREST.v:2981$230 ($le).
+Removed top 3 bits (of 10) from port B of cell COMPS.$le$RFOREST.v:2982$231 ($le).
+Removed top 2 bits (of 10) from port B of cell COMPS.$le$RFOREST.v:2983$232 ($le).
+Removed top 2 bits (of 10) from port B of cell COMPS.$le$RFOREST.v:2985$234 ($le).
+Removed top 1 bits (of 10) from port B of cell COMPS.$le$RFOREST.v:2987$236 ($le).
+Removed top 2 bits (of 10) from port B of cell COMPS.$le$RFOREST.v:2988$237 ($le).
+Removed top 1 bits (of 10) from port B of cell COMPS.$le$RFOREST.v:2991$240 ($le).
+Removed top 2 bits (of 10) from port B of cell COMPS.$le$RFOREST.v:2994$243 ($le).
+Removed top 1 bits (of 10) from port B of cell COMPS.$le$RFOREST.v:2995$244 ($le).
+Removed top 2 bits (of 10) from port B of cell COMPS.$le$RFOREST.v:2996$245 ($le).
+Removed top 1 bits (of 10) from port B of cell COMPS.$le$RFOREST.v:2999$248 ($le).
+Removed top 1 bits (of 10) from port B of cell COMPS.$le$RFOREST.v:3000$249 ($le).
+Removed top 1 bits (of 10) from port B of cell COMPS.$le$RFOREST.v:3002$251 ($le).
+Removed top 2 bits (of 10) from port B of cell COMPS.$le$RFOREST.v:3003$252 ($le).
+Removed top 2 bits (of 10) from port B of cell COMPS.$le$RFOREST.v:3005$254 ($le).
+Removed top 1 bits (of 10) from port B of cell COMPS.$le$RFOREST.v:3006$255 ($le).
+Removed top 1 bits (of 10) from port B of cell COMPS.$le$RFOREST.v:3009$258 ($le).
+Removed top 1 bits (of 10) from port B of cell COMPS.$le$RFOREST.v:3011$260 ($le).
+Removed top 3 bits (of 10) from port B of cell COMPS.$le$RFOREST.v:3015$264 ($le).
+Removed top 1 bits (of 10) from port B of cell COMPS.$le$RFOREST.v:3017$266 ($le).
+Removed top 6 bits (of 10) from port B of cell COMPS.$le$RFOREST.v:3018$267 ($le).
+Removed top 1 bits (of 10) from port B of cell COMPS.$le$RFOREST.v:3019$268 ($le).
+Removed top 1 bits (of 10) from port B of cell COMPS.$le$RFOREST.v:3021$270 ($le).
+Removed top 1 bits (of 10) from port B of cell COMPS.$le$RFOREST.v:3023$272 ($le).
+Removed top 1 bits (of 10) from port B of cell COMPS.$le$RFOREST.v:3024$273 ($le).
+Removed top 5 bits (of 10) from port B of cell COMPS.$le$RFOREST.v:3025$274 ($le).
+Removed top 6 bits (of 10) from port B of cell COMPS.$le$RFOREST.v:3026$275 ($le).
+Removed top 4 bits (of 10) from port B of cell COMPS.$le$RFOREST.v:3027$276 ($le).
+Removed top 1 bits (of 10) from port B of cell COMPS.$le$RFOREST.v:3030$279 ($le).
+Removed top 1 bits (of 10) from port B of cell COMPS.$le$RFOREST.v:3033$282 ($le).
+Removed top 1 bits (of 10) from port B of cell COMPS.$le$RFOREST.v:3035$284 ($le).
+Removed top 4 bits (of 10) from port B of cell COMPS.$le$RFOREST.v:3037$286 ($le).
+Removed top 2 bits (of 10) from port B of cell COMPS.$le$RFOREST.v:3038$287 ($le).
+Removed top 1 bits (of 10) from port B of cell COMPS.$le$RFOREST.v:3040$289 ($le).
+Removed top 1 bits (of 10) from port B of cell COMPS.$le$RFOREST.v:3043$292 ($le).
+Removed top 1 bits (of 10) from port B of cell COMPS.$le$RFOREST.v:3044$293 ($le).
+Removed top 1 bits (of 10) from port B of cell COMPS.$le$RFOREST.v:3048$297 ($le).
+Removed top 3 bits (of 10) from port B of cell COMPS.$le$RFOREST.v:3050$299 ($le).
+Removed top 2 bits (of 10) from port B of cell COMPS.$le$RFOREST.v:3051$300 ($le).
+Removed top 1 bits (of 10) from port B of cell COMPS.$le$RFOREST.v:3052$301 ($le).
+Removed top 1 bits (of 10) from port B of cell COMPS.$le$RFOREST.v:3053$302 ($le).
+Removed top 1 bits (of 10) from port B of cell COMPS.$le$RFOREST.v:3061$310 ($le).
+Removed top 1 bits (of 10) from port B of cell COMPS.$le$RFOREST.v:3063$312 ($le).
+Removed top 1 bits (of 10) from port B of cell COMPS.$le$RFOREST.v:3064$313 ($le).
+Removed top 1 bits (of 10) from port B of cell COMPS.$le$RFOREST.v:3065$314 ($le).
+Removed top 1 bits (of 10) from port B of cell COMPS.$le$RFOREST.v:3066$315 ($le).
+Removed top 2 bits (of 10) from port B of cell COMPS.$le$RFOREST.v:3069$318 ($le).
+Removed top 1 bits (of 10) from port B of cell COMPS.$le$RFOREST.v:3075$324 ($le).
+Removed top 1 bits (of 10) from port B of cell COMPS.$le$RFOREST.v:3076$325 ($le).
+Removed top 1 bits (of 10) from port B of cell COMPS.$le$RFOREST.v:3077$326 ($le).
+Removed top 1 bits (of 10) from port B of cell COMPS.$le$RFOREST.v:3078$327 ($le).
+Removed top 1 bits (of 10) from port B of cell COMPS.$le$RFOREST.v:3081$330 ($le).
+Removed top 4 bits (of 10) from port B of cell COMPS.$le$RFOREST.v:3082$331 ($le).
+Removed top 3 bits (of 10) from port B of cell COMPS.$le$RFOREST.v:3083$332 ($le).
+Removed top 1 bits (of 10) from port B of cell COMPS.$le$RFOREST.v:3086$335 ($le).
+Removed top 1 bits (of 10) from port B of cell COMPS.$le$RFOREST.v:3088$337 ($le).
+Removed top 1 bits (of 10) from port B of cell COMPS.$le$RFOREST.v:3091$340 ($le).
+Removed top 1 bits (of 10) from port B of cell COMPS.$le$RFOREST.v:3092$341 ($le).
+Removed top 1 bits (of 10) from port B of cell COMPS.$le$RFOREST.v:3094$343 ($le).
+Removed top 1 bits (of 10) from port B of cell COMPS.$le$RFOREST.v:3097$346 ($le).
+Removed top 1 bits (of 10) from port B of cell COMPS.$le$RFOREST.v:3099$348 ($le).
+Removed top 1 bits (of 10) from port B of cell COMPS.$le$RFOREST.v:3101$350 ($le).
+Removed top 1 bits (of 10) from port B of cell COMPS.$le$RFOREST.v:3103$352 ($le).
+Removed top 1 bits (of 10) from port B of cell COMPS.$le$RFOREST.v:3106$355 ($le).
+Removed top 1 bits (of 10) from port B of cell COMPS.$le$RFOREST.v:3107$356 ($le).
+Removed top 2 bits (of 10) from port B of cell COMPS.$le$RFOREST.v:3108$357 ($le).
+Removed top 1 bits (of 10) from port B of cell COMPS.$le$RFOREST.v:3110$359 ($le).
+Removed top 1 bits (of 10) from port B of cell COMPS.$le$RFOREST.v:3113$362 ($le).
+Removed top 2 bits (of 10) from port B of cell COMPS.$le$RFOREST.v:3114$363 ($le).
+Removed top 6 bits (of 10) from port B of cell COMPS.$le$RFOREST.v:3117$366 ($le).
+Removed top 5 bits (of 10) from port B of cell COMPS.$le$RFOREST.v:3118$367 ($le).
+Removed top 1 bits (of 10) from port B of cell COMPS.$le$RFOREST.v:3120$369 ($le).
+Removed top 1 bits (of 10) from port B of cell COMPS.$le$RFOREST.v:3122$371 ($le).
+Removed top 1 bits (of 10) from port B of cell COMPS.$le$RFOREST.v:3123$372 ($le).
+Removed top 1 bits (of 10) from port B of cell COMPS.$le$RFOREST.v:3124$373 ($le).
+Removed top 2 bits (of 10) from port B of cell COMPS.$le$RFOREST.v:3125$374 ($le).
+Removed top 1 bits (of 10) from port B of cell COMPS.$le$RFOREST.v:3126$375 ($le).
+Removed top 1 bits (of 10) from port B of cell COMPS.$le$RFOREST.v:3127$376 ($le).
+Removed top 1 bits (of 10) from port B of cell COMPS.$le$RFOREST.v:3128$377 ($le).
+Removed top 1 bits (of 10) from port B of cell COMPS.$le$RFOREST.v:3130$379 ($le).
+Removed top 2 bits (of 10) from port B of cell COMPS.$le$RFOREST.v:3131$380 ($le).
+Removed top 1 bits (of 10) from port B of cell COMPS.$le$RFOREST.v:3133$382 ($le).
+Removed top 1 bits (of 10) from port B of cell COMPS.$le$RFOREST.v:3134$383 ($le).
+Removed top 1 bits (of 10) from port B of cell COMPS.$le$RFOREST.v:3135$384 ($le).
+Removed top 4 bits (of 10) from port B of cell COMPS.$le$RFOREST.v:3136$385 ($le).
+Removed top 6 bits (of 10) from port B of cell COMPS.$le$RFOREST.v:3137$386 ($le).
+Removed top 5 bits (of 10) from port B of cell COMPS.$le$RFOREST.v:3138$387 ($le).
+Removed top 1 bits (of 10) from port B of cell COMPS.$le$RFOREST.v:3140$389 ($le).
+Removed top 1 bits (of 10) from port B of cell COMPS.$le$RFOREST.v:3141$390 ($le).
+Removed top 2 bits (of 10) from port B of cell COMPS.$le$RFOREST.v:3144$393 ($le).
+Removed top 1 bits (of 10) from port B of cell COMPS.$le$RFOREST.v:3146$395 ($le).
+Removed top 2 bits (of 10) from port B of cell COMPS.$le$RFOREST.v:3147$396 ($le).
+Removed top 1 bits (of 10) from port B of cell COMPS.$le$RFOREST.v:3148$397 ($le).
+Removed top 1 bits (of 10) from port B of cell COMPS.$le$RFOREST.v:3149$398 ($le).
+Removed top 1 bits (of 10) from port B of cell COMPS.$le$RFOREST.v:3150$399 ($le).
+Removed top 1 bits (of 10) from port B of cell COMPS.$le$RFOREST.v:3152$401 ($le).
+Removed top 1 bits (of 10) from port B of cell COMPS.$le$RFOREST.v:3155$404 ($le).
+Removed top 1 bits (of 10) from port B of cell COMPS.$le$RFOREST.v:3156$405 ($le).
+Removed top 1 bits (of 10) from port B of cell COMPS.$le$RFOREST.v:3158$407 ($le).
+Removed top 1 bits (of 10) from port B of cell COMPS.$le$RFOREST.v:3159$408 ($le).
+Removed top 2 bits (of 10) from port B of cell COMPS.$le$RFOREST.v:3160$409 ($le).
+Removed top 4 bits (of 10) from port B of cell COMPS.$le$RFOREST.v:3161$410 ($le).
+Removed top 1 bits (of 10) from port B of cell COMPS.$le$RFOREST.v:3163$412 ($le).
+Removed top 2 bits (of 10) from port B of cell COMPS.$le$RFOREST.v:3164$413 ($le).
+Removed top 1 bits (of 10) from port B of cell COMPS.$le$RFOREST.v:3166$415 ($le).
+Removed top 1 bits (of 10) from port B of cell COMPS.$le$RFOREST.v:3168$417 ($le).
+Removed top 1 bits (of 10) from port B of cell COMPS.$le$RFOREST.v:3171$420 ($le).
+Removed top 1 bits (of 10) from port B of cell COMPS.$le$RFOREST.v:3172$421 ($le).
+Removed top 4 bits (of 10) from port B of cell COMPS.$le$RFOREST.v:3173$422 ($le).
+Removed top 1 bits (of 10) from port B of cell COMPS.$le$RFOREST.v:3175$424 ($le).
+Removed top 1 bits (of 10) from port B of cell COMPS.$le$RFOREST.v:3176$425 ($le).
+Removed top 1 bits (of 10) from port B of cell COMPS.$le$RFOREST.v:3177$426 ($le).
+Removed top 1 bits (of 10) from port B of cell COMPS.$le$RFOREST.v:3179$428 ($le).
+Removed top 1 bits (of 10) from port B of cell COMPS.$le$RFOREST.v:3180$429 ($le).
+Removed top 1 bits (of 10) from port B of cell COMPS.$le$RFOREST.v:3183$432 ($le).
+Removed top 1 bits (of 10) from port B of cell COMPS.$le$RFOREST.v:3184$433 ($le).
+Removed top 4 bits (of 10) from port B of cell COMPS.$le$RFOREST.v:3186$435 ($le).
+Removed top 3 bits (of 10) from port B of cell COMPS.$le$RFOREST.v:3187$436 ($le).
+Removed top 2 bits (of 10) from port B of cell COMPS.$le$RFOREST.v:3188$437 ($le).
+Removed top 3 bits (of 10) from port B of cell COMPS.$le$RFOREST.v:3189$438 ($le).
+Removed top 1 bits (of 10) from port B of cell COMPS.$le$RFOREST.v:3192$441 ($le).
+Removed top 4 bits (of 10) from port B of cell COMPS.$le$RFOREST.v:3193$442 ($le).
+Removed top 1 bits (of 10) from port B of cell COMPS.$le$RFOREST.v:3194$443 ($le).
+Removed top 2 bits (of 10) from port B of cell COMPS.$le$RFOREST.v:3195$444 ($le).
+Removed top 1 bits (of 10) from port B of cell COMPS.$le$RFOREST.v:3196$445 ($le).
+Removed top 5 bits (of 10) from port B of cell COMPS.$le$RFOREST.v:3197$446 ($le).
+Removed top 4 bits (of 10) from port B of cell COMPS.$le$RFOREST.v:3200$449 ($le).
+Removed top 1 bits (of 10) from port B of cell COMPS.$le$RFOREST.v:3202$451 ($le).
+Removed top 1 bits (of 10) from port B of cell COMPS.$le$RFOREST.v:3207$456 ($le).
+Removed top 2 bits (of 10) from port B of cell COMPS.$le$RFOREST.v:3209$458 ($le).
+Removed top 2 bits (of 10) from port B of cell COMPS.$le$RFOREST.v:3210$459 ($le).
+Removed top 3 bits (of 10) from port B of cell COMPS.$le$RFOREST.v:3212$461 ($le).
+Removed top 1 bits (of 10) from port B of cell COMPS.$le$RFOREST.v:3213$462 ($le).
+Removed top 2 bits (of 10) from port B of cell COMPS.$le$RFOREST.v:3216$465 ($le).
+Removed top 5 bits (of 10) from port B of cell COMPS.$le$RFOREST.v:3217$466 ($le).
+Removed top 3 bits (of 10) from port B of cell COMPS.$le$RFOREST.v:3221$470 ($le).
+Removed top 1 bits (of 10) from port B of cell COMPS.$le$RFOREST.v:3224$473 ($le).
+Removed top 1 bits (of 10) from port B of cell COMPS.$le$RFOREST.v:3225$474 ($le).
+Removed top 1 bits (of 10) from port B of cell COMPS.$le$RFOREST.v:3226$475 ($le).
+Removed top 1 bits (of 10) from port B of cell COMPS.$le$RFOREST.v:3227$476 ($le).
+Removed top 1 bits (of 10) from port B of cell COMPS.$le$RFOREST.v:3228$477 ($le).
+Removed top 2 bits (of 10) from port B of cell COMPS.$le$RFOREST.v:3231$480 ($le).
+Removed top 1 bits (of 10) from port B of cell COMPS.$le$RFOREST.v:3233$482 ($le).
+Removed top 1 bits (of 10) from port B of cell COMPS.$le$RFOREST.v:3234$483 ($le).
+Removed top 1 bits (of 10) from port B of cell COMPS.$le$RFOREST.v:3235$484 ($le).
+Removed top 1 bits (of 10) from port B of cell COMPS.$le$RFOREST.v:3237$486 ($le).
+Removed top 1 bits (of 10) from port B of cell COMPS.$le$RFOREST.v:3240$489 ($le).
+Removed top 1 bits (of 10) from port B of cell COMPS.$le$RFOREST.v:3242$491 ($le).
+Removed top 3 bits (of 10) from port B of cell COMPS.$le$RFOREST.v:3244$493 ($le).
+Removed top 3 bits (of 10) from port B of cell COMPS.$le$RFOREST.v:3246$495 ($le).
+Removed top 1 bits (of 10) from port B of cell COMPS.$le$RFOREST.v:3249$498 ($le).
+Removed top 1 bits (of 10) from port B of cell COMPS.$le$RFOREST.v:3252$501 ($le).
+Removed top 2 bits (of 10) from port B of cell COMPS.$le$RFOREST.v:3253$502 ($le).
+Removed top 1 bits (of 10) from port B of cell COMPS.$le$RFOREST.v:3257$506 ($le).
+Removed top 1 bits (of 10) from port B of cell COMPS.$le$RFOREST.v:3260$509 ($le).
+Removed top 2 bits (of 10) from port B of cell COMPS.$le$RFOREST.v:3261$510 ($le).
+Removed top 1 bits (of 10) from port B of cell COMPS.$le$RFOREST.v:3262$511 ($le).
+Removed top 1 bits (of 10) from port B of cell COMPS.$le$RFOREST.v:3264$513 ($le).
+Removed top 1 bits (of 10) from port B of cell COMPS.$le$RFOREST.v:3265$514 ($le).
+Removed top 4 bits (of 10) from port B of cell COMPS.$le$RFOREST.v:3266$515 ($le).
+Removed top 1 bits (of 10) from port B of cell COMPS.$le$RFOREST.v:3271$520 ($le).
+Removed top 1 bits (of 10) from port B of cell COMPS.$le$RFOREST.v:3274$523 ($le).
+Removed top 1 bits (of 10) from port B of cell COMPS.$le$RFOREST.v:3276$525 ($le).
+Removed top 1 bits (of 10) from port B of cell COMPS.$le$RFOREST.v:3277$526 ($le).
+Removed top 1 bits (of 10) from port B of cell COMPS.$le$RFOREST.v:3278$527 ($le).
+Removed top 2 bits (of 10) from port B of cell COMPS.$le$RFOREST.v:3279$528 ($le).
+Removed top 1 bits (of 10) from port B of cell COMPS.$le$RFOREST.v:3280$529 ($le).
+Removed top 2 bits (of 10) from port B of cell COMPS.$le$RFOREST.v:3282$531 ($le).
+Removed top 2 bits (of 10) from port B of cell COMPS.$le$RFOREST.v:3285$534 ($le).
+Removed top 2 bits (of 10) from port B of cell COMPS.$le$RFOREST.v:3291$540 ($le).
+Removed top 1 bits (of 10) from port B of cell COMPS.$le$RFOREST.v:3292$541 ($le).
+Removed top 2 bits (of 10) from port B of cell COMPS.$le$RFOREST.v:3294$543 ($le).
+Removed top 2 bits (of 10) from port B of cell COMPS.$le$RFOREST.v:3295$544 ($le).
+Removed top 2 bits (of 10) from port B of cell COMPS.$le$RFOREST.v:3296$545 ($le).
+Removed top 3 bits (of 10) from port B of cell COMPS.$le$RFOREST.v:3302$551 ($le).
+Removed top 3 bits (of 10) from port B of cell COMPS.$le$RFOREST.v:3305$554 ($le).
+Removed top 1 bits (of 10) from port B of cell COMPS.$le$RFOREST.v:3307$556 ($le).
+Removed top 1 bits (of 10) from port B of cell COMPS.$le$RFOREST.v:3308$557 ($le).
+Removed top 1 bits (of 10) from port B of cell COMPS.$le$RFOREST.v:3312$561 ($le).
+Removed top 2 bits (of 10) from port B of cell COMPS.$le$RFOREST.v:3313$562 ($le).
+Removed top 3 bits (of 10) from port B of cell COMPS.$le$RFOREST.v:3314$563 ($le).
+Removed top 1 bits (of 10) from port B of cell COMPS.$le$RFOREST.v:3315$564 ($le).
+Removed top 2 bits (of 10) from port B of cell COMPS.$le$RFOREST.v:3316$565 ($le).
+Removed top 3 bits (of 10) from port B of cell COMPS.$le$RFOREST.v:3317$566 ($le).
+Removed top 6 bits (of 10) from port B of cell COMPS.$le$RFOREST.v:3319$568 ($le).
+Removed top 1 bits (of 10) from port B of cell COMPS.$le$RFOREST.v:3322$571 ($le).
+Removed top 1 bits (of 10) from port B of cell COMPS.$le$RFOREST.v:3323$572 ($le).
+Removed top 1 bits (of 10) from port B of cell COMPS.$le$RFOREST.v:3326$575 ($le).
+Removed top 4 bits (of 10) from port B of cell COMPS.$le$RFOREST.v:3329$578 ($le).
+Removed top 2 bits (of 10) from port B of cell COMPS.$le$RFOREST.v:3330$579 ($le).
+Removed top 4 bits (of 10) from port B of cell COMPS.$le$RFOREST.v:3334$583 ($le).
+Removed top 1 bits (of 10) from port B of cell COMPS.$le$RFOREST.v:3336$585 ($le).
+Removed top 4 bits (of 10) from port B of cell COMPS.$le$RFOREST.v:3338$587 ($le).
+Removed top 1 bits (of 10) from port B of cell COMPS.$le$RFOREST.v:3340$589 ($le).
+Removed top 1 bits (of 10) from port B of cell COMPS.$le$RFOREST.v:3341$590 ($le).
+Removed top 1 bits (of 10) from port B of cell COMPS.$le$RFOREST.v:3343$592 ($le).
+Removed top 1 bits (of 10) from port B of cell COMPS.$le$RFOREST.v:3347$596 ($le).
+Removed top 4 bits (of 10) from port B of cell COMPS.$le$RFOREST.v:3350$599 ($le).
+Removed top 1 bits (of 10) from port B of cell COMPS.$le$RFOREST.v:3351$600 ($le).
+Removed top 1 bits (of 10) from port B of cell COMPS.$le$RFOREST.v:3352$601 ($le).
+Removed top 1 bits (of 10) from port B of cell COMPS.$le$RFOREST.v:3354$603 ($le).
+Removed top 1 bits (of 10) from port B of cell COMPS.$le$RFOREST.v:3357$606 ($le).
+Removed top 1 bits (of 10) from port B of cell COMPS.$le$RFOREST.v:3359$608 ($le).
+Removed top 1 bits (of 10) from port B of cell COMPS.$le$RFOREST.v:3361$610 ($le).
+Removed top 1 bits (of 10) from port B of cell COMPS.$le$RFOREST.v:3362$611 ($le).
+Removed top 1 bits (of 10) from port B of cell COMPS.$le$RFOREST.v:3363$612 ($le).
+Removed top 2 bits (of 10) from port B of cell COMPS.$le$RFOREST.v:3364$613 ($le).
+Removed top 4 bits (of 10) from port B of cell COMPS.$le$RFOREST.v:3366$615 ($le).
+Removed top 2 bits (of 10) from port B of cell COMPS.$le$RFOREST.v:3369$618 ($le).
+Removed top 3 bits (of 10) from port B of cell COMPS.$le$RFOREST.v:3371$620 ($le).
+Removed top 2 bits (of 10) from port B of cell COMPS.$le$RFOREST.v:3372$621 ($le).
+Removed top 2 bits (of 10) from port B of cell COMPS.$le$RFOREST.v:3373$622 ($le).
+Removed top 2 bits (of 10) from port B of cell COMPS.$le$RFOREST.v:3378$627 ($le).
+Removed top 1 bits (of 10) from port B of cell COMPS.$le$RFOREST.v:3382$631 ($le).
+Removed top 7 bits (of 10) from port B of cell COMPS.$le$RFOREST.v:3383$632 ($le).
+Removed top 5 bits (of 10) from port B of cell COMPS.$le$RFOREST.v:3385$634 ($le).
+Removed top 3 bits (of 10) from port B of cell COMPS.$le$RFOREST.v:3387$636 ($le).
+Removed top 1 bits (of 10) from port B of cell COMPS.$le$RFOREST.v:3389$638 ($le).
+Removed top 1 bits (of 10) from port B of cell COMPS.$le$RFOREST.v:3391$640 ($le).
+Removed top 1 bits (of 10) from port B of cell COMPS.$le$RFOREST.v:3392$641 ($le).
+Removed top 2 bits (of 10) from port B of cell COMPS.$le$RFOREST.v:3394$643 ($le).
+Removed top 2 bits (of 10) from port B of cell COMPS.$le$RFOREST.v:3395$644 ($le).
+Removed top 1 bits (of 10) from port B of cell COMPS.$le$RFOREST.v:3397$646 ($le).
+Removed top 1 bits (of 10) from port B of cell COMPS.$le$RFOREST.v:3399$648 ($le).
+Removed top 1 bits (of 10) from port B of cell COMPS.$le$RFOREST.v:3401$650 ($le).
+Removed top 1 bits (of 10) from port B of cell COMPS.$le$RFOREST.v:3402$651 ($le).
+Removed top 1 bits (of 10) from port B of cell COMPS.$le$RFOREST.v:3404$653 ($le).
+Removed top 2 bits (of 10) from port B of cell COMPS.$le$RFOREST.v:3406$655 ($le).
+Removed top 1 bits (of 10) from port B of cell COMPS.$le$RFOREST.v:3409$658 ($le).
+Removed top 1 bits (of 10) from port B of cell COMPS.$le$RFOREST.v:3411$660 ($le).
+Removed top 1 bits (of 10) from port B of cell COMPS.$le$RFOREST.v:3412$661 ($le).
+Removed top 2 bits (of 10) from port B of cell COMPS.$le$RFOREST.v:3415$664 ($le).
+Removed top 1 bits (of 10) from port B of cell COMPS.$le$RFOREST.v:3417$666 ($le).
+Removed top 1 bits (of 10) from port B of cell COMPS.$le$RFOREST.v:3418$667 ($le).
+Removed top 1 bits (of 10) from port B of cell COMPS.$le$RFOREST.v:3419$668 ($le).
+Removed top 5 bits (of 10) from port B of cell COMPS.$le$RFOREST.v:3420$669 ($le).
+Removed top 5 bits (of 10) from port B of cell COMPS.$le$RFOREST.v:3421$670 ($le).
+Removed top 2 bits (of 10) from port B of cell COMPS.$le$RFOREST.v:3424$673 ($le).
+Removed top 1 bits (of 10) from port B of cell COMPS.$le$RFOREST.v:3429$678 ($le).
+Removed top 1 bits (of 10) from port B of cell COMPS.$le$RFOREST.v:3431$680 ($le).
+Removed top 1 bits (of 10) from port B of cell COMPS.$le$RFOREST.v:3432$681 ($le).
+Removed top 4 bits (of 10) from port B of cell COMPS.$le$RFOREST.v:3435$684 ($le).
+Removed top 2 bits (of 10) from port B of cell COMPS.$le$RFOREST.v:3436$685 ($le).
+Removed top 1 bits (of 10) from port B of cell COMPS.$le$RFOREST.v:3440$689 ($le).
+Removed top 2 bits (of 10) from port B of cell COMPS.$le$RFOREST.v:3448$697 ($le).
+Removed top 3 bits (of 10) from port B of cell COMPS.$le$RFOREST.v:3450$699 ($le).
+Removed top 1 bits (of 10) from port B of cell COMPS.$le$RFOREST.v:3452$701 ($le).
+Removed top 1 bits (of 10) from port B of cell COMPS.$le$RFOREST.v:3454$703 ($le).
+Removed top 3 bits (of 10) from port B of cell COMPS.$le$RFOREST.v:3456$705 ($le).
+Removed top 1 bits (of 10) from port B of cell COMPS.$le$RFOREST.v:3459$708 ($le).
+Removed top 3 bits (of 10) from port B of cell COMPS.$le$RFOREST.v:3460$709 ($le).
+Removed top 2 bits (of 10) from port B of cell COMPS.$le$RFOREST.v:3461$710 ($le).
+Removed top 1 bits (of 10) from port B of cell COMPS.$le$RFOREST.v:3465$714 ($le).
+Removed top 1 bits (of 10) from port B of cell COMPS.$le$RFOREST.v:3466$715 ($le).
+Removed top 1 bits (of 10) from port B of cell COMPS.$le$RFOREST.v:3469$718 ($le).
+Removed top 4 bits (of 10) from port B of cell COMPS.$le$RFOREST.v:3471$720 ($le).
+Removed top 1 bits (of 10) from port B of cell COMPS.$le$RFOREST.v:3474$723 ($le).
+Removed top 1 bits (of 10) from port B of cell COMPS.$le$RFOREST.v:3478$727 ($le).
+Removed top 1 bits (of 10) from port B of cell COMPS.$le$RFOREST.v:3480$729 ($le).
+Removed top 2 bits (of 10) from port B of cell COMPS.$le$RFOREST.v:3481$730 ($le).
+Removed top 1 bits (of 10) from port B of cell COMPS.$le$RFOREST.v:3483$732 ($le).
+Removed top 1 bits (of 10) from port B of cell COMPS.$le$RFOREST.v:3484$733 ($le).
+Removed top 3 bits (of 10) from port B of cell COMPS.$le$RFOREST.v:3485$734 ($le).
+Removed top 1 bits (of 10) from port B of cell COMPS.$le$RFOREST.v:3486$735 ($le).
+Removed top 1 bits (of 10) from port B of cell COMPS.$le$RFOREST.v:3487$736 ($le).
+Removed top 2 bits (of 10) from port B of cell COMPS.$le$RFOREST.v:3490$739 ($le).
+Removed top 4 bits (of 10) from port B of cell COMPS.$le$RFOREST.v:3492$741 ($le).
+Removed top 2 bits (of 3) from port A of cell MAJ.$add$RFOREST.v:6618$10021 ($add).
+Removed top 2 bits (of 3) from port B of cell MAJ.$add$RFOREST.v:6618$10021 ($add).
+Removed top 1 bits (of 3) from port Y of cell MAJ.$add$RFOREST.v:6618$10021 ($add).
+Removed top 1 bits (of 3) from port A of cell MAJ.$add$RFOREST.v:6618$10022 ($add).
+Removed top 2 bits (of 3) from port B of cell MAJ.$add$RFOREST.v:6618$10022 ($add).
+Removed top 2 bits (of 3) from port B of cell MAJ.$add$RFOREST.v:6618$10023 ($add).
+Removed top 2 bits (of 3) from port B of cell MAJ.$add$RFOREST.v:6618$10024 ($add).
+Removed top 2 bits (of 3) from port A of cell MAJ.$add$RFOREST.v:6620$10025 ($add).
+Removed top 2 bits (of 3) from port B of cell MAJ.$add$RFOREST.v:6620$10025 ($add).
+Removed top 1 bits (of 3) from port Y of cell MAJ.$add$RFOREST.v:6620$10025 ($add).
+Removed top 1 bits (of 3) from port A of cell MAJ.$add$RFOREST.v:6620$10026 ($add).
+Removed top 2 bits (of 3) from port B of cell MAJ.$add$RFOREST.v:6620$10026 ($add).
+Removed top 2 bits (of 3) from port B of cell MAJ.$add$RFOREST.v:6620$10027 ($add).
+Removed top 2 bits (of 3) from port B of cell MAJ.$add$RFOREST.v:6620$10028 ($add).
+Removed top 2 bits (of 3) from port A of cell MAJ.$add$RFOREST.v:6622$10029 ($add).
+Removed top 2 bits (of 3) from port B of cell MAJ.$add$RFOREST.v:6622$10029 ($add).
+Removed top 1 bits (of 3) from port Y of cell MAJ.$add$RFOREST.v:6622$10029 ($add).
+Removed top 1 bits (of 3) from port A of cell MAJ.$add$RFOREST.v:6622$10030 ($add).
+Removed top 2 bits (of 3) from port B of cell MAJ.$add$RFOREST.v:6622$10030 ($add).
+Removed top 2 bits (of 3) from port B of cell MAJ.$add$RFOREST.v:6622$10031 ($add).
+Removed top 2 bits (of 3) from port B of cell MAJ.$add$RFOREST.v:6622$10032 ($add).
+Removed top 2 bits (of 3) from port A of cell MAJ.$add$RFOREST.v:6624$10033 ($add).
+Removed top 2 bits (of 3) from port B of cell MAJ.$add$RFOREST.v:6624$10033 ($add).
+Removed top 1 bits (of 3) from port Y of cell MAJ.$add$RFOREST.v:6624$10033 ($add).
+Removed top 1 bits (of 3) from port A of cell MAJ.$add$RFOREST.v:6624$10034 ($add).
+Removed top 2 bits (of 3) from port B of cell MAJ.$add$RFOREST.v:6624$10034 ($add).
+Removed top 2 bits (of 3) from port B of cell MAJ.$add$RFOREST.v:6624$10035 ($add).
+Removed top 2 bits (of 3) from port B of cell MAJ.$add$RFOREST.v:6624$10036 ($add).
+Removed top 2 bits (of 3) from port A of cell MAJ.$add$RFOREST.v:6626$10037 ($add).
+Removed top 2 bits (of 3) from port B of cell MAJ.$add$RFOREST.v:6626$10037 ($add).
+Removed top 1 bits (of 3) from port Y of cell MAJ.$add$RFOREST.v:6626$10037 ($add).
+Removed top 1 bits (of 3) from port A of cell MAJ.$add$RFOREST.v:6626$10038 ($add).
+Removed top 2 bits (of 3) from port B of cell MAJ.$add$RFOREST.v:6626$10038 ($add).
+Removed top 2 bits (of 3) from port B of cell MAJ.$add$RFOREST.v:6626$10039 ($add).
+Removed top 2 bits (of 3) from port B of cell MAJ.$add$RFOREST.v:6626$10040 ($add).
+Removed top 1 bits (of 3) from port B of cell MAJ.$eq$RFOREST.v:6649$10051 ($eq).
+Removed top 2 bits (of 3) from port B of cell MAJ.$eq$RFOREST.v:6653$10055 ($eq).
+Removed top 1 bits (of 3) from wire MAJ.$add$RFOREST.v:6618$10021_Y.
+Removed top 1 bits (of 3) from wire MAJ.$add$RFOREST.v:6620$10025_Y.
+Removed top 1 bits (of 3) from wire MAJ.$add$RFOREST.v:6622$10029_Y.
+Removed top 1 bits (of 3) from wire MAJ.$add$RFOREST.v:6624$10033_Y.
+Removed top 1 bits (of 3) from wire MAJ.$add$RFOREST.v:6626$10037_Y.
+
+13. Executing PEEPOPT pass (run peephole optimizers).
+
+14. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \ANDS..
+Finding unused cells or wires in module \COMPS..
+Finding unused cells or wires in module \MAJ..
+Finding unused cells or wires in module \RForest..
+Removed 0 unused cells and 5 unused wires.
+<suppressed ~1 debug messages>
+
+15. Executing SHARE pass (SAT-based resource sharing).
+
+16. Executing OPT pass (performing simple optimizations).
+
+16.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module ANDS.
+Optimizing module COMPS.
+Optimizing module MAJ.
+<suppressed ~5 debug messages>
+Optimizing module RForest.
+
+16.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\ANDS'.
+Finding identical cells in module `\COMPS'.
+Finding identical cells in module `\MAJ'.
+Finding identical cells in module `\RForest'.
+Removed a total of 0 cells.
+
+16.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \ANDS..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Running muxtree optimizer on module \COMPS..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Running muxtree optimizer on module \MAJ..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Running muxtree optimizer on module \RForest..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Removed 0 multiplexer ports.
+<suppressed ~3 debug messages>
+
+16.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \ANDS.
+  Optimizing cells in module \COMPS.
+  Optimizing cells in module \MAJ.
+  Optimizing cells in module \RForest.
+Performed a total of 0 changes.
+
+16.5. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\ANDS'.
+Finding identical cells in module `\COMPS'.
+Finding identical cells in module `\MAJ'.
+Finding identical cells in module `\RForest'.
+Removed a total of 0 cells.
+
+16.6. Executing OPT_SHARE pass.
+
+16.7. Executing OPT_DFF pass (perform DFF optimizations).
+
+16.8. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \ANDS..
+Finding unused cells or wires in module \COMPS..
+Finding unused cells or wires in module \MAJ..
+Finding unused cells or wires in module \RForest..
+Removed 0 unused cells and 4 unused wires.
+<suppressed ~1 debug messages>
+
+16.9. Executing OPT_EXPR pass (perform const folding).
+Optimizing module ANDS.
+Optimizing module COMPS.
+Optimizing module MAJ.
+Optimizing module RForest.
+
+16.10. Rerunning OPT passes. (Maybe there is more to do..)
+
+16.11. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \ANDS..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Running muxtree optimizer on module \COMPS..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Running muxtree optimizer on module \MAJ..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Running muxtree optimizer on module \RForest..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Removed 0 multiplexer ports.
+<suppressed ~3 debug messages>
+
+16.12. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \ANDS.
+  Optimizing cells in module \COMPS.
+  Optimizing cells in module \MAJ.
+  Optimizing cells in module \RForest.
+Performed a total of 0 changes.
+
+16.13. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\ANDS'.
+Finding identical cells in module `\COMPS'.
+Finding identical cells in module `\MAJ'.
+Finding identical cells in module `\RForest'.
+Removed a total of 0 cells.
+
+16.14. Executing OPT_SHARE pass.
+
+16.15. Executing OPT_DFF pass (perform DFF optimizations).
+
+16.16. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \ANDS..
+Finding unused cells or wires in module \COMPS..
+Finding unused cells or wires in module \MAJ..
+Finding unused cells or wires in module \RForest..
+
+16.17. Executing OPT_EXPR pass (perform const folding).
+Optimizing module ANDS.
+Optimizing module COMPS.
+Optimizing module MAJ.
+Optimizing module RForest.
+
+16.18. Finished OPT passes. (There is nothing left to do.)
+
+17. Executing MEMORY pass.
+
+17.1. Executing OPT_MEM pass (optimize memories).
+Performed a total of 0 transformations.
+
+17.2. Executing OPT_MEM_PRIORITY pass (removing unnecessary memory write priority relations).
+Performed a total of 0 transformations.
+
+17.3. Executing OPT_MEM_FEEDBACK pass (finding memory read-to-write feedback paths).
+
+17.4. Executing MEMORY_BMUX2ROM pass (converting muxes to ROMs).
+
+17.5. Executing MEMORY_DFF pass (merging $dff cells to $memrd).
+
+17.6. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \ANDS..
+Finding unused cells or wires in module \COMPS..
+Finding unused cells or wires in module \MAJ..
+Finding unused cells or wires in module \RForest..
+
+17.7. Executing MEMORY_SHARE pass (consolidating $memrd/$memwr cells).
+
+17.8. Executing OPT_MEM_WIDEN pass (optimize memories where all ports are wide).
+Performed a total of 0 transformations.
+
+17.9. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \ANDS..
+Finding unused cells or wires in module \COMPS..
+Finding unused cells or wires in module \MAJ..
+Finding unused cells or wires in module \RForest..
+
+17.10. Executing MEMORY_COLLECT pass (generating $mem cells).
+
+18. Executing FLATTEN pass (flatten design).
+Deleting now unused module ANDS.
+Deleting now unused module COMPS.
+Deleting now unused module MAJ.
+<suppressed ~3 debug messages>
+
+19. Executing OPT pass (performing simple optimizations).
+
+19.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module RForest.
+
+19.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\RForest'.
+Removed a total of 0 cells.
+
+19.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \RForest..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~3 debug messages>
+
+19.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \RForest.
+Performed a total of 0 changes.
+
+19.5. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\RForest'.
+Removed a total of 0 cells.
+
+19.6. Executing OPT_SHARE pass.
+
+19.7. Executing OPT_DFF pass (perform DFF optimizations).
+
+19.8. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \RForest..
+Removed 1 unused cells and 3 unused wires.
+<suppressed ~4 debug messages>
+
+19.9. Executing OPT_EXPR pass (perform const folding).
+Optimizing module RForest.
+
+19.10. Rerunning OPT passes. (Maybe there is more to do..)
+
+19.11. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \RForest..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~3 debug messages>
+
+19.12. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \RForest.
+Performed a total of 0 changes.
+
+19.13. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\RForest'.
+Removed a total of 0 cells.
+
+19.14. Executing OPT_SHARE pass.
+
+19.15. Executing OPT_DFF pass (perform DFF optimizations).
+
+19.16. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \RForest..
+
+19.17. Executing OPT_EXPR pass (perform const folding).
+Optimizing module RForest.
+
+19.18. Finished OPT passes. (There is nothing left to do.)
+
+20. Executing TECHMAP pass (map to technology primitives).
+
+20.1. Executing Verilog-2005 frontend: /home/moises-leiva/vtr-verilog-to-routing/build/bin/../share/yosys/parmys/adff2dff.v
+Parsing Verilog input from `/home/moises-leiva/vtr-verilog-to-routing/build/bin/../share/yosys/parmys/adff2dff.v' to AST representation.
+Generating RTLIL representation for module `\adff2dff'.
+Successfully finished Verilog frontend.
+
+20.2. Continuing TECHMAP pass.
+No more expansions possible.
+<suppressed ~3 debug messages>
+
+21. Executing TECHMAP pass (map to technology primitives).
+
+21.1. Executing Verilog-2005 frontend: /home/moises-leiva/vtr-verilog-to-routing/build/bin/../share/yosys/parmys/adffe2dff.v
+Parsing Verilog input from `/home/moises-leiva/vtr-verilog-to-routing/build/bin/../share/yosys/parmys/adffe2dff.v' to AST representation.
+Generating RTLIL representation for module `\adffe2dff'.
+Successfully finished Verilog frontend.
+
+21.2. Continuing TECHMAP pass.
+No more expansions possible.
+<suppressed ~3 debug messages>
+
+22. Executing TECHMAP pass (map to technology primitives).
+
+22.1. Executing Verilog-2005 frontend: /home/moises-leiva/vtr-verilog-to-routing/build/bin/../share/yosys/parmys/aldff2dff.v
+Parsing Verilog input from `/home/moises-leiva/vtr-verilog-to-routing/build/bin/../share/yosys/parmys/aldff2dff.v' to AST representation.
+Generating RTLIL representation for module `\aldff2dff'.
+Successfully finished Verilog frontend.
+
+22.2. Continuing TECHMAP pass.
+No more expansions possible.
+<suppressed ~3 debug messages>
+
+23. Executing TECHMAP pass (map to technology primitives).
+
+23.1. Executing Verilog-2005 frontend: /home/moises-leiva/vtr-verilog-to-routing/build/bin/../share/yosys/parmys/aldffe2dff.v
+Parsing Verilog input from `/home/moises-leiva/vtr-verilog-to-routing/build/bin/../share/yosys/parmys/aldffe2dff.v' to AST representation.
+Generating RTLIL representation for module `\aldffe2dff'.
+Successfully finished Verilog frontend.
+
+23.2. Continuing TECHMAP pass.
+No more expansions possible.
+<suppressed ~3 debug messages>
+
+24. Executing OPT pass (performing simple optimizations).
+
+24.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module RForest.
+
+24.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\RForest'.
+Removed a total of 0 cells.
+
+24.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \RForest..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~3 debug messages>
+
+24.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \RForest.
+Performed a total of 0 changes.
+
+24.5. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\RForest'.
+Removed a total of 0 cells.
+
+24.6. Executing OPT_SHARE pass.
+
+24.7. Executing OPT_DFF pass (perform DFF optimizations).
+
+24.8. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \RForest..
+
+24.9. Executing OPT_EXPR pass (perform const folding).
+Optimizing module RForest.
+
+24.10. Finished OPT passes. (There is nothing left to do.)
+
+25. Starting parmys pass.
+Reading Configuration file
+Architecture: EArch.xml
+Reading FPGA Architecture file
+Using Lut input width of: 4
+--------------------------------------------------------------------
+Creating Odin-II Netlist from Design
+--------------------------------------------------------------------
+High-level Synthesis Begin
+
+Elaboration Time: 2.5ms
+--------------------------------------------------------------------
+Successful Elaboration of the design by Odin-II
+Performing Optimization on the Netlist
+
+Optimization Time: 0.2ms
+--------------------------------------------------------------------
+Successful Optimization of netlist by Odin-II
+Performing Partial Technology Mapping to the target device
+
+Techmap Time: 9.3ms
+--------------------------------------------------------------------
+Successful Partial Technology Mapping by Odin-II
+
+Total Synthesis Time: 12.1ms
+--------------------------------------------------------------------
+
+Hard Multiplier Distribution
+============================
+
+
+Total # of multipliers = 0
+
+Hard adder Distribution
+============================
+
+
+Total # of chains = 0
+
+Hard adder chain Details
+============================
+
+
+The Number of Hard Block adders in the Longest Chain: 0
+
+
+The Total Number of Hard Block adders: 0
+
+
+Geometric mean adder/subtractor chain length: -nan
+
+Hard MINUS Distribution
+============================
+
+
+Total # of chains = 0
+
+Hard sub chain Details
+============================
+
+
+The Number of Hard Block subs in the Longest Chain: 0
+
+
+The Total Number of Hard Block subs: 0
+
+	==== Stats ====
+Number of <INPUT_NODE> node:              520
+Number of <OUTPUT_NODE> node:             5
+Number of <ADD> node:                     75
+Number of <GENERIC> node:                 4123
+Total estimated number of lut:            8958
+Total number of node:                     4198
+Longest path:                             71
+Average path:                             7
+
+
+--------------------------------------------------------------------
+Updating the Design
+--------------------------------------------------------------------
+parmys pass finished.
+
+26. Executing OPT pass (performing simple optimizations).
+
+26.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module RForest.
+
+26.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\RForest'.
+Removed a total of 0 cells.
+
+26.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \RForest..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~3 debug messages>
+
+26.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \RForest.
+Performed a total of 0 changes.
+
+26.5. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\RForest'.
+Removed a total of 0 cells.
+
+26.6. Executing OPT_SHARE pass.
+
+26.7. Executing OPT_DFF pass (perform DFF optimizations).
+
+26.8. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \RForest..
+Removed 0 unused cells and 8 unused wires.
+<suppressed ~1 debug messages>
+
+26.9. Executing OPT_EXPR pass (perform const folding).
+Optimizing module RForest.
+
+26.10. Rerunning OPT passes. (Maybe there is more to do..)
+
+26.11. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \RForest..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~3 debug messages>
+
+26.12. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \RForest.
+Performed a total of 0 changes.
+
+26.13. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\RForest'.
+Removed a total of 0 cells.
+
+26.14. Executing OPT_SHARE pass.
+
+26.15. Executing OPT_DFF pass (perform DFF optimizations).
+
+26.16. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \RForest..
+
+26.17. Executing OPT_EXPR pass (perform const folding).
+Optimizing module RForest.
+
+26.18. Finished OPT passes. (There is nothing left to do.)
+
+27. Executing TECHMAP pass (map to technology primitives).
+
+27.1. Executing Verilog-2005 frontend: /home/moises-leiva/vtr-verilog-to-routing/build/bin/../share/yosys/techmap.v
+Parsing Verilog input from `/home/moises-leiva/vtr-verilog-to-routing/build/bin/../share/yosys/techmap.v' to AST representation.
+Generating RTLIL representation for module `\_90_simplemap_bool_ops'.
+Generating RTLIL representation for module `\_90_simplemap_reduce_ops'.
+Generating RTLIL representation for module `\_90_simplemap_logic_ops'.
+Generating RTLIL representation for module `\_90_simplemap_compare_ops'.
+Generating RTLIL representation for module `\_90_simplemap_various'.
+Generating RTLIL representation for module `\_90_simplemap_registers'.
+Generating RTLIL representation for module `\_90_shift_ops_shr_shl_sshl_sshr'.
+Generating RTLIL representation for module `\_90_shift_shiftx'.
+Generating RTLIL representation for module `\_90_fa'.
+Generating RTLIL representation for module `\_90_lcu'.
+Generating RTLIL representation for module `\_90_alu'.
+Generating RTLIL representation for module `\_90_macc'.
+Generating RTLIL representation for module `\_90_alumacc'.
+Generating RTLIL representation for module `\$__div_mod_u'.
+Generating RTLIL representation for module `\$__div_mod_trunc'.
+Generating RTLIL representation for module `\_90_div'.
+Generating RTLIL representation for module `\_90_mod'.
+Generating RTLIL representation for module `\$__div_mod_floor'.
+Generating RTLIL representation for module `\_90_divfloor'.
+Generating RTLIL representation for module `\_90_modfloor'.
+Generating RTLIL representation for module `\_90_pow'.
+Generating RTLIL representation for module `\_90_pmux'.
+Generating RTLIL representation for module `\_90_demux'.
+Generating RTLIL representation for module `\_90_lut'.
+Successfully finished Verilog frontend.
+
+27.2. Continuing TECHMAP pass.
+Using extmapper simplemap for cells of type $or.
+Running "alumacc" on wrapper $extern:wrap:$le:A_SIGNED=0:A_WIDTH=10:B_SIGNED=0:B_WIDTH=8:Y_WIDTH=1:394426c56d1a028ba8fdd5469b163e04011def47.
+Using template $extern:wrap:$le:A_SIGNED=0:A_WIDTH=10:B_SIGNED=0:B_WIDTH=8:Y_WIDTH=1:394426c56d1a028ba8fdd5469b163e04011def47 for cells of type $extern:wrap:$le:A_SIGNED=0:A_WIDTH=10:B_SIGNED=0:B_WIDTH=8:Y_WIDTH=1:394426c56d1a028ba8fdd5469b163e04011def47.
+Using extmapper simplemap for cells of type $and.
+Running "alumacc" on wrapper $extern:wrap:$le:A_SIGNED=0:A_WIDTH=10:B_SIGNED=0:B_WIDTH=10:Y_WIDTH=1:394426c56d1a028ba8fdd5469b163e04011def47.
+Using template $extern:wrap:$le:A_SIGNED=0:A_WIDTH=10:B_SIGNED=0:B_WIDTH=10:Y_WIDTH=1:394426c56d1a028ba8fdd5469b163e04011def47 for cells of type $extern:wrap:$le:A_SIGNED=0:A_WIDTH=10:B_SIGNED=0:B_WIDTH=10:Y_WIDTH=1:394426c56d1a028ba8fdd5469b163e04011def47.
+Using extmapper simplemap for cells of type $not.
+Running "alumacc" on wrapper $extern:wrap:$le:A_SIGNED=0:A_WIDTH=10:B_SIGNED=0:B_WIDTH=7:Y_WIDTH=1:394426c56d1a028ba8fdd5469b163e04011def47.
+Using template $extern:wrap:$le:A_SIGNED=0:A_WIDTH=10:B_SIGNED=0:B_WIDTH=7:Y_WIDTH=1:394426c56d1a028ba8fdd5469b163e04011def47 for cells of type $extern:wrap:$le:A_SIGNED=0:A_WIDTH=10:B_SIGNED=0:B_WIDTH=7:Y_WIDTH=1:394426c56d1a028ba8fdd5469b163e04011def47.
+Running "alumacc" on wrapper $extern:wrap:$le:A_SIGNED=0:A_WIDTH=10:B_SIGNED=0:B_WIDTH=9:Y_WIDTH=1:394426c56d1a028ba8fdd5469b163e04011def47.
+Using template $extern:wrap:$le:A_SIGNED=0:A_WIDTH=10:B_SIGNED=0:B_WIDTH=9:Y_WIDTH=1:394426c56d1a028ba8fdd5469b163e04011def47 for cells of type $extern:wrap:$le:A_SIGNED=0:A_WIDTH=10:B_SIGNED=0:B_WIDTH=9:Y_WIDTH=1:394426c56d1a028ba8fdd5469b163e04011def47.
+Running "alumacc" on wrapper $extern:wrap:$le:A_SIGNED=0:A_WIDTH=10:B_SIGNED=0:B_WIDTH=5:Y_WIDTH=1:394426c56d1a028ba8fdd5469b163e04011def47.
+Using template $extern:wrap:$le:A_SIGNED=0:A_WIDTH=10:B_SIGNED=0:B_WIDTH=5:Y_WIDTH=1:394426c56d1a028ba8fdd5469b163e04011def47 for cells of type $extern:wrap:$le:A_SIGNED=0:A_WIDTH=10:B_SIGNED=0:B_WIDTH=5:Y_WIDTH=1:394426c56d1a028ba8fdd5469b163e04011def47.
+Running "alumacc" on wrapper $extern:wrap:$ge:A_SIGNED=0:A_WIDTH=3:B_SIGNED=0:B_WIDTH=3:Y_WIDTH=1:394426c56d1a028ba8fdd5469b163e04011def47.
+Using template $extern:wrap:$ge:A_SIGNED=0:A_WIDTH=3:B_SIGNED=0:B_WIDTH=3:Y_WIDTH=1:394426c56d1a028ba8fdd5469b163e04011def47 for cells of type $extern:wrap:$ge:A_SIGNED=0:A_WIDTH=3:B_SIGNED=0:B_WIDTH=3:Y_WIDTH=1:394426c56d1a028ba8fdd5469b163e04011def47.
+Using extmapper simplemap for cells of type $mux.
+Using extmapper simplemap for cells of type $eq.
+Running "alumacc" on wrapper $extern:wrap:$le:A_SIGNED=0:A_WIDTH=10:B_SIGNED=0:B_WIDTH=6:Y_WIDTH=1:394426c56d1a028ba8fdd5469b163e04011def47.
+Using template $extern:wrap:$le:A_SIGNED=0:A_WIDTH=10:B_SIGNED=0:B_WIDTH=6:Y_WIDTH=1:394426c56d1a028ba8fdd5469b163e04011def47 for cells of type $extern:wrap:$le:A_SIGNED=0:A_WIDTH=10:B_SIGNED=0:B_WIDTH=6:Y_WIDTH=1:394426c56d1a028ba8fdd5469b163e04011def47.
+Running "alumacc" on wrapper $extern:wrap:$le:A_SIGNED=0:A_WIDTH=10:B_SIGNED=0:B_WIDTH=4:Y_WIDTH=1:394426c56d1a028ba8fdd5469b163e04011def47.
+Using template $extern:wrap:$le:A_SIGNED=0:A_WIDTH=10:B_SIGNED=0:B_WIDTH=4:Y_WIDTH=1:394426c56d1a028ba8fdd5469b163e04011def47 for cells of type $extern:wrap:$le:A_SIGNED=0:A_WIDTH=10:B_SIGNED=0:B_WIDTH=4:Y_WIDTH=1:394426c56d1a028ba8fdd5469b163e04011def47.
+Running "alumacc" on wrapper $extern:wrap:$le:A_SIGNED=0:A_WIDTH=10:B_SIGNED=0:B_WIDTH=3:Y_WIDTH=1:394426c56d1a028ba8fdd5469b163e04011def47.
+Using template $extern:wrap:$le:A_SIGNED=0:A_WIDTH=10:B_SIGNED=0:B_WIDTH=3:Y_WIDTH=1:394426c56d1a028ba8fdd5469b163e04011def47 for cells of type $extern:wrap:$le:A_SIGNED=0:A_WIDTH=10:B_SIGNED=0:B_WIDTH=3:Y_WIDTH=1:394426c56d1a028ba8fdd5469b163e04011def47.
+Using extmapper simplemap for cells of type $reduce_and.
+Using extmapper simplemap for cells of type $reduce_or.
+Using template $paramod$484d51534650924b7ed4c69e46eed3a56904771f\_90_alu for cells of type $alu.
+Using template $paramod$49641a5ace7a8dbedd31c417f5a1b54fcecf6c7d\_90_alu for cells of type $alu.
+Using template $paramod$2d591d76303cd5065d50f216288bb81e81f2927d\_90_alu for cells of type $alu.
+Using template $paramod$78e969f2586efcf3a5b0b0440bcca0db83d5cca2\_90_alu for cells of type $alu.
+Using template $paramod$78648aff6d035ceca1e51be5292d8e9748cdc2be\_90_alu for cells of type $alu.
+Using template $paramod$9c32b45917accb56be6667e7eba7742d064d7fbb\_90_alu for cells of type $alu.
+Using template $paramod$d902cfcd8f5bceb817669b134f968d68db216af4\_90_alu for cells of type $alu.
+Using template $paramod$b016129edba87ad27a7393da6fa50baa1808cfd8\_90_alu for cells of type $alu.
+Using template $paramod$f53bb43f1533599b54d7004cd284f52ef9cb8fdf\_90_alu for cells of type $alu.
+Using extmapper simplemap for cells of type $pos.
+Using template $paramod\_90_lcu\WIDTH=32'00000000000000000000000000001010 for cells of type $lcu.
+Using extmapper simplemap for cells of type $xor.
+Using template $paramod\_90_lcu\WIDTH=32'00000000000000000000000000000011 for cells of type $lcu.
+No more expansions possible.
+<suppressed ~38660 debug messages>
+
+28. Executing OPT pass (performing simple optimizations).
+
+28.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module RForest.
+<suppressed ~37651 debug messages>
+
+28.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\RForest'.
+<suppressed ~49827 debug messages>
+Removed a total of 16609 cells.
+
+28.3. Executing OPT_DFF pass (perform DFF optimizations).
+
+28.4. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \RForest..
+Removed 9775 unused cells and 44074 unused wires.
+<suppressed ~9776 debug messages>
+
+28.5. Finished fast OPT passes.
+
+29. Executing DFFUNMAP pass (unmap clock enable and synchronous reset from FFs).
+
+30. Executing OPT pass (performing simple optimizations).
+
+30.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module RForest.
+
+30.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\RForest'.
+Removed a total of 0 cells.
+
+30.3. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \RForest..
+
+30.4. Finished fast OPT passes.
+
+31. Printing statistics.
+
+=== RForest ===
+
+   Number of wires:              11446
+   Number of wire bits:          20681
+   Number of public wires:         527
+   Number of public wire bits:     527
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:              13392
+     $_AND_                       7123
+     $_MUX_                          9
+     $_NOT_                       2302
+     $_OR_                        3871
+     $_XOR_                         12
+     adder                          75
+
+32. Executing HIERARCHY pass (managing design hierarchy).
+
+32.1. Finding top of design hierarchy..
+root of   1 design levels: RForest             
+Automatically selected RForest as design top module.
+
+32.2. Analyzing design hierarchy..
+Top module:  \RForest
+
+32.3. Analyzing design hierarchy..
+Top module:  \RForest
+Removed 0 unused modules.
+
+33. Executing BLIF backend.
+
+Warnings: 25 unique messages, 25 total
+End of script. Logfile hash: 9c745f30b2, CPU: user 17.65s system 0.24s, MEM: 407.75 MB peak
+Yosys 0.32 (git sha1 UNKNOWN, clang 14.0.0-1ubuntu1.1 -fPIC -Os)
+Time spent: 38% 24x opt_expr (6 sec), 14% 20x opt_merge (2 sec), ...
+	Command being timed: "/home/moises-leiva/vtr-verilog-to-routing/build/bin/yosys -c synthesis.tcl"
+	User time (seconds): 17.70
+	System time (seconds): 0.24
+	Percent of CPU this job got: 99%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:17.96
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 417540
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 81060
+	Voluntary context switches: 1
+	Involuntary context switches: 22
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 6704
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
