@@ -1,0 +1,326 @@
+<?xml version="1.0"?>
+<block name="SOBEL.pre-vpr.net" instance="FPGA_packed_netlist[0]" architecture_id="SHA256:096931c368d37b5224ea38ef4aff8cb3c1abf19068c57c022acb1b1e331f38cd" atom_netlist_id="SHA256:08837da2b39648f96a3f98b06e2dcc763917cef0fff83735db0c7f300bfd4ba9">
+	<inputs>p0~1 p0~2 p0~3 p0~4 p0~5 p0~6 p0~7 p0~0</inputs>
+	<outputs>out:out~0 out:out~1 out:out~2 out:out~3 out:out~4 out:out~5 out:out~6 out:out~7</outputs>
+	<clocks></clocks>
+	<block name="out:out~0" instance="io[0]" mode="outpad">
+		<inputs>
+			<port name="outpad">p0~0</port>
+		</inputs>
+		<outputs>
+			<port name="inpad">open</port>
+		</outputs>
+		<clocks>
+			<port name="clock">open</port>
+		</clocks>
+		<block name="out:out~0" instance="outpad[0]">
+			<attributes />
+			<parameters />
+			<inputs>
+				<port name="outpad">io.outpad[0]-&gt;outpad</port>
+			</inputs>
+			<outputs />
+			<clocks />
+		</block>
+	</block>
+	<block name="out:out~1" instance="io[1]" mode="outpad">
+		<inputs>
+			<port name="outpad">p0~1</port>
+		</inputs>
+		<outputs>
+			<port name="inpad">open</port>
+		</outputs>
+		<clocks>
+			<port name="clock">open</port>
+		</clocks>
+		<block name="out:out~1" instance="outpad[0]">
+			<attributes />
+			<parameters />
+			<inputs>
+				<port name="outpad">io.outpad[0]-&gt;outpad</port>
+			</inputs>
+			<outputs />
+			<clocks />
+		</block>
+	</block>
+	<block name="out:out~2" instance="io[2]" mode="outpad">
+		<inputs>
+			<port name="outpad">p0~2</port>
+		</inputs>
+		<outputs>
+			<port name="inpad">open</port>
+		</outputs>
+		<clocks>
+			<port name="clock">open</port>
+		</clocks>
+		<block name="out:out~2" instance="outpad[0]">
+			<attributes />
+			<parameters />
+			<inputs>
+				<port name="outpad">io.outpad[0]-&gt;outpad</port>
+			</inputs>
+			<outputs />
+			<clocks />
+		</block>
+	</block>
+	<block name="out:out~3" instance="io[3]" mode="outpad">
+		<inputs>
+			<port name="outpad">p0~3</port>
+		</inputs>
+		<outputs>
+			<port name="inpad">open</port>
+		</outputs>
+		<clocks>
+			<port name="clock">open</port>
+		</clocks>
+		<block name="out:out~3" instance="outpad[0]">
+			<attributes />
+			<parameters />
+			<inputs>
+				<port name="outpad">io.outpad[0]-&gt;outpad</port>
+			</inputs>
+			<outputs />
+			<clocks />
+		</block>
+	</block>
+	<block name="out:out~4" instance="io[4]" mode="outpad">
+		<inputs>
+			<port name="outpad">p0~4</port>
+		</inputs>
+		<outputs>
+			<port name="inpad">open</port>
+		</outputs>
+		<clocks>
+			<port name="clock">open</port>
+		</clocks>
+		<block name="out:out~4" instance="outpad[0]">
+			<attributes />
+			<parameters />
+			<inputs>
+				<port name="outpad">io.outpad[0]-&gt;outpad</port>
+			</inputs>
+			<outputs />
+			<clocks />
+		</block>
+	</block>
+	<block name="out:out~5" instance="io[5]" mode="outpad">
+		<inputs>
+			<port name="outpad">p0~5</port>
+		</inputs>
+		<outputs>
+			<port name="inpad">open</port>
+		</outputs>
+		<clocks>
+			<port name="clock">open</port>
+		</clocks>
+		<block name="out:out~5" instance="outpad[0]">
+			<attributes />
+			<parameters />
+			<inputs>
+				<port name="outpad">io.outpad[0]-&gt;outpad</port>
+			</inputs>
+			<outputs />
+			<clocks />
+		</block>
+	</block>
+	<block name="out:out~6" instance="io[6]" mode="outpad">
+		<inputs>
+			<port name="outpad">p0~6</port>
+		</inputs>
+		<outputs>
+			<port name="inpad">open</port>
+		</outputs>
+		<clocks>
+			<port name="clock">open</port>
+		</clocks>
+		<block name="out:out~6" instance="outpad[0]">
+			<attributes />
+			<parameters />
+			<inputs>
+				<port name="outpad">io.outpad[0]-&gt;outpad</port>
+			</inputs>
+			<outputs />
+			<clocks />
+		</block>
+	</block>
+	<block name="out:out~7" instance="io[7]" mode="outpad">
+		<inputs>
+			<port name="outpad">p0~7</port>
+		</inputs>
+		<outputs>
+			<port name="inpad">open</port>
+		</outputs>
+		<clocks>
+			<port name="clock">open</port>
+		</clocks>
+		<block name="out:out~7" instance="outpad[0]">
+			<attributes />
+			<parameters />
+			<inputs>
+				<port name="outpad">io.outpad[0]-&gt;outpad</port>
+			</inputs>
+			<outputs />
+			<clocks />
+		</block>
+	</block>
+	<block name="p0~1" instance="io[8]" mode="inpad">
+		<inputs>
+			<port name="outpad">open</port>
+		</inputs>
+		<outputs>
+			<port name="inpad">inpad[0].inpad[0]-&gt;inpad</port>
+		</outputs>
+		<clocks>
+			<port name="clock">open</port>
+		</clocks>
+		<block name="p0~1" instance="inpad[0]">
+			<attributes />
+			<parameters />
+			<inputs />
+			<outputs>
+				<port name="inpad">p0~1</port>
+			</outputs>
+			<clocks />
+		</block>
+	</block>
+	<block name="p0~2" instance="io[9]" mode="inpad">
+		<inputs>
+			<port name="outpad">open</port>
+		</inputs>
+		<outputs>
+			<port name="inpad">inpad[0].inpad[0]-&gt;inpad</port>
+		</outputs>
+		<clocks>
+			<port name="clock">open</port>
+		</clocks>
+		<block name="p0~2" instance="inpad[0]">
+			<attributes />
+			<parameters />
+			<inputs />
+			<outputs>
+				<port name="inpad">p0~2</port>
+			</outputs>
+			<clocks />
+		</block>
+	</block>
+	<block name="p0~3" instance="io[10]" mode="inpad">
+		<inputs>
+			<port name="outpad">open</port>
+		</inputs>
+		<outputs>
+			<port name="inpad">inpad[0].inpad[0]-&gt;inpad</port>
+		</outputs>
+		<clocks>
+			<port name="clock">open</port>
+		</clocks>
+		<block name="p0~3" instance="inpad[0]">
+			<attributes />
+			<parameters />
+			<inputs />
+			<outputs>
+				<port name="inpad">p0~3</port>
+			</outputs>
+			<clocks />
+		</block>
+	</block>
+	<block name="p0~4" instance="io[11]" mode="inpad">
+		<inputs>
+			<port name="outpad">open</port>
+		</inputs>
+		<outputs>
+			<port name="inpad">inpad[0].inpad[0]-&gt;inpad</port>
+		</outputs>
+		<clocks>
+			<port name="clock">open</port>
+		</clocks>
+		<block name="p0~4" instance="inpad[0]">
+			<attributes />
+			<parameters />
+			<inputs />
+			<outputs>
+				<port name="inpad">p0~4</port>
+			</outputs>
+			<clocks />
+		</block>
+	</block>
+	<block name="p0~5" instance="io[12]" mode="inpad">
+		<inputs>
+			<port name="outpad">open</port>
+		</inputs>
+		<outputs>
+			<port name="inpad">inpad[0].inpad[0]-&gt;inpad</port>
+		</outputs>
+		<clocks>
+			<port name="clock">open</port>
+		</clocks>
+		<block name="p0~5" instance="inpad[0]">
+			<attributes />
+			<parameters />
+			<inputs />
+			<outputs>
+				<port name="inpad">p0~5</port>
+			</outputs>
+			<clocks />
+		</block>
+	</block>
+	<block name="p0~6" instance="io[13]" mode="inpad">
+		<inputs>
+			<port name="outpad">open</port>
+		</inputs>
+		<outputs>
+			<port name="inpad">inpad[0].inpad[0]-&gt;inpad</port>
+		</outputs>
+		<clocks>
+			<port name="clock">open</port>
+		</clocks>
+		<block name="p0~6" instance="inpad[0]">
+			<attributes />
+			<parameters />
+			<inputs />
+			<outputs>
+				<port name="inpad">p0~6</port>
+			</outputs>
+			<clocks />
+		</block>
+	</block>
+	<block name="p0~7" instance="io[14]" mode="inpad">
+		<inputs>
+			<port name="outpad">open</port>
+		</inputs>
+		<outputs>
+			<port name="inpad">inpad[0].inpad[0]-&gt;inpad</port>
+		</outputs>
+		<clocks>
+			<port name="clock">open</port>
+		</clocks>
+		<block name="p0~7" instance="inpad[0]">
+			<attributes />
+			<parameters />
+			<inputs />
+			<outputs>
+				<port name="inpad">p0~7</port>
+			</outputs>
+			<clocks />
+		</block>
+	</block>
+	<block name="p0~0" instance="io[15]" mode="inpad">
+		<inputs>
+			<port name="outpad">open</port>
+		</inputs>
+		<outputs>
+			<port name="inpad">inpad[0].inpad[0]-&gt;inpad</port>
+		</outputs>
+		<clocks>
+			<port name="clock">open</port>
+		</clocks>
+		<block name="p0~0" instance="inpad[0]">
+			<attributes />
+			<parameters />
+			<inputs />
+			<outputs>
+				<port name="inpad">p0~0</port>
+			</outputs>
+			<clocks />
+		</block>
+	</block>
+</block>

@@ -1,0 +1,21 @@
+Netlist_File: SOBEL.pre-vpr.net Netlist_ID: SHA256:67fed781ab81080662c3b7a737773e436f5051f094b1c89d6d84664d549400ae
+Array size: 3 x 3 logic blocks
+
+#block name	x	y	subblk	layer	block number
+#----------	--	--	------	-----	------------
+out:out~0	0	1	0	0	#0
+out:out~1	0	1	7	0	#1
+out:out~2	2	1	3	0	#2
+out:out~3	0	1	2	0	#3
+out:out~4	0	1	6	0	#4
+out:out~5	2	1	4	0	#5
+out:out~6	1	2	7	0	#6
+out:out~7	1	0	1	0	#7
+p0~1		0	1	1	0	#8
+p0~2		0	1	3	0	#9
+p0~3		1	0	6	0	#10
+p0~4		2	1	5	0	#11
+p0~5		1	2	5	0	#12
+p0~6		1	2	6	0	#13
+p0~7		1	0	0	0	#14
+p0~0		2	1	7	0	#15

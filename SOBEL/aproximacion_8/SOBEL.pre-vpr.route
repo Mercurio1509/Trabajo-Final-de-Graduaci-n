@@ -1,0 +1,83 @@
+Placement_File: SOBEL.pre-vpr.place Placement_ID: SHA256:5307b1d6adf2d267bb5dab7f784d22652530c36008f6cacf83cd27062cec7328
+Array size: 3 x 3 logic blocks.
+
+Routing:
+
+Net 0 (p0~0)
+
+Node:	268	SOURCE (0,2,1)  Pad: 22  Switch: 0
+Node:	292	  OPIN (0,2,1)  Pad: 22  Switch: 2
+Node:	614	 CHANY (0,1,1)  Track: 20  Switch: 2
+Node:	417	 CHANX (0,1,1)  Track: 23  Switch: 2
+Node:	569	 CHANY (0,0,1)  Track: 75  Switch: 1
+Node:	24	  IPIN (0,0,1)  Pad: 0  Switch: 0
+Node:	0	  SINK (0,0,1)  Pad: 0  Switch: -1 Net_pin_index: 1
+
+
+Net 1 (p0~1)
+
+Node:	4	SOURCE (0,0,1)  Pad: 4  Switch: 0
+Node:	28	  OPIN (0,0,1)  Pad: 4  Switch: 2
+Node:	508	 CHANY (0,0,1)  Track: 14  Switch: 1
+Node:	45	  IPIN (0,0,1)  Pad: 21  Switch: 0
+Node:	21	  SINK (0,0,1)  Pad: 21  Switch: -1 Net_pin_index: 1
+
+
+Net 2 (p0~2)
+
+Node:	10	SOURCE (0,0,1)  Pad: 10  Switch: 0
+Node:	34	  OPIN (0,0,1)  Pad: 10  Switch: 2
+Node:	526	 CHANY (0,0,1)  Track: 32  Switch: 2
+Node:	458	 CHANX (0,1,1)  Track: 64  Switch: 2
+Node:	657	 CHANY (0,1,1)  Track: 63  Switch: 1
+Node:	279	  IPIN (0,2,1)  Pad: 9  Switch: 0
+Node:	255	  SINK (0,2,1)  Pad: 9  Switch: -1 Net_pin_index: 1
+
+
+Net 3 (p0~3)
+
+Node:	67	SOURCE (0,1,0)  Pad: 19  Switch: 0
+Node:	91	  OPIN (0,1,0)  Pad: 19  Switch: 2
+Node:	363	 CHANX (0,1,0)  Track: 69  Switch: 2
+Node:	560	 CHANY (0,0,1)  Track: 66  Switch: 1
+Node:	30	  IPIN (0,0,1)  Pad: 6  Switch: 0
+Node:	6	  SINK (0,0,1)  Pad: 6  Switch: -1 Net_pin_index: 1
+
+
+Net 4 (p0~4)
+
+Node:	262	SOURCE (0,2,1)  Pad: 16  Switch: 0
+Node:	286	  OPIN (0,2,1)  Pad: 16  Switch: 2
+Node:	600	 CHANY (0,1,1)  Track: 6  Switch: 2
+Node:	403	 CHANX (0,1,1)  Track: 9  Switch: 2
+Node:	583	 CHANY (0,0,1)  Track: 89  Switch: 1
+Node:	42	  IPIN (0,0,1)  Pad: 18  Switch: 0
+Node:	18	  SINK (0,0,1)  Pad: 18  Switch: -1 Net_pin_index: 1
+
+
+Net 5 (p0~5)
+
+Node:	214	SOURCE (0,1,2)  Pad: 16  Switch: 0
+Node:	238	  OPIN (0,1,2)  Pad: 16  Switch: 2
+Node:	394	 CHANX (0,1,1)  Track: 0  Switch: 2
+Node:	693	 CHANY (0,1,1)  Track: 99  Switch: 1
+Node:	282	  IPIN (0,2,1)  Pad: 12  Switch: 0
+Node:	258	  SINK (0,2,1)  Pad: 12  Switch: -1 Net_pin_index: 1
+
+
+Net 6 (p0~6)
+
+Node:	217	SOURCE (0,1,2)  Pad: 19  Switch: 0
+Node:	241	  OPIN (0,1,2)  Pad: 19  Switch: 2
+Node:	407	 CHANX (0,1,1)  Track: 13  Switch: 1
+Node:	243	  IPIN (0,1,2)  Pad: 21  Switch: 0
+Node:	219	  SINK (0,1,2)  Pad: 21  Switch: -1 Net_pin_index: 1
+
+
+Net 7 (p0~7)
+
+Node:	49	SOURCE (0,1,0)  Pad: 1  Switch: 0
+Node:	73	  OPIN (0,1,0)  Pad: 1  Switch: 2
+Node:	296	 CHANX (0,1,0)  Track: 2  Switch: 1
+Node:	75	  IPIN (0,1,0)  Pad: 3  Switch: 0
+Node:	51	  SINK (0,1,0)  Pad: 3  Switch: -1 Net_pin_index: 1
